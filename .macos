@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+#########################
+# Window Management app #
+#########################
+
+# Setting gaps at the screen edges
+defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 10
+defaults write com.knollsoft.Rectangle screenEdgeGapBottom -int 10
+defaults write com.knollsoft.Rectangle screenEdgeGapLeft -int 10
+defaults write com.knollsoft.Rectangle screenEdgeGapRight -int 10
