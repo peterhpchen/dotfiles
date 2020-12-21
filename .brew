@@ -9,3 +9,4 @@ brew upgrade
 # Install dev tools
 brew install alacritty
 brew install rectangle
+brew install tmux
