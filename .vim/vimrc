@@ -1,2 +1,16 @@
-set number relativenumber
+syntax on " 開啟語法高亮
 
+set number relativenumber" 開啟行號
+
+set expandtab " 將 Tab 輸入都改為 Space
+set tabstop=2 " 按下 Tab 輸入兩個字元
+set softtabstop=2 " 如果 `expandtab` 設置, 按下 Tab 輸入兩個字元
+set shiftwidth=2 " 按下 `>>` 或 `<<` 或 `==` 時增減的字元數
+set autoindent " 新行跟上一行的縮排相同
+
+set path+=**
+set wildmenu
+
+" gruvbox theme setting
+colorscheme gruvbox
+autocmd vimenter * ++nested colorscheme gruvbox
