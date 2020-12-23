@@ -1,6 +1,7 @@
 syntax on " 開啟語法高亮
 
-set number relativenumber" 開啟行號
+set termguicolors " enable true color
+set number relativenumber " 開啟行號
 
 set expandtab " 將 Tab 輸入都改為 Space
 set tabstop=2 " 按下 Tab 輸入兩個字元
@@ -13,4 +14,5 @@ set wildmenu
 
 " gruvbox theme setting
 colorscheme gruvbox
+set background=dark
 autocmd vimenter * ++nested colorscheme gruvbox

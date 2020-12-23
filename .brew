@@ -10,3 +10,4 @@ brew upgrade
 brew install alacritty
 brew install rectangle
 brew install tmux
+brew install drawio
