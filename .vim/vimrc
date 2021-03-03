@@ -12,7 +12,7 @@ set autoindent " 新行跟上一行的縮排相同
 set path+=**
 set wildmenu
 
-" gruvbox theme setting
-colorscheme gruvbox
-set background=dark
-autocmd vimenter * ++nested colorscheme gruvbox
+"" gruvbox theme setting
+" colorscheme gruvbox
+" set background=dark
+" autocmd vimenter * ++nested colorscheme gruvbox
