@@ -1,4 +1,5 @@
 #!/bin.zsh
 
-sudo ln -sf $PWD/.vim ~/.vim
-sudo ln -sf $PWD/alacritty ~/.config/alacritty
+sudo ln -sf $PWD/.vim ~/
+sudo ln -sf $PWD/alacritty ~/.config
+sudo ln -sf $PWD/.zshrc ~/

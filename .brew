@@ -12,3 +12,4 @@ brew install rectangle
 brew install tmux
 brew install drawio
 brew install dbeaver-community
+brew install nvm
