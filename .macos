@@ -11,3 +11,21 @@ defaults write com.knollsoft.Rectangle screenEdgeGapTop -int 10
 defaults write com.knollsoft.Rectangle screenEdgeGapBottom -int 10
 defaults write com.knollsoft.Rectangle screenEdgeGapLeft -int 10
 defaults write com.knollsoft.Rectangle screenEdgeGapRight -int 10
+
+############
+# Keyboard #
+############
+
+# Boost key in speed
+defaults write -g InitialKeyRepeat -int 1
+defaults write -g KeyRepeat -int 1
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+######################
+# Visual Studio Code #
+######################
+
+# https://github.com/VSCodeVim/Vim
+
+# To enable key-repeating
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false 
