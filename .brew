@@ -6,6 +6,9 @@ brew update
 # Update any installed formulae
 brew upgrade
 
+# Set default app by command
+brew install duti
+
 # Tap drivers
 brew tap homebrew/cask-drivers
 
@@ -19,3 +22,6 @@ brew install nvm
 
 # Install drivers
 brew install logitech-options
+
+# PDF reader
+brew adobe-acrobat-reader
