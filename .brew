@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-# Update Homebrew 
+# Update Homebrew
 brew update
 
 # Update any installed formulae
@@ -19,3 +19,8 @@ brew install nvm
 
 # Install drivers
 brew install logitech-options
+
+# Fonts
+# https://github.com/ryanoasis/nerd-fonts
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
