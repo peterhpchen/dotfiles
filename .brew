@@ -6,6 +6,9 @@ brew update
 # Update any installed formulae
 brew upgrade
 
+# Set default app by command
+brew install duti
+
 # Tap drivers
 brew tap homebrew/cask-drivers
 
@@ -24,3 +27,6 @@ brew install logitech-options
 # https://github.com/ryanoasis/nerd-fonts
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
+
+# PDF reader
+brew adobe-acrobat-reader
