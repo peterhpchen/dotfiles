@@ -32,4 +32,6 @@ brew install --cask font-hack-nerd-font
 # PDF reader
 brew adobe-acrobat-reader
 
+# Command line tools
 brew install fd
+brew install ripgrep
