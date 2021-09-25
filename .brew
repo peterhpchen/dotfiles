@@ -31,3 +31,5 @@ brew install --cask font-hack-nerd-font
 
 # PDF reader
 brew adobe-acrobat-reader
+
+brew install fd
