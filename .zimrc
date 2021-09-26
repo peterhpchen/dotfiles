@@ -52,3 +52,6 @@ zmodule homebrew
 
 # Alias hints
 zmodule djui/alias-tips
+
+# exa
+zmodule exa

@@ -37,3 +37,4 @@ brew install fd
 brew install ripgrep
 brew install bat
 brew install eth-p/software/bat-extras
+brew install exa
