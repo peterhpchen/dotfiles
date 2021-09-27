@@ -38,3 +38,7 @@ brew install ripgrep
 brew install bat
 brew install eth-p/software/bat-extras
 brew install exa
+
+# fzf
+brew install fzf
+$(brew --prefix)/opt/fzf/install

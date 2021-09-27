@@ -55,3 +55,6 @@ zmodule djui/alias-tips
 
 # exa
 zmodule exa
+
+# fzf
+zmodule fzf
