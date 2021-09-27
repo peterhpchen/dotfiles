@@ -58,3 +58,6 @@ zmodule exa
 
 # fzf
 zmodule fzf
+
+# jump around
+zmodule rupa/z
