@@ -18,3 +18,4 @@ code --install-extension foxundermoon.shell-format
 # Develop
 code --install-extension eamodio.gitlens
 code --install-extension ms-azuretools.vscode-docker
+code --install-extension humao.rest-client
