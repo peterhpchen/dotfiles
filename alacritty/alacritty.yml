@@ -21,7 +21,8 @@ env:
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  TERM: alacritty
+  # TERM: alacritty
+  TERM: xterm-256color
 
 window:
   # Window dimensions (changes require restart)
@@ -331,7 +332,6 @@ live_config_reload: true
 
 # Send ESC (\x1b) before characters when alt is pressed.
 alt_send_esc: true
-
 #mouse:
 # Click settings
 #
