@@ -6,6 +6,7 @@ setup_symlinks() {
   echo "Creating symlinks"
   ln -s $DOTFILES/zsh/.zshrc $HOME/.zshrc
   ln -s $DOTFILES/zsh/.zshenv $HOME/.zshenv
+  ln -s $DOTFILES/zsh/.p10k.zsh $HOME/.p10k.zsh
 }
 
 setup_homebrew() {
