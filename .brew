@@ -36,9 +36,7 @@ brew adobe-acrobat-reader
 # Command line tools
 brew install fd
 brew install ripgrep
-brew install bat
 brew install eth-p/software/bat-extras
-brew install exa
 brew install tig
 
 # fzf
