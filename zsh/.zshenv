@@ -1,0 +1,1 @@
+ZPLUG_HOME=~/.zplug
