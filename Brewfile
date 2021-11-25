@@ -5,3 +5,11 @@ brew 'exa'
 # A cat(1) clone with wings.
 # https://github.com/sharkdp/bat
 brew 'bat'
+
+# Vim-fork focused on extensibility and usability
+# https://github.com/neovim/neovim
+brew 'neovim'
+
+# A cross-platform, OpenGL terminal emulator.
+# https://github.com/alacritty/alacritty
+cask 'alacritty'

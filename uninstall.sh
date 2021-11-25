@@ -4,6 +4,10 @@ DOTFILES="$(pwd)"
 unset_symlinks() {
     echo "Removing symlinks"
     unlink $HOME/.zshrc
+    unlink $HOME/.zshenv
+    unlink $HOME/.p10k.zsh
+
+    unlink $HOME/.config/alacritty
 }
 
 unset_homebrew() {
@@ -22,6 +26,6 @@ unset_cheat.sh() {
     rm -f ~/.zsh.d/_cht
 }
 
-# unset_symlinks
+unset_symlinks
 unset_homebrew
-# unset_cheat.sh
+unset_cheat.sh
