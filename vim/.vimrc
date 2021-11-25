@@ -25,16 +25,20 @@ syntax on
 
 " Using true color
 set termguicolors
-" set number relativenumber " 開啟行號
 
-" set expandtab " 將 Tab 輸入都改為 Space
-" set tabstop=2 " 按下 Tab 輸入兩個字元
-" set softtabstop=2 " 如果 `expandtab` 設置, 按下 Tab 輸入兩個字元
-" set shiftwidth=2 " 按下 `>>` 或 `<<` 或 `==` 時增減的字元數
-" set autoindent " 新行跟上一行的縮排相同
+" Fix termguicolors issue
+" :h xterm-true-color
+let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
+let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 
-" set path+=**
-" set wildmenu
+" Show the line number relative to the line with the cursor in front of each line.
+set number relativenumber
+
+" Copy indent from current line when starting a new line
+set autoindent
+
+" Enables "enhanced mode" of command-line completion.
+set wildmenu
 
 """""""""""""""""""
 " colorscheme
