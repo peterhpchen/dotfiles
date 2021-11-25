@@ -2,6 +2,10 @@
 # https://the.exa.website/
 brew 'exa'
 
+# A command-line fuzzy finder
+# https://github.com/junegunn/fzf
+brew 'fzf'
+
 # A cat(1) clone with wings.
 # https://github.com/sharkdp/bat
 brew 'bat'

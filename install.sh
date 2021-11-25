@@ -17,6 +17,11 @@ setup_symlinks() {
 setup_homebrew() {
   echo "Setting up Homebrew"
   brew bundle --file=$DOTFILES/Brewfile
+
+  echo "Installing fzf"
+  # Just for zsh, add fzf
+  # https://github.com/junegunn/fzf/blob/master/install
+  "$(brew --prefix)"/opt/fzf/install --key-bindings --completion --update-rc --no-bash --no-fish
 }
 
 setup_symlinks

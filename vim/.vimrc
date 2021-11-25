@@ -17,6 +17,9 @@ Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
+" Enable loading the plugin files for specific file types
+filetype plugin on
+
 " Make Vim behave in a more useful way.
 set nocompatible
 
