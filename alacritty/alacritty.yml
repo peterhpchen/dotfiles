@@ -1,3 +1,7 @@
+env:
+  # Fix vim termguicolors
+  # https://www.reddit.com/r/vim/comments/kennw5/comment/gg4866y/?utm_source=share&utm_medium=web2x&context=3
+  TERM: xterm-256color
 import:
   - ~/.config/alacritty/nord.yml
 font:

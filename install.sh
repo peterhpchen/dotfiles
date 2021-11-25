@@ -5,11 +5,13 @@ DOTFILES="$(pwd)"
 setup_symlinks() {
   echo "Creating symlinks"
 
-  ln -s $DOTFILES/zsh/.zshrc $HOME/.zshrc
-  ln -s $DOTFILES/zsh/.zshenv $HOME/.zshenv
-  ln -s $DOTFILES/zsh/.p10k.zsh $HOME/.p10k.zsh
+  [[ -e $HOME/.zshrc ]] || ln -s $DOTFILES/zsh/.zshrc $HOME/.zshrc
+  [[ -e $HOME/.zshenv ]] || ln -s $DOTFILES/zsh/.zshenv $HOME/.zshenv
+  [[ -e $HOME/.p10k.zsh ]] || ln -s $DOTFILES/zsh/.p10k.zsh $HOME/.p10k.zsh
 
-  ln -s $DOTFILES/alacritty $HOME/.config/alacritty
+  [[ -e $HOME/.config/alacritty ]] || ln -s $DOTFILES/alacritty $HOME/.config/alacritty
+
+  [[ -e $HOME/.vimrc ]] || ln -s $DOTFILES/vim/.vimrc $HOME/.vimrc
 }
 
 setup_homebrew() {

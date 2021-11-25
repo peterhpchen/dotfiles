@@ -8,6 +8,8 @@ unset_symlinks() {
     unlink $HOME/.p10k.zsh
 
     unlink $HOME/.config/alacritty
+
+    unlink $HOME/.vimrc
 }
 
 unset_homebrew() {

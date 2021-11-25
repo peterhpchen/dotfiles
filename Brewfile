@@ -6,6 +6,10 @@ brew 'exa'
 # https://github.com/sharkdp/bat
 brew 'bat'
 
+# Vim is a greatly improved version of the good old UNIX editor Vi.
+# https://github.com/vim/vim
+brew 'vim'
+
 # Vim-fork focused on extensibility and usability
 # https://github.com/neovim/neovim
 brew 'neovim'
