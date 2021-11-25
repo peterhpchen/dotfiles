@@ -14,7 +14,6 @@ brew tap homebrew/cask-drivers
 
 # Install dev tools
 brew install git
-brew install alacritty
 brew install rectangle
 brew install tmux
 brew install tmuxinator
