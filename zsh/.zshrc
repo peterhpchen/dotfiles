@@ -84,10 +84,9 @@ zplug zsh-users/zsh-syntax-highlighting
 # https://github.com/zsh-users/zsh-history-substring-search
 zplug zsh-users/zsh-history-substring-search
 
-# # initialize autocomplete
-# # https://scriptingosx.com/2019/07/moving-to-zsh-part-5-completions/
-# autoload -U compinit
-# compinit
+# # Replace zsh's default completion selection menu with fzf!
+# # https://github.com/Aloxaf/fzf-tab
+# zplug Aloxaf/fzf-tab
 
 # zplug check returns true if all packages are installed
 # Therefore, when it returns false, run zplug install
@@ -101,4 +100,5 @@ zplug load
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Set up fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

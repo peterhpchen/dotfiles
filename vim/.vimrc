@@ -15,6 +15,10 @@ call plug#begin()
 " https://github.com/arcticicestudio/nord-vim
 Plug 'arcticicestudio/nord-vim'
 
+" Add fzf(homebrew installed) to runtimepath
+" https://github.com/junegunn/fzf/blob/master/README-VIM.md#installation
+Plug '/usr/local/opt/fzf'
+
 call plug#end()
 
 " Enable loading the plugin files for specific file types
@@ -42,6 +46,9 @@ set autoindent
 
 " Enables "enhanced mode" of command-line completion.
 set wildmenu
+
+
+nnoremap <C-p> :<C-u>FZF<CR>
 
 """""""""""""""""""
 " colorscheme
