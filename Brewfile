@@ -1,3 +1,7 @@
+# These are the GNU core utilities.
+# https://github.com/coreutils/coreutils
+brew 'coreutils'
+
 # A modern replacement for ls.
 # https://the.exa.website/
 brew 'exa'

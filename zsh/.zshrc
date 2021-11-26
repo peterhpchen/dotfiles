@@ -5,6 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Mac needs to use gdircolors to set $LS_COLORS
+# https://github.com/gibbling/dircolors
+eval $(gdircolors -b $HOME/.dir_colors)
+
 ########################################
 # alias
 ########################################
@@ -32,6 +36,7 @@ fi
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+
 ########################################
 # zstyle
 ########################################
@@ -39,7 +44,12 @@ bindkey '^[[B' history-substring-search-down
 # Completion tab highlight
 # https://stackoverflow.com/a/29197217/9265131
 zstyle ':completion:*' menu select
-# zstyle ':completion:*:default' list-colors ${(s.:.):-di=1;34:ln=35:so=32:pi=33:ex=31:bd=1;36:cd=1;33:su=30;41:sg=30;46:tw=30;42:ow=30;43}
+
+# Set colors to completion options
+if [ -n $LS_COLORS ]; then
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+fi
+
 
 ########################################
 # cheat.sh

@@ -6,6 +6,8 @@ unset_symlinks() {
     unlink $HOME/.zshrc
     unlink $HOME/.zshenv
     unlink $HOME/.p10k.zsh
+    unlink $HOME/.ripgreprc
+    unlink $HOME/.dir_colors
 
     unlink $HOME/.config/alacritty
 

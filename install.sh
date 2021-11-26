@@ -9,6 +9,7 @@ setup_symlinks() {
   [[ -e $HOME/.zshenv ]] || ln -s $DOTFILES/zsh/.zshenv $HOME/.zshenv
   [[ -e $HOME/.p10k.zsh ]] || ln -s $DOTFILES/zsh/.p10k.zsh $HOME/.p10k.zsh
   [[ -e $HOME/.ripgreprc ]] || ln -s $DOTFILES/zsh/.ripgreprc $HOME/.ripgreprc
+  [[ -e $HOME/.dir_colors ]] || ln -s $DOTFILES/zsh/.dir_colors $HOME/.dir_colors
 
   [[ -e $HOME/.config/alacritty ]] || ln -s $DOTFILES/alacritty $HOME/.config/alacritty
 
