@@ -2,6 +2,10 @@
 # https://the.exa.website/
 brew 'exa'
 
+# A line-oriented search tool that recursively searches the current directory for a regex pattern.
+# https://github.com/BurntSushi/ripgrep
+brew 'ripgrep'
+
 # A command-line fuzzy finder
 # https://github.com/junegunn/fzf
 brew 'fzf'
