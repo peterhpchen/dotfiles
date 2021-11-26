@@ -14,6 +14,10 @@ brew 'fzf'
 # https://github.com/sharkdp/bat
 brew 'bat'
 
+# Bash scripts that integrate bat with various command line tools.
+# https://github.com/eth-p/bat-extras
+brew 'eth-p/software/bat-extras'
+
 # Vim is a greatly improved version of the good old UNIX editor Vi.
 # https://github.com/vim/vim
 brew 'vim'

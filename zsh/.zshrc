@@ -15,6 +15,14 @@ if (( ${+commands[exa]} )); then
   alias ls='exa --group-directories-first'
 fi
 
+# eth-p/bat-extras
+# https://github.com/eth-p/bat-extras
+if (( ${+commands[rg]} )); then
+  if (( ${+commands[batman]} )); then
+    alias man='batman'
+  fi
+fi
+
 ########################################
 # bindkey
 ########################################
@@ -31,6 +39,7 @@ bindkey '^[[B' history-substring-search-down
 # Completion tab highlight
 # https://stackoverflow.com/a/29197217/9265131
 zstyle ':completion:*' menu select
+# zstyle ':completion:*:default' list-colors ${(s.:.):-di=1;34:ln=35:so=32:pi=33:ex=31:bd=1;36:cd=1;33:su=30;41:sg=30;46:tw=30;42:ow=30;43}
 
 ########################################
 # cheat.sh

@@ -1,3 +1,6 @@
+# ripgrep configuration file
+# https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#configuration-file
+
 # Search hidden files and directories.
 --hidden
 
