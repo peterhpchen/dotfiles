@@ -22,6 +22,10 @@ brew 'bat'
 # https://github.com/eth-p/bat-extras
 brew 'eth-p/software/bat-extras'
 
+# A shell parser, formatter, and interpreter with bash support
+# https://github.com/mvdan/sh
+brew 'shfmt'
+
 # Vim is a greatly improved version of the good old UNIX editor Vi.
 # https://github.com/vim/vim
 brew 'vim'

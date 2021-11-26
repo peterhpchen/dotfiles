@@ -23,7 +23,15 @@ Plug '/usr/local/opt/fzf'
 " https://github.com/junegunn/fzf.vim
 Plug 'junegunn/fzf.vim'
 
+" Vim plugin for shfmt
+" https://github.com/z0mbix/vim-shfmt
+Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
+
 call plug#end()
+
+" Auto format shell scripts on save
+" https://github.com/z0mbix/vim-shfmt#auto-format-on-save
+let g:shfmt_fmt_on_save = 1
 
 " Enable loading the plugin files for specific file types
 filetype plugin on
