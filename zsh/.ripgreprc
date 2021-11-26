@@ -1,0 +1,9 @@
+# Search hidden files and directories.
+--hidden
+
+# .git folder remaining ignored
+--glob
+!.git/*
+
+# Searches case insensitively if the pattern is all lowercase. Search case sensitively otherwise.
+--smart-case

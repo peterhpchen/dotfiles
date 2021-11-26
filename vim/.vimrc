@@ -19,6 +19,10 @@ Plug 'arcticicestudio/nord-vim'
 " https://github.com/junegunn/fzf/blob/master/README-VIM.md#installation
 Plug '/usr/local/opt/fzf'
 
+" Things you can do with fzf and Vim.
+" https://github.com/junegunn/fzf.vim
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
 
 " Enable loading the plugin files for specific file types
@@ -48,7 +52,7 @@ set autoindent
 set wildmenu
 
 
-nnoremap <C-p> :<C-u>FZF<CR>
+nnoremap <C-p> :<C-u>Files<CR>
 
 """""""""""""""""""
 " colorscheme
