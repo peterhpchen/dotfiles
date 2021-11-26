@@ -103,9 +103,9 @@ zplug zsh-users/zsh-syntax-highlighting
 # https://github.com/zsh-users/zsh-history-substring-search
 zplug zsh-users/zsh-history-substring-search
 
-# # Replace zsh's default completion selection menu with fzf!
-# # https://github.com/Aloxaf/fzf-tab
-# zplug Aloxaf/fzf-tab
+# Replace zsh's default completion selection menu with fzf!
+# https://github.com/Aloxaf/fzf-tab
+zplug Aloxaf/fzf-tab
 
 # zplug check returns true if all packages are installed
 # Therefore, when it returns false, run zplug install
