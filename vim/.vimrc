@@ -56,8 +56,9 @@ set number relativenumber
 " Copy indent from current line when starting a new line
 set autoindent
 
-" Enables "enhanced mode" of command-line completion.
+" Enables command-line completion.
 set wildmenu
+set wildmode=full
 
 
 nnoremap <C-p> :<C-u>Files<CR>
