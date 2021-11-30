@@ -1,0 +1,17 @@
+root = true
+
+# shfmt settings
+# Reference Google's Shell Style Guide
+# https://google.github.io/styleguide/shellguide.html
+# Execute `man shfmt` for details
+[*.sh]
+# like -i 2
+indent_style = space
+indent_size = 2
+
+shell_variant      = bash # like -ln=bash
+binary_next_line   = true  # like -bn
+switch_case_indent = true  # like -ci
+# space_redirects    = true  # like -sr
+# keep_padding       = true  # like -kp
+# function_next_line = true  # like -fn

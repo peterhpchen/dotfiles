@@ -14,6 +14,8 @@ setup_symlinks() {
   [[ -e $HOME/.config/alacritty ]] || ln -s "$DOTFILES"/alacritty "$HOME"/.config/alacritty
 
   [[ -e $HOME/.vimrc ]] || ln -s "$DOTFILES"/vim/.vimrc "$HOME"/.vimrc
+
+  [[ -e $HOME/.editorconfig ]] || ln -s "$DOTFILES"/.editorconfig "$HOME"/.editorconfig
 }
 
 setup_homebrew() {

@@ -27,6 +27,10 @@ Plug 'junegunn/fzf.vim'
 " https://github.com/dense-analysis/ale
 Plug 'dense-analysis/ale'
 
+" This is an EditorConfig plugin for Vim.
+" https://github.com/editorconfig/editorconfig-vim
+Plug 'editorconfig/editorconfig-vim'
+
 call plug#end()
 
 " Enable loading the plugin files for specific file types
@@ -61,7 +65,8 @@ nnoremap <C-p> :<C-u>Files<CR>
 
 " Set shfmt to format sh files
 let g:ale_fixers = { 'sh': ['shfmt'] }
-let g:ale_sh_shfmt_options = '-i 2'
+" Use editorconfig to setting shfmt
+let g:ale_sh_shfmt_options = ''
 
 " Set shfmt to format sh files
 let g:ale_linters = { 'sh': ['shellcheck'] }
