@@ -26,6 +26,10 @@ brew 'eth-p/software/bat-extras'
 # https://github.com/mvdan/sh
 brew 'shfmt'
 
+# ShellCheck, a static analysis tool for shell scripts
+# https://github.com/koalaman/shellcheck
+brew 'shellcheck'
+
 # Vim is a greatly improved version of the good old UNIX editor Vi.
 # https://github.com/vim/vim
 brew 'vim'

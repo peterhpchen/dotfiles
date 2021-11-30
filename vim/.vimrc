@@ -23,15 +23,11 @@ Plug '/usr/local/opt/fzf'
 " https://github.com/junegunn/fzf.vim
 Plug 'junegunn/fzf.vim'
 
-" Vim plugin for shfmt
-" https://github.com/z0mbix/vim-shfmt
-Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
+" Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support
+" https://github.com/dense-analysis/ale
+Plug 'dense-analysis/ale'
 
 call plug#end()
-
-" Auto format shell scripts on save
-" https://github.com/z0mbix/vim-shfmt#auto-format-on-save
-let g:shfmt_fmt_on_save = 1
 
 " Enable loading the plugin files for specific file types
 filetype plugin on
@@ -60,8 +56,18 @@ set autoindent
 set wildmenu
 set wildmode=full
 
-
+" open fzf
 nnoremap <C-p> :<C-u>Files<CR>
+
+" Set shfmt to format sh files
+let g:ale_fixers = { 'sh': ['shfmt'] }
+let g:ale_sh_shfmt_options = '-i 2'
+
+" Set shfmt to format sh files
+let g:ale_linters = { 'sh': ['shellcheck'] }
+
+" Set this variable to 1 to fix files when you save them.
+let g:ale_fix_on_save = 1
 
 """""""""""""""""""
 " colorscheme
