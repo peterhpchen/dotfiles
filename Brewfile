@@ -30,6 +30,10 @@ brew 'shfmt'
 # https://github.com/koalaman/shellcheck
 brew 'shellcheck'
 
+# Terminal multiplexer
+# https://github.com/tmux/tmux
+brew 'tmux'
+
 # Vim is a greatly improved version of the good old UNIX editor Vi.
 # https://github.com/vim/vim
 brew 'vim'

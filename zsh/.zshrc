@@ -27,6 +27,11 @@ if (( ${+commands[rg]} )); then
   fi
 fi
 
+if (( ${+commands[nvim]} )); then
+  alias vim='nvim'
+  alias vi='nvim'
+fi
+
 ########################################
 # bindkey
 ########################################

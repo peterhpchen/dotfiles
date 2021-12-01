@@ -13,7 +13,12 @@ unset_symlinks() {
 
   unlink $HOME/.vimrc
 
+  unlink $HOME/.config/nvim
+
   unlink $HOME/.editorconfig
+
+  unlink $HOME/.tmux.conf
+  unlink $HOME/.tmux
 }
 
 unset_homebrew() {
