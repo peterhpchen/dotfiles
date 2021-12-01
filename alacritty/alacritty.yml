@@ -5,4 +5,15 @@ font:
     # Recommended font by p10k
     # https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
     family: MesloLGS NF
-  size: 16
+  # pixel perfections
+  # https://github.com/romkatv/powerlevel10k#sub-pixel-imperfections-around-powerline-symbols
+  size: 18.5
+  offset:
+    x: 0
+    y: 2
+  glyph_offset:
+    x: 0
+    y: 1
+window:
+  startup_mode: Maximized
+background_opacity: 0.9

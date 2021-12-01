@@ -15,6 +15,8 @@ setup_symlinks() {
 
   [[ -e $HOME/.vimrc ]] || ln -s "$DOTFILES"/vim/.vimrc "$HOME"/.vimrc
 
+  [[ -e $HOME/.config/nvim ]] || ln -s "$DOTFILES"/nvim "$HOME"/.config/nvim
+
   [[ -e $HOME/.editorconfig ]] || ln -s "$DOTFILES"/.editorconfig "$HOME"/.editorconfig
 }
 
