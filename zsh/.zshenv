@@ -19,3 +19,5 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 # BurntSushi/ripgrep
 # https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#configuration-file
 export RIPGREP_CONFIG_PATH=~/.ripgreprc
+
+export VISUAL=nvim
