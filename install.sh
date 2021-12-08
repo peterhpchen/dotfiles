@@ -20,7 +20,6 @@ setup_symlinks() {
   [[ -e $HOME/.editorconfig ]] || ln -s "$DOTFILES"/.editorconfig "$HOME"/.editorconfig
 
   [[ -e $HOME/.tmux.conf ]] || ln -s "$DOTFILES"/tmux/.tmux.conf "$HOME"/.tmux.conf
-  [[ -e $HOME/.tmux ]] || ln -s "$DOTFILES"/tmux/.tmux "$HOME"/.tmux
 }
 
 setup_homebrew() {

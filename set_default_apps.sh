@@ -1,1 +1,0 @@
-duti -s com.adobe.Reader .pdf all

@@ -18,7 +18,6 @@ unset_symlinks() {
   unlink $HOME/.editorconfig
 
   unlink $HOME/.tmux.conf
-  unlink $HOME/.tmux
 }
 
 unset_homebrew() {

@@ -1,9 +1,0 @@
-{
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "GitHub Dark Dimmed",
-  "editor.lineNumbers": "relative",
-  "vim.hlsearch": true,
-  "[ignore]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  }
-}
