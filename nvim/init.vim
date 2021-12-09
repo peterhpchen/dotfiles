@@ -37,4 +37,10 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 lua << EOF
 require('Comment').setup()
 require('nvim-tree').setup()
+require('nvim-treesitter.configs').setup({
+  highlight = {
+    enable = true
+  },
+  ensure_installed = {"vim", "lua"}
+})
 EOF
