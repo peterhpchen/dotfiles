@@ -13,8 +13,13 @@ endif
 call plug#begin()
 
 Plug 'numToStr/Comment.nvim'
-Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 
@@ -26,6 +31,8 @@ let g:nvim_tree_show_icons = {
     \ }
 
 nnoremap <C-n> :NvimTreeToggle<CR>
+
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
 
 lua << EOF
 require('Comment').setup()
