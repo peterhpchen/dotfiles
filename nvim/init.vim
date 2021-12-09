@@ -35,6 +35,19 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 
+Plug 'folke/trouble.nvim'
+
+Plug 'nvim-lualine/lualine.nvim'
+
+Plug 'akinsho/bufferline.nvim'
+
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sleuth'
+
+Plug 'lewis6991/gitsigns.nvim'
+
 call plug#end()
 
 let g:nvim_tree_show_icons = {
@@ -51,6 +64,11 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <silent> gh :Lspsaga lsp_finder<CR>
 
 set completeopt=menu,menuone,noselect
+
+set termguicolors
+
+" Show the line number relative to the line with the cursor in front of each line.
+set number relativenumber
 
 lua << EOF
 require('Comment').setup()
@@ -161,4 +179,14 @@ end
 
 require('lspsaga').init_lsp_saga()
 
+require("trouble").setup {
+  -- your configuration comes here
+  -- or leave it empty to use the default settings
+  -- refer to the configuration section below
+}
+require'lualine'.setup{
+  theme='nord'
+}
+require("bufferline").setup{}
+require('gitsigns').setup()
 EOF
