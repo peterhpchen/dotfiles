@@ -12,11 +12,22 @@ endif
 
 call plug#begin()
 
-" Plug 'tpope/vim-commentary'
-Plug 'neovim/nvim-lspconfig'
+Plug 'numToStr/Comment.nvim'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 
 call plug#end()
 
+let g:nvim_tree_show_icons = {
+    \ 'git': 1,
+    \ 'folders': 1,
+    \ 'files': 1,
+    \ 'folder_arrows': 0,
+    \ }
+
+nnoremap <C-n> :NvimTreeToggle<CR>
+
 lua << EOF
-require'lspconfig'.tsserver.setup{}
+require('Comment').setup()
+require('nvim-tree').setup()
 EOF
