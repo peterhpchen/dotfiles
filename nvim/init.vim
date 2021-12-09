@@ -23,6 +23,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'neovim/nvim-lspconfig'
+Plug 'tami5/lspsaga.nvim'
 
 call plug#end()
 
@@ -36,6 +37,8 @@ let g:nvim_tree_show_icons = {
 nnoremap <C-n> :NvimTreeToggle<CR>
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
+
+nnoremap <silent> gh :Lspsaga lsp_finder<CR>
 
 lua << EOF
 require('Comment').setup()
@@ -83,7 +86,7 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = {'vimls'}
+local servers = {'vimls', 'tsserver'}
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
@@ -92,4 +95,6 @@ for _, lsp in ipairs(servers) do
     }
   }
 end
+
+require('lspsaga').init_lsp_saga()
 EOF
