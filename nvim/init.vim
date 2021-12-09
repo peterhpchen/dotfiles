@@ -12,7 +12,7 @@ endif
 
 call plug#begin()
 
-Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-commentary'
 Plug 'neovim/nvim-lspconfig'
 
 call plug#end()

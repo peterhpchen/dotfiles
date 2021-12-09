@@ -32,6 +32,8 @@ if (( ${+commands[nvim]} )); then
   alias vi='nvim'
 fi
 
+alias dfs='cd ~/.dotfiles'
+
 ########################################
 # bindkey
 ########################################
@@ -55,6 +57,17 @@ if [ -n $LS_COLORS ]; then
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 fi
 
+########################################
+# nvm
+# https://github.com/nvm-sh/nvm
+########################################
+
+# Install nvm if necessary
+if [[ ! -f $NVM_DIR/nvm.sh ]]; then
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+fi
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 ########################################
 # cheat.sh

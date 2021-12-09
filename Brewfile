@@ -20,7 +20,7 @@ brew 'bat'
 
 # Bash scripts that integrate bat with various command line tools.
 # https://github.com/eth-p/bat-extras
-brew 'eth-p/software/bat-extras'
+# brew 'eth-p/software/bat-extras'
 
 # A shell parser, formatter, and interpreter with bash support
 # https://github.com/mvdan/sh

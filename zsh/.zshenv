@@ -21,3 +21,5 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 export RIPGREP_CONFIG_PATH=~/.ripgreprc
 
 export VISUAL=nvim
+
+export NVM_DIR="$HOME/.nvm"
