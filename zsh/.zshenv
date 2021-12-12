@@ -1,3 +1,5 @@
+export DOTFILES=$HOME/.dotfiles
+
 # zplug/zplug
 # https://github.com/zplug/zplug#zplug_home
 export ZPLUG_HOME=~/.zplug
@@ -22,4 +24,6 @@ export RIPGREP_CONFIG_PATH=~/.ripgreprc
 
 export VISUAL=nvim
 
-export NVM_DIR="$HOME/.nvm"
+while read file; do
+  source $file
+done < <(find $DOTFILES -name path.zsh)
