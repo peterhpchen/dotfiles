@@ -1,0 +1,5 @@
+#!/bin/bash
+
+while read installer; do
+  bash "$installer"
+done < <(find $(dirname $0)/.. -name install.sh)
