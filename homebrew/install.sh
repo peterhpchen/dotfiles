@@ -1,5 +1,7 @@
 #!/bin/bash
 
+__dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 echo "Homebrew installer"
 
 if [[ ! "$(command -v brew)" ]]; then
@@ -8,5 +10,8 @@ if [[ ! "$(command -v brew)" ]]; then
 else
   echo "Homebrew installed."
 fi
+
+echo "Installing dependencies from the Brewfile"
+brew bundle --file="$__dir/Brewfile"
 
 exit 0
