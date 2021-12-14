@@ -5,87 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Mac needs to use gdircolors to set $LS_COLORS
-# https://github.com/gibbling/dircolors
-eval $(gdircolors -b $HOME/.dir_colors)
-
-########################################
-# alias
-########################################
-
-# ogham/exa
-# https://github.com/zimfw/exa/blob/bab903d6745f87a9516c63505e19257ed3409131/init.zsh
-if (( ${+commands[exa]} )); then
-  alias ls='exa --group-directories-first'
-fi
-
-# eth-p/bat-extras
-# https://github.com/eth-p/bat-extras
-if (( ${+commands[rg]} )); then
-  if (( ${+commands[batman]} )); then
-    alias man='batman'
-  fi
-fi
-
-if (( ${+commands[nvim]} )); then
-  alias vim='nvim'
-  alias vi='nvim'
-fi
-
-alias dfs='cd ~/.dotfiles'
-
-########################################
-# bindkey
-########################################
-
-# zsh-users/zsh-history-substring-search
-# https://github.com/zsh-users/zsh-history-substring-search#usage
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
-
-########################################
-# zstyle
-########################################
-
-# Completion tab highlight
-# https://stackoverflow.com/a/29197217/9265131
-zstyle ':completion:*' menu select
-
-# Set colors to completion options
-if [ -n $LS_COLORS ]; then
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-fi
-
-########################################
-# nvm
-# https://github.com/nvm-sh/nvm
-########################################
-
-# Install nvm if necessary
-if [[ ! -f $NVM_DIR/nvm.sh ]]; then
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-fi
-
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-########################################
-# cheat.sh
-# https://github.com/chubin/cheat.sh
-########################################
-
-# Install cheat.sh if necessary
-if ! type cht.sh > /dev/null; then
-  curl -s https://cht.sh/:cht.sh > /usr/local/bin/cht.sh
-  chmod +x /usr/local/bin/cht.sh
-fi
-
-# Completion definitions for cheat.sh
-if [[ ! -f $HOME/.zsh.d/_cht ]]; then
-  curl -s https://cheat.sh/:zsh > $HOME/.zsh.d/_cht
-fi
-fpath=(~/.zsh.d/ $fpath)
+while read file; do 
+  source "$file"
+done < <(find $DOTFILES_ROOT/**/*.zsh ! -name "path.zsh")
 
 ########################################
 # zplug
@@ -137,6 +59,3 @@ zplug load
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Set up fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
