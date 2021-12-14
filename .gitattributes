@@ -1,1 +1,3 @@
 *.zsh.symlink linguist-language=Shell linguist-detectable
+*.zshenv.symlink linguist-language=Shell linguist-detectable
+*.zshrc.symlink linguist-language=Shell linguist-detectable
