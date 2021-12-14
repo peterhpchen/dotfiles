@@ -5,23 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-while read file; do 
-  source "$file"
-done < <(find $DOTFILES_ROOT/**/*.zsh ! -name "path.zsh")
-
-# Clone zplug if necessary
-if [[ ! -f $ZPLUG_HOME/init.zsh ]]; then
-  git clone https://github.com/zplug/zplug $ZPLUG_HOME
-fi
-
 # Init zplug
 source $ZPLUG_HOME/init.zsh
 
-# zplug check returns true if all packages are installed
-# Therefore, when it returns false, run zplug install
-if ! zplug check; then
-  zplug install
-fi
-
-# source plugins and add commands to the PATH
-zplug load
+while read file; do 
+  source "$file"
+done < <(find $DOTFILES_ROOT/**/*.zsh ! -name "path.zsh")
