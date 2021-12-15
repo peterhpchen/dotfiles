@@ -419,6 +419,20 @@
             }
           }
         }
+      },
+      "neofetch": {
+        "version": "7.1.0",
+        "bottle": {
+          "rebuild": 2,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "all": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/neofetch/blobs/sha256:78eb3e99dfde7f5fb1c3b192804a6d345f428c9effa6ea6ba54d7e5b7254387f",
+              "sha256": "78eb3e99dfde7f5fb1c3b192804a6d345f428c9effa6ea6ba54d7e5b7254387f"
+            }
+          }
+        }
       }
     },
     "cask": {
@@ -435,7 +449,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.8-18-g7fd5085",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "c9e22c7fd5680b66e6a9a946bc486046a3a73c4c",
+        "Homebrew/homebrew-core": "2ef9f95f825506477ad62d3d42960008490cc45c",
         "CLT": "13.1.0.0.1.1633545042",
         "Xcode": "13.1",
         "macOS": "12.0.1"
