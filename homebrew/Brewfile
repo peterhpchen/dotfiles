@@ -18,10 +18,6 @@ brew 'fzf'
 # https://github.com/sharkdp/bat
 brew 'bat'
 
-# Bash scripts that integrate bat with various command line tools.
-# https://github.com/eth-p/bat-extras
-# brew 'eth-p/software/bat-extras'
-
 # A shell parser, formatter, and interpreter with bash support
 # https://github.com/mvdan/sh
 brew 'shfmt'
@@ -33,10 +29,6 @@ brew 'shellcheck'
 # Terminal multiplexer
 # https://github.com/tmux/tmux
 brew 'tmux'
-
-# Vim is a greatly improved version of the good old UNIX editor Vi.
-# https://github.com/vim/vim
-brew 'vim'
 
 # Vim-fork focused on extensibility and usability
 # https://github.com/neovim/neovim
