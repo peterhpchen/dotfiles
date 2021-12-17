@@ -1,3 +1,11 @@
+# Fast, scalable, distributed revision control system
+# https://github.com/git/git
+brew 'git'
+
+# Move and resize windows on macOS with keyboard shortcuts and snap areas
+# https://github.com/rxhanson/Rectangle
+brew 'rectangle'
+
 # These are the GNU core utilities.
 # https://github.com/coreutils/coreutils
 brew 'coreutils'
@@ -30,6 +38,14 @@ brew 'shellcheck'
 # https://github.com/tmux/tmux
 brew 'tmux'
 
+# Manage complex tmux sessions easily
+# https://github.com/tmuxinator/tmuxinator
+brew 'tmuxinator'
+
+# Vim is a greatly improved version of the good old UNIX editor Vi.
+# https://github.com/vim/vim
+brew 'vim'
+
 # Vim-fork focused on extensibility and usability
 # https://github.com/neovim/neovim
 brew 'neovim'
@@ -41,3 +57,7 @@ brew 'neofetch'
 # A cross-platform, OpenGL terminal emulator.
 # https://github.com/alacritty/alacritty
 cask 'alacritty'
+
+# A configurable diagramming/whiteboarding visualization application.
+# https://github.com/jgraph/drawio-desktop
+cask 'drawio'
