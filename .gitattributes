@@ -10,3 +10,6 @@
 .editorconfig.symlink linguist-language=Editorconfig linguist-detectable
 
 *.vim.symlink linguist-language=Vim-Script linguist-detectable
+.vimrc.symlink linguist-language=Vim-Script linguist-detectable
+
+*.lua.symlink linguist-language=Lua linguist-detectable

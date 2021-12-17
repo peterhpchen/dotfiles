@@ -1,73 +1,69 @@
-set ignorecase
-set clipboard+=unnamedplus
+--vim.opt.ignorecase = true
+--vim.opt.clipboard = "unnamedplus"
 
-tnoremap <ESC> <C-\><C-n>
+--vim.api.nvim_set_keymap('t', '<ESC>', [[<C-\><C-n>]], { noremap = true })
 
-call plug#begin()
+vim.cmd([[
+  call plug#begin()
+  
+  Plug 'arcticicestudio/nord-vim'
+  
+  Plug 'numToStr/Comment.nvim'
+  
+  Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'kyazdani42/nvim-tree.lua'
+  
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
+  
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'tami5/lspsaga.nvim'
+  
+  Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'hrsh7th/cmp-buffer'
+  Plug 'hrsh7th/cmp-path'
+  Plug 'hrsh7th/cmp-cmdline'
+  Plug 'hrsh7th/nvim-cmp'
+  
+  " For luasnip users.
+  Plug 'L3MON4D3/LuaSnip'
+  Plug 'saadparwaiz1/cmp_luasnip'
+  
+  Plug 'folke/trouble.nvim'
+  
+  Plug 'nvim-lualine/lualine.nvim'
+  
+  Plug 'akinsho/bufferline.nvim'
+  
+  Plug 'tpope/vim-unimpaired'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-repeat'
+  Plug 'tpope/vim-sleuth'
+  
+  Plug 'lewis6991/gitsigns.nvim'
+  
+  call plug#end()
 
-Plug 'arcticicestudio/nord-vim'
+  let g:nvim_tree_show_icons = {
+      \ 'git': 1,
+      \ 'folders': 1,
+      \ 'files': 1,
+      \ 'folder_arrows': 0,
+      \ }
+  
+  nnoremap <C-n> :NvimTreeToggle<CR>
+  
+  nnoremap <leader>ff <cmd>Telescope find_files<cr>
+  
+  nnoremap <silent> gh :Lspsaga lsp_finder<CR>
+  
+  set completeopt=menu,menuone,noselect
+]])
 
-Plug 'numToStr/Comment.nvim'
+vim.cmd('source ~/.vimrc')
 
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'kyazdani42/nvim-tree.lua'
-
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-
-Plug 'neovim/nvim-lspconfig'
-Plug 'tami5/lspsaga.nvim'
-
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'hrsh7th/nvim-cmp'
-
-" For luasnip users.
-Plug 'L3MON4D3/LuaSnip'
-Plug 'saadparwaiz1/cmp_luasnip'
-
-Plug 'folke/trouble.nvim'
-
-Plug 'nvim-lualine/lualine.nvim'
-
-Plug 'akinsho/bufferline.nvim'
-
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-sleuth'
-
-Plug 'lewis6991/gitsigns.nvim'
-
-call plug#end()
-
-colorscheme nord
-
-let g:nvim_tree_show_icons = {
-    \ 'git': 1,
-    \ 'folders': 1,
-    \ 'files': 1,
-    \ 'folder_arrows': 0,
-    \ }
-
-nnoremap <C-n> :NvimTreeToggle<CR>
-
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-
-nnoremap <silent> gh :Lspsaga lsp_finder<CR>
-
-set completeopt=menu,menuone,noselect
-
-set termguicolors
-
-" Show the line number relative to the line with the cursor in front of each line.
-set number relativenumber
-
-lua << EOF
 require('Comment').setup()
 require('nvim-tree').setup()
 require('nvim-treesitter.configs').setup({
@@ -186,4 +182,3 @@ require'lualine'.setup{
 }
 require("bufferline").setup{}
 require('gitsigns').setup()
-EOF
