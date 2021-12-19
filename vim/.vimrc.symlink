@@ -34,49 +34,5 @@ set wildmode=full
 colorscheme nord
 
 if has('nvim')
-  echo 'nvim'
 else  
-  echo 'vim'
-  call plug#begin()
-  
-  " An arctic, north-bluish clean and elegant Vim theme.
-  " https://github.com/arcticicestudio/nord-vim
-  Plug 'arcticicestudio/nord-vim'
-  
-  " Add fzf(homebrew installed) to runtimepath
-  " https://github.com/junegunn/fzf/blob/master/README-VIM.md#installation
-  Plug '/usr/local/opt/fzf'
-  
-  " Things you can do with fzf and Vim.
-  " https://github.com/junegunn/fzf.vim
-  Plug 'junegunn/fzf.vim'
-  
-  " Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support
-  " https://github.com/dense-analysis/ale
-  Plug 'dense-analysis/ale'
-  
-  " This is an EditorConfig plugin for Vim.
-  " https://github.com/editorconfig/editorconfig-vim
-  Plug 'editorconfig/editorconfig-vim'
-  
-  call plug#end()
-
-  " Fix termguicolors issue
-  " :h xterm-true-color
-  let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
-  let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
-
-  " open fzf
-  nnoremap <C-p> :<C-u>Files<CR>
-
-  " Set shfmt to format sh files
-  let g:ale_fixers = { 'sh': ['shfmt'] }
-  " Use editorconfig to setting shfmt
-  let g:ale_sh_shfmt_options = ''
-  
-  " Set shfmt to format sh files
-  let g:ale_linters = { 'sh': ['shellcheck'] }
-  
-  " Set this variable to 1 to fix files when you save them.
-  let g:ale_fix_on_save = 1
 endif

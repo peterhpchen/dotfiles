@@ -1,0 +1,45 @@
+return require('packer').startup(function()
+  -- Packer can manage itself
+  use 'wbthomason/packer.nvim' 
+
+  use 'arcticicestudio/nord-vim'
+  
+  use 'numToStr/Comment.nvim'
+  
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
+  
+  use {
+    'nvim-treesitter/nvim-treesitter', 
+    run = ':TSUpdate'
+  }
+  
+  use 'nvim-lua/plenary.nvim'
+  use 'nvim-telescope/telescope.nvim'
+  
+  use 'neovim/nvim-lspconfig'
+  use 'tami5/lspsaga.nvim'
+  
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  
+  -- For luasnip users.
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+  
+  use 'folke/trouble.nvim'
+  
+  use 'nvim-lualine/lualine.nvim'
+  
+  use 'akinsho/bufferline.nvim'
+  
+  use 'tpope/vim-unimpaired'
+  use 'tpope/vim-surround'
+  use 'tpope/vim-repeat'
+  use 'tpope/vim-sleuth'
+  
+  use 'lewis6991/gitsigns.nvim'
+end)
