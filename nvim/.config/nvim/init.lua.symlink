@@ -24,6 +24,11 @@ vim.cmd([[
 
 vim.cmd('source ~/.vimrc')
 
+local nightfox = require('nightfox')
+nightfox.setup({
+  fox = 'nordfox'
+})
+nightfox.load()
 require('Comment').setup()
 require('nvim-tree').setup()
 require('nvim-treesitter.configs').setup({
@@ -137,8 +142,10 @@ require("trouble").setup {
   -- or leave it empty to use the default settings
   -- refer to the configuration section below
 }
-require'lualine'.setup{
-  theme='nord'
-}
+require('lualine').setup({
+  options = {
+    theme = 'nightfox'
+  }
+})
 require("bufferline").setup{}
 require('gitsigns').setup()

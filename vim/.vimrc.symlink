@@ -25,13 +25,6 @@ set autoindent
 " Enables command-line completion.
 set wildmenu
 set wildmode=full
-"""""""""""""""""""
-" colorscheme
-"""""""""""""""""""
-
-" Setting nord theme
-" https://github.com/arcticicestudio/nord-vim#quick-start
-colorscheme nord
 
 if has('nvim')
 else  
