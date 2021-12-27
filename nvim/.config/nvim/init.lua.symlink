@@ -3,8 +3,6 @@
 
 --vim.api.nvim_set_keymap('t', '<ESC>', [[<C-\><C-n>]], { noremap = true })
 
-require('plugins')
-
 vim.cmd([[
   let g:nvim_tree_show_icons = {
       \ 'git': 1,
