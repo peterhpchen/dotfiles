@@ -17,7 +17,10 @@ return require('packer').startup(function()
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
   
-  use 'neovim/nvim-lspconfig'
+  use {
+      'neovim/nvim-lspconfig',
+      'williamboman/nvim-lsp-installer',
+  }
   use 'tami5/lspsaga.nvim'
   
   use 'hrsh7th/cmp-nvim-lsp'
