@@ -54,6 +54,18 @@ brew 'neovim'
 # https://github.com/dylanaraps/neofetch
 brew 'neofetch'
 
+# The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
+# https://github.com/llvm/llvm-project
+brew 'llvm'
+
+# the cross-platform, open-source build system.
+# https://gitlab.kitware.com/cmake/cmake
+brew 'cmake'
+
+# C/C++/ObjC language server supporting cross references, hierarchies, completion and semantic highlighting
+# https://github.com/MaskRay/ccls
+brew 'ccls'
+
 # A cross-platform, OpenGL terminal emulator.
 # https://github.com/alacritty/alacritty
 cask 'alacritty'
