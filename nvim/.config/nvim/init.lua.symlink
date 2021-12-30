@@ -6,15 +6,6 @@
 require('plugins')
 
 vim.cmd([[
-  let g:nvim_tree_show_icons = {
-      \ 'git': 1,
-      \ 'folders': 1,
-      \ 'files': 1,
-      \ 'folder_arrows': 0,
-      \ }
-  
-  nnoremap <C-n> :NvimTreeToggle<CR>
-  
   nnoremap <leader>ff <cmd>Telescope find_files<cr>
   
   nnoremap <silent> gh :Lspsaga lsp_finder<CR>
@@ -25,7 +16,6 @@ vim.cmd([[
 vim.cmd('source ~/.vimrc')
 
 require('Comment').setup()
-require('nvim-tree').setup()
 require('nvim-treesitter.configs').setup({
   highlight = {
     enable = true

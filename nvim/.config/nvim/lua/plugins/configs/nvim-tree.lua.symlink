@@ -1,0 +1,7 @@
+local nvimtree = require('nvim-tree')
+
+vim.g.nvim_tree_quit_on_open = 1
+
+vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', { noremap = true })
+
+nvimtree.setup()

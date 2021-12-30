@@ -10,7 +10,10 @@ return require('packer').startup(function()
   use 'numToStr/Comment.nvim'
   
   use 'kyazdani42/nvim-web-devicons'
-  use 'kyazdani42/nvim-tree.lua'
+  use {
+    'kyazdani42/nvim-tree.lua',
+    config = require('plugins.configs.nvim-tree'),
+  }
   
   use {
     'nvim-treesitter/nvim-treesitter', 
