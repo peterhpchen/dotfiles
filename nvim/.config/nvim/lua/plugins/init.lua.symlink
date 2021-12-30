@@ -45,10 +45,15 @@ return require('packer').startup(function()
   
   use 'akinsho/bufferline.nvim'
   
-  use 'tpope/vim-unimpaired'
-  use 'tpope/vim-surround'
-  use 'tpope/vim-repeat'
-  use 'tpope/vim-sleuth'
+  -- use 'tpope/vim-unimpaired'
+  -- use 'tpope/vim-surround'
+  -- use 'tpope/vim-repeat'
+  -- use 'tpope/vim-sleuth'
   
   use 'lewis6991/gitsigns.nvim'
+
+  use {
+    'akinsho/toggleterm.nvim',
+    config = require('plugins.configs.toggleterm'),
+  }
 end)
