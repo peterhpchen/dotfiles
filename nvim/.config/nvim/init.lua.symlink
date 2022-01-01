@@ -15,7 +15,6 @@ vim.cmd([[
 
 vim.cmd('source ~/.vimrc')
 
-require('Comment').setup()
 require('nvim-treesitter.configs').setup({
   highlight = {
     enable = true
