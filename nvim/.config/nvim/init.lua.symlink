@@ -15,13 +15,6 @@ vim.cmd([[
 
 vim.cmd('source ~/.vimrc')
 
-require('nvim-treesitter.configs').setup({
-  highlight = {
-    enable = true
-  },
-  ensure_installed = {"vim", "lua"}
-})
-
 -- Setup nvim-cmp.
 local cmp = require'cmp'
 
