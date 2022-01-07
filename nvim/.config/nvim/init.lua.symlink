@@ -6,8 +6,6 @@
 require('plugins')
 
 vim.cmd([[
-  nnoremap <leader>ff <cmd>Telescope find_files<cr>
-  
   nnoremap <silent> gh :Lspsaga lsp_finder<CR>
   
   set completeopt=menu,menuone,noselect
