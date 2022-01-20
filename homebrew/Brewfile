@@ -2,10 +2,6 @@
 # https://github.com/git/git
 brew 'git'
 
-# Move and resize windows on macOS with keyboard shortcuts and snap areas
-# https://github.com/rxhanson/Rectangle
-brew 'rectangle'
-
 # These are the GNU core utilities.
 # https://github.com/coreutils/coreutils
 brew 'coreutils'
@@ -17,6 +13,10 @@ brew 'exa'
 # A line-oriented search tool that recursively searches the current directory for a regex pattern.
 # https://github.com/BurntSushi/ripgrep
 brew 'ripgrep'
+
+# A simple, fast and user-friendly alternative to 'find'
+# https://github.com/sharkdp/fd
+brew 'fd'
 
 # A command-line fuzzy finder
 # https://github.com/junegunn/fzf
@@ -65,6 +65,10 @@ brew 'cmake'
 # C/C++/ObjC language server supporting cross references, hierarchies, completion and semantic highlighting
 # https://github.com/MaskRay/ccls
 brew 'ccls'
+
+# Move and resize windows on macOS with keyboard shortcuts and snap areas
+# https://github.com/rxhanson/Rectangle
+cask 'rectangle'
 
 # A cross-platform, OpenGL terminal emulator.
 # https://github.com/alacritty/alacritty
