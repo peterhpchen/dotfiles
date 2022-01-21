@@ -123,4 +123,3 @@ require('lualine').setup({
   }
 })
 require("bufferline").setup{}
-require('gitsigns').setup()
