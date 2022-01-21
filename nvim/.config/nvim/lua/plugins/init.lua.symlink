@@ -11,12 +11,12 @@ return require('packer').startup(function()
     'numToStr/Comment.nvim',
     config = require('plugins.configs.comment'),
   }
+
+  -- be used by nvim-tree, bufferline
+  use 'kyazdani42/nvim-web-devicons'
   
   use {
     'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons',
-    },
     config = require('plugins.configs.nvim-tree'),
   }
   
@@ -26,6 +26,7 @@ return require('packer').startup(function()
     config = require('plugins.configs.nvim-treesitter'),
   }
 
+  -- be used by telescope, gitsigns
   use 'nvim-lua/plenary.nvim'
 
   use {
@@ -53,7 +54,10 @@ return require('packer').startup(function()
   
   use 'nvim-lualine/lualine.nvim'
   
-  use 'akinsho/bufferline.nvim'
+  use {
+    'akinsho/bufferline.nvim',
+    config = require('plugins.configs.bufferline'),
+  }
   
   -- use 'tpope/vim-unimpaired'
   -- use 'tpope/vim-surround'

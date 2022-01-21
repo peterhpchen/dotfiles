@@ -122,4 +122,3 @@ require('lualine').setup({
     theme = 'nightfox'
   }
 })
-require("bufferline").setup{}
