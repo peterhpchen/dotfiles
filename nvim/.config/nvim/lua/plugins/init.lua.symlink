@@ -12,7 +12,7 @@ return require('packer').startup(function()
     config = require('plugins.configs.comment'),
   }
 
-  -- be used by nvim-tree, bufferline
+  -- be used by nvim-tree, bufferline, lualine
   use 'kyazdani42/nvim-web-devicons'
   
   use {
@@ -33,10 +33,12 @@ return require('packer').startup(function()
     'nvim-telescope/telescope.nvim',
     config = require('plugins.configs.telescope'),
   } 
+
+  use 'neovim/nvim-lspconfig'
   
   use {
-      'neovim/nvim-lspconfig',
-      'williamboman/nvim-lsp-installer',
+    'williamboman/nvim-lsp-installer',
+    config = require('plugins.configs.nvim-lsp-installer'),
   }
   use 'tami5/lspsaga.nvim'
   
