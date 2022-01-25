@@ -1,13 +1,3 @@
---vim.opt.ignorecase = true
---vim.opt.clipboard = "unnamedplus"
-
---vim.api.nvim_set_keymap('t', '<ESC>', [[<C-\><C-n>]], { noremap = true })
-
 require('plugins')
 
-vim.cmd([[
-  nnoremap <silent> gh :Lspsaga lsp_finder<CR>
-]])
-
 vim.cmd('source ~/.vimrc')
-
