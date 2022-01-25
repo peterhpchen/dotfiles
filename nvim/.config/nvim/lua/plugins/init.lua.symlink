@@ -40,7 +40,10 @@ return require('packer').startup(function()
     'williamboman/nvim-lsp-installer',
     config = require('plugins.configs.nvim-lsp-installer'),
   }
-  use 'tami5/lspsaga.nvim'
+  use {
+    'tami5/lspsaga.nvim',
+    config = require('plugins.configs.lspsaga')
+  }
   
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
