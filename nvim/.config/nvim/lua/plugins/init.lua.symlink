@@ -54,7 +54,10 @@ return require('packer').startup(function()
   
   use 'folke/trouble.nvim'
   
-  use 'nvim-lualine/lualine.nvim'
+  use {
+    'nvim-lualine/lualine.nvim',
+    config = require('plugins.configs.lualine'),
+  }
   
   use {
     'akinsho/bufferline.nvim',
