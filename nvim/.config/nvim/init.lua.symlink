@@ -7,8 +7,6 @@ require('plugins')
 
 vim.cmd([[
   nnoremap <silent> gh :Lspsaga lsp_finder<CR>
-  
-  set completeopt=menu,menuone,noselect
 ]])
 
 vim.cmd('source ~/.vimrc')
