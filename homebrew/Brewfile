@@ -66,6 +66,10 @@ brew 'cmake'
 # https://github.com/MaskRay/ccls
 brew 'ccls'
 
+# The Go programming language
+# https://github.com/golang/go
+brew 'go'
+
 # Move and resize windows on macOS with keyboard shortcuts and snap areas
 # https://github.com/rxhanson/Rectangle
 cask 'rectangle'
