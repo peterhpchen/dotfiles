@@ -34,10 +34,7 @@ return require('packer').startup(function()
     config = require('plugins.configs.telescope'),
   } 
 
-  use {
-    'neovim/nvim-lspconfig',
-    config = require('plugins.configs.lspconfig'),
-  }
+  use 'neovim/nvim-lspconfig'
   
   use {
     'williamboman/nvim-lsp-installer',
