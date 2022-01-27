@@ -1,0 +1,9 @@
+.zshenv.symlink linguist-language=Shell linguist-detectable
+.zshrc.symlink linguist-language=Shell linguist-detectable
+.tmux.conf.symlink linguist-language=Shell linguist-detectable
+
+.dir_colors.symlink linguist-language=dircolors linguist-detectable
+
+.editorconfig.symlink linguist-language=Editorconfig linguist-detectable
+
+.vimrc.symlink linguist-language=Vim-Script linguist-detectable
