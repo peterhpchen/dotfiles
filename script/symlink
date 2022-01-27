@@ -5,8 +5,9 @@ source $__dir/_base.sh
 
 while read src; do
   dst_dir="$(dirname "$HOME/${src#$DOTFILES_ROOT/*/}")"
-  dst_file="$(basename ${src%.*})"
+  dst_file="$(basename ${src/.symlink})"
   dst="$dst_dir/$dst_file"
+
 
   if [[ ! -e "$dst" ]]; then
     if [[ ! -d "$dst_dir)" ]]; then
@@ -14,4 +15,4 @@ while read src; do
     fi
     ln -s "$src" "$dst"
   fi
-done < <(find $DOTFILES_ROOT -name *.symlink)
+done < <(find $DOTFILES_ROOT -name *.symlink.*)
