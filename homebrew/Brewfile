@@ -70,6 +70,10 @@ brew 'ccls'
 # https://github.com/golang/go
 brew 'go'
 
+# The Rust toolchain installer
+# https://github.com/rust-lang/rustup
+brew 'rustup-init'
+
 # Move and resize windows on macOS with keyboard shortcuts and snap areas
 # https://github.com/rxhanson/Rectangle
 cask 'rectangle'
