@@ -15,4 +15,4 @@ while read src; do
     fi
     ln -s "$src" "$dst"
   fi
-done < <(find $DOTFILES_ROOT -name *.symlink.*)
+done < <(find $DOTFILES_ROOT -name *.symlink*)
