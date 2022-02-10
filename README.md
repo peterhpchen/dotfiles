@@ -11,19 +11,21 @@
 ## Initial Setup and Installation
 
 ```bash
-./install.sh
+./script/install
+./script/symlink
 ```
 
 ## QA
 
 ### Can not execute `./install.sh`
 
-You need to have the execute right for `./install.sh`.
+You need to have the execute right for `./script/install`.
 
 Use `chmod`:
 
 ```bash
-chmod +w ./install.sh
+chmod +w ./script/install
+chmod +w ./script/symlink
 ```
 
 ### show `zsh compinit: insecure directories` when open terminal
