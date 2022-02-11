@@ -17,15 +17,15 @@
 
 ## QA
 
-### Can not execute `./install.sh`
+### Can not execute scripts
 
-You need to have the execute right for `./script/install`.
+You need to have the execute right.
 
 Use `chmod`:
 
 ```bash
-chmod +w ./script/install
-chmod +w ./script/symlink
+chmod +w ./_scripts/install
+chmod +w ./_scripts/symlink
 ```
 
 ### show `zsh compinit: insecure directories` when open terminal
