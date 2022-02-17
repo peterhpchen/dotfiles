@@ -6,7 +6,8 @@
 
 ## Inspired By
 
-* [nicknisi/dotfiles](https://github.com/nicknisi/dotfiles)
+* Repo structure and dotfile scripts: [nicknisi/dotfiles](https://github.com/nicknisi/dotfiles)
+* Neovim lsp efm config: [damianveltkamp/dotfiles](https://github.com/damianveltkamp/dotfiles)
 
 ## Initial Setup and Installation
 
