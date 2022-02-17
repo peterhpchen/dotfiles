@@ -15,19 +15,33 @@ lsp_installer.on_server_ready(function(server)
 	-- end
 	if server.name == "efm" then
 		opts = {
-			filetypes = { "lua" },
+			filetypes = { "lua", "typescriptreact" },
 			init_options = { documentFormatting = true },
 			settings = {
 				languages = {
 					lua = {
 						{ formatCommand = "stylua -s -", formatStdin = true },
 					},
+					typescriptreact = {
+						{
+							formatCommand = "prettier --stdin-filepath ${INPUT}",
+							formatStdin = true,
+						},
+					},
 				},
 			},
 		}
 	end
 
-	opts.on_attach = on_attach
+	if server.name == "tsserver" then
+		opts.on_attach = function(client)
+			client.resolved_capabilities.document_formatting = false
+			on_attach(client)
+		end
+	else
+		opts.on_attach = on_attach
+	end
+
 	opts.flags = {
 		debounce_text_changes = 150,
 	}
