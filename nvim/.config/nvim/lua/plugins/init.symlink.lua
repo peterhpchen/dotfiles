@@ -38,7 +38,7 @@ return require("packer").startup(function(use)
 
 	use({
 		"williamboman/nvim-lsp-installer",
-		config = require("plugins.configs.nvim-lsp-installer"),
+		config = require("lsp"),
 	})
 	use({
 		"tami5/lspsaga.nvim",
