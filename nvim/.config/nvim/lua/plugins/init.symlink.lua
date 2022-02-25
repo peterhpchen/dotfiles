@@ -97,4 +97,10 @@ return require("packer").startup(function(use)
 		"windwp/nvim-autopairs",
 		config = require("plugins.configs.nvim-autopairs"),
 	})
+
+	use({
+		"phaazon/hop.nvim",
+		branch = "v1",
+		config = require("plugins.configs.hop"),
+	})
 end)
