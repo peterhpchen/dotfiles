@@ -8,12 +8,15 @@ if server_is_found and not server:is_installed() then
 end
 
 return function(opts)
-	opts.filetypes = { "lua", "typescriptreact" }
+	opts.filetypes = { "lua", "sh", "typescriptreact" }
 	opts.init_options = { documentFormatting = true }
 	opts.settings = {
 		languages = {
 			lua = {
 				{ formatCommand = "stylua -s -", formatStdin = true },
+			},
+			sh = {
+				{ formatCommand = "shfmt", formatStdin = true },
 			},
 			typescriptreact = {
 				{
