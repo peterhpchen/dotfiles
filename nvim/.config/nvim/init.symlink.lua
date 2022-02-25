@@ -1,3 +1,3 @@
-require('plugins')
+require("plugins")
 
-vim.cmd('source ~/.vimrc')
+vim.cmd("source ~/.vimrc")

@@ -103,4 +103,8 @@ return require("packer").startup(function(use)
 		branch = "v1",
 		config = require("plugins.configs.hop"),
 	})
+	use({
+		"max397574/better-escape.nvim",
+		config = require("plugins.configs.better-escape"),
+	})
 end)
