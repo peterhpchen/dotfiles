@@ -8,7 +8,7 @@ if server_is_found and not server:is_installed() then
 end
 
 return function(opts)
-  opts.filetypes = { 'lua', 'sh', 'typescriptreact' }
+  opts.filetypes = { 'lua', 'sh', 'markdown', 'javascript', 'typescriptreact' }
   opts.init_options = { documentFormatting = true }
   opts.settings = {
     languages = {
@@ -20,6 +20,18 @@ return function(opts)
       },
       sh = {
         { formatCommand = 'shfmt' },
+      },
+      markdown = {
+        {
+          formatCommand = 'prettier --stdin-filepath ${INPUT}',
+          formatStdin = true,
+        },
+      },
+      javascript = {
+        {
+          formatCommand = 'prettier --stdin-filepath ${INPUT}',
+          formatStdin = true,
+        },
       },
       typescriptreact = {
         {

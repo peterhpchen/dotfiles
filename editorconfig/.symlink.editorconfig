@@ -15,3 +15,17 @@ switch_case_indent = true  # like -ci
 # space_redirects    = true  # like -sr
 # keep_padding       = true  # like -kp
 # function_next_line = true  # like -fn
+
+# Matches all files
+# TODO: Not work for prettier
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+max_line_length = 80
+
+# Matches all Markdown files
+[*.md]
+trim_trailing_whitespace = false
