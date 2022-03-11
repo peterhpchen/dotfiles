@@ -2,7 +2,8 @@
 
 ## Style Guide
 
-[Google Shell Style Guide](https://google.github.io/styleguide/shellguide.html).
+* [Google Shell Style Guide](https://google.github.io/styleguide/shellguide.html).
+* [Lua Style Guide](https://github.com/Olivine-Labs/lua-style-guide).
 
 ## Inspired By
 
