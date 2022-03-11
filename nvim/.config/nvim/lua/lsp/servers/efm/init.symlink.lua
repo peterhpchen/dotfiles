@@ -21,9 +21,7 @@ return function(opts)
         },
       },
       sh = {
-        -- TODO check why shfmt can not detect .editorconfig
-        -- { formatCommand = "shfmt", formatStdin = true },
-        { formatCommand = "shfmt -i 2 -ci -bn", formatStdin = true },
+        { formatCommand = "shfmt" },
       },
       typescriptreact = {
         {
