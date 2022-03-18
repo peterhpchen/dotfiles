@@ -74,6 +74,10 @@ brew 'go'
 # https://github.com/rust-lang/rustup
 brew 'rustup-init'
 
+# Simple Python version management
+# https://github.com/pyenv/pyenv
+brew 'pyenv'
+
 # Move and resize windows on macOS with keyboard shortcuts and snap areas
 # https://github.com/rxhanson/Rectangle
 cask 'rectangle'
