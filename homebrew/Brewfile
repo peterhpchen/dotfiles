@@ -78,6 +78,10 @@ brew 'rustup-init'
 # https://github.com/pyenv/pyenv
 brew 'pyenv'
 
+# a pyenv plugin to manage virtualenv 
+# https://github.com/pyenv/pyenv-virtualenv
+brew 'pyenv-virtualenv'
+
 # Move and resize windows on macOS with keyboard shortcuts and snap areas
 # https://github.com/rxhanson/Rectangle
 cask 'rectangle'
