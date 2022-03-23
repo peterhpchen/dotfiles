@@ -1,16 +1,14 @@
-local lsp_installer = require("nvim-lsp-installer")
+local lsp_installer = require('nvim-lsp-installer')
 
-local on_attach = require("lsp/helpers/on_attach")
-local efm = require("lsp/servers/efm")
-local tsserver = require("lsp/servers/tsserver")
-local sumneko_lua = require("lsp/servers/sumneko_lua")
+local on_attach = require('lsp/helpers/on_attach')
+local tsserver = require('lsp/servers/tsserver')
+local sumneko_lua = require('lsp/servers/sumneko_lua')
 
-local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 local enhance_server_opts = {
-  ["efm"] = efm,
-  ["tsserver"] = tsserver,
-  ["sumneko_lua"] = sumneko_lua,
+  ['tsserver'] = tsserver,
+  ['sumneko_lua'] = sumneko_lua,
 }
 
 -- Register a handler that will be called for all installed servers.
