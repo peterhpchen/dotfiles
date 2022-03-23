@@ -1,3 +1,4 @@
-require("plugins")
+require('core.mappings')
+require('plugins')
 
-vim.cmd("source ~/.vimrc")
+vim.cmd('source ~/.vimrc')
