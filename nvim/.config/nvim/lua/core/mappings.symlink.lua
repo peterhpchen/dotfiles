@@ -2,7 +2,7 @@ local opts = { noremap = true, silent = true }
 local map = vim.api.nvim_set_keymap
 
 -- lsp
-map('n', '<Leader>f', '<Cmd>lua vim.lsp.buf.formatting_sync()<CR>', opts)
+map('n', '<Leader>f', '<Cmd>lua vim.lsp.buf.formatting_sync(nil, 10000)<CR>', opts)
 map('n', '<Leader>li', '<Cmd>LspInfo<CR>', opts)
 map('n', '<Leader>lI', '<Cmd>LspInstallInfo<CR>', opts)
 

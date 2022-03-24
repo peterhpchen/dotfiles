@@ -7,15 +7,6 @@ local on_attach = function(client, bufnr)
 
   -- Enable completion triggered by <c-x><c-o>
   buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
-
-  if client.resolved_capabilities.document_formatting then
-    vim.cmd([[
-              augroup LspFormatting
-                  autocmd! * <buffer>
-                  autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()
-              augroup END
-              ]])
-  end
 end
 
 return on_attach

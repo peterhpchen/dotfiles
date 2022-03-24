@@ -5,7 +5,8 @@ null_ls.setup({
   sources = {
     null_ls.builtins.formatting.stylua,
     null_ls.builtins.formatting.shfmt,
-    null_ls.builtins.formatting.prettier,
+    -- null_ls.builtins.formatting.prettier,
+    null_ls.builtins.formatting.prettierd,
     null_ls.builtins.formatting.isort,
   },
   on_attach = function(client)
@@ -13,7 +14,7 @@ null_ls.setup({
       vim.cmd([[
             augroup LspFormatting
                 autocmd! * <buffer>
-                autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()
+                autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync(nil, 10000)
             augroup END
             ]])
     end
