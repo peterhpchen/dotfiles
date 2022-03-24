@@ -4,12 +4,12 @@ return require('packer').startup(function(use)
 
   use({
     'EdenEast/nightfox.nvim',
-    config = require('plugins.configs.nightfox'),
+    config = require('configs.nightfox'),
   })
 
   use({
     'numToStr/Comment.nvim',
-    config = require('plugins.configs.comment'),
+    config = require('configs.comment'),
   })
 
   -- be used by nvim-tree, bufferline, lualine
@@ -17,13 +17,13 @@ return require('packer').startup(function(use)
 
   use({
     'kyazdani42/nvim-tree.lua',
-    config = require('plugins.configs.nvim-tree'),
+    config = require('configs.nvim-tree'),
   })
 
   use({
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
-    config = require('plugins.configs.nvim-treesitter'),
+    config = require('configs.nvim-treesitter'),
   })
 
   -- be used by telescope, gitsigns
@@ -31,7 +31,7 @@ return require('packer').startup(function(use)
 
   use({
     'nvim-telescope/telescope.nvim',
-    config = require('plugins.configs.telescope'),
+    config = require('configs.telescope'),
   })
 
   use('neovim/nvim-lspconfig')
@@ -42,7 +42,7 @@ return require('packer').startup(function(use)
   })
   use({
     'tami5/lspsaga.nvim',
-    config = require('plugins.configs.lspsaga'),
+    config = require('configs.lspsaga'),
   })
 
   use('hrsh7th/cmp-nvim-lsp')
@@ -51,7 +51,7 @@ return require('packer').startup(function(use)
   use('hrsh7th/cmp-cmdline')
   use({
     'hrsh7th/nvim-cmp',
-    config = require('plugins.configs.cmp'),
+    config = require('configs.cmp'),
   })
 
   -- For luasnip users.
@@ -60,17 +60,17 @@ return require('packer').startup(function(use)
 
   use({
     'folke/trouble.nvim',
-    config = require('plugins.configs.trouble'),
+    config = require('configs.trouble'),
   })
 
   use({
     'nvim-lualine/lualine.nvim',
-    config = require('plugins.configs.lualine'),
+    config = require('configs.lualine'),
   })
 
   use({
     'akinsho/bufferline.nvim',
-    config = require('plugins.configs.bufferline'),
+    config = require('configs.bufferline'),
   })
 
   -- use 'tpope/vim-unimpaired'
@@ -80,35 +80,35 @@ return require('packer').startup(function(use)
 
   use({
     'lewis6991/gitsigns.nvim',
-    config = require('plugins.configs.gitsigns'),
+    config = require('configs.gitsigns'),
   })
 
   use({
     'akinsho/toggleterm.nvim',
-    config = require('plugins.configs.toggleterm'),
+    config = require('configs.toggleterm'),
   })
 
   use({
     'lukas-reineke/indent-blankline.nvim',
-    config = require('plugins.configs.indent-blankline'),
+    config = require('configs.indent-blankline'),
   })
 
   use({
     'windwp/nvim-autopairs',
-    config = require('plugins.configs.nvim-autopairs'),
+    config = require('configs.nvim-autopairs'),
   })
 
   use({
     'phaazon/hop.nvim',
     branch = 'v1',
-    config = require('plugins.configs.hop'),
+    config = require('configs.hop'),
   })
   use({
     'max397574/better-escape.nvim',
-    config = require('plugins.configs.better-escape'),
+    config = require('configs.better-escape'),
   })
   use({
     'jose-elias-alvarez/null-ls.nvim',
-    config = require('plugins.configs.null-ls'),
+    config = require('configs.null-ls'),
   })
 end)
