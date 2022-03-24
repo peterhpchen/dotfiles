@@ -1,4 +1,4 @@
 require('core.mappings')
-require('plugins')
+require('core.plugins')
 
 vim.cmd('source ~/.vimrc')
