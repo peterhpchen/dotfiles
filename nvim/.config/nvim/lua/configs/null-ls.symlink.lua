@@ -10,6 +10,7 @@ null_ls.setup({
     null_ls.builtins.formatting.isort,
 
     null_ls.builtins.diagnostics.eslint,
+    null_ls.builtins.diagnostics.shellcheck,
   },
   on_attach = function(client)
     if client.resolved_capabilities.document_formatting then
