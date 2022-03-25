@@ -93,3 +93,11 @@ cask 'alacritty'
 # A configurable diagramming/whiteboarding visualization application.
 # https://github.com/jgraph/drawio-desktop
 cask 'drawio'
+
+# Virtualizer for x86 hardware
+# https://www.virtualbox.org/
+cask 'virtualbox'
+
+# Vagrant is a tool for building and distributing development environments.
+# https://github.com/hashicorp/vagrant
+cask 'vagrant'
