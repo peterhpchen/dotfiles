@@ -12,4 +12,4 @@ source $ZPLUG_HOME/init.zsh
 
 while read file; do
   source "$file"
-done < <(find $DOTFILES_ROOT/**/*.zsh ! -name "path.zsh" ! -name "*.zprofile.zsh")
+done < <(find $DOTFILES_ROOT/**/*.zsh ! -name "*.zshenv.zsh" ! -name "*.zprofile.zsh")
