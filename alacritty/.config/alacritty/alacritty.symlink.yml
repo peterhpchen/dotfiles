@@ -5,7 +5,7 @@ font:
     # Recommended font by p10k
     # https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
     family: MesloLGS NF
-  size: 20
+  size: 18
   # pixel perfections
   # https://github.com/romkatv/powerlevel10k#sub-pixel-imperfections-around-powerline-symbols
   # size: 18.5
