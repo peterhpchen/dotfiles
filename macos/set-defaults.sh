@@ -7,7 +7,7 @@
 # Boost key in speed
 
 echo "Set a shorter Delay until key repeat"
-defaults write -g InitialKeyRepeat -int 1
+defaults write -g InitialKeyRepeat -int 15
 
 echo "Set a blazingly fast keyboard repeat rate"
 defaults write -g KeyRepeat -int 1
