@@ -3,4 +3,5 @@
 __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source $__dir/_base.sh
 
-source $__dir/setup-macos
+source $__dir/setup-os
+source $__dir/setup-package-manager
