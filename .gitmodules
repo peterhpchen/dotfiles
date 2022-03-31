@@ -1,0 +1,3 @@
+[submodule "ssh"]
+	path = ssh
+	url = git@github.com:peterhpchen/ssh.git
