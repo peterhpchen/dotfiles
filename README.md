@@ -12,8 +12,9 @@
 
 ## Initial Setup and Installation
 
-1. [Setup ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
-2. Execute `./_scripts/setup`.
+1. Edit `./git/.symlink.editconfig`.
+2. [Setup ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+3. Execute `./_scripts/setup`.
 
 ## QA
 
