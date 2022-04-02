@@ -3,5 +3,11 @@
 __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source $__dir/_base.sh
 
-source $__dir/setup-os
+# 1. remove then symlink all link files
+source $__dir/relink
+# 2. install package manager and install all packages
 source $__dir/setup-package-manager
+# 3. execute all install.sh order by collection directory name
+source $__dir/install
+# 4. setup os settings
+source $__dir/setup-os
