@@ -1,2 +1,3 @@
+zsh
 vim
 neovim

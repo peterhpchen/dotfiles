@@ -82,6 +82,10 @@ brew 'pyenv'
 # https://github.com/pyenv/pyenv-virtualenv
 brew 'pyenv-virtualenv'
 
+# UNIX shell (command interpreter)
+# https://www.zsh.org/
+brew 'zsh'
+
 # Move and resize windows on macOS with keyboard shortcuts and snap areas
 # https://github.com/rxhanson/Rectangle
 cask 'rectangle'
