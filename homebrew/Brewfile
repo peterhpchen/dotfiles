@@ -70,10 +70,6 @@ brew 'ccls'
 # https://github.com/golang/go
 brew 'go'
 
-# The Rust toolchain installer
-# https://github.com/rust-lang/rustup
-brew 'rustup-init'
-
 # Simple Python version management
 # https://github.com/pyenv/pyenv
 brew 'pyenv'
