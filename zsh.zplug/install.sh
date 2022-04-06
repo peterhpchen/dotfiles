@@ -2,6 +2,8 @@
 
 echo "zplug installer"
 
+ZPLUG_HOME=~/.zplug
+
 # Clone zplug if necessary
 if [[ ! -f $ZPLUG_HOME/init.zsh ]]; then
   echo "Installing zplug."
