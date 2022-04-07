@@ -1,4 +1,8 @@
-local trouble = require("trouble")
+local present, trouble = pcall(require, 'trouble')
+
+if not present then
+  return
+end
 
 trouble.setup({
   -- your configuration comes here

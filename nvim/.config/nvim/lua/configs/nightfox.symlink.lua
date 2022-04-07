@@ -1,5 +1,10 @@
-local nightfox = require('nightfox')
+local present, nightfox = pcall(require, 'nightfox')
+
+if not present then
+  return
+end
+
 nightfox.setup({
-  fox = 'nordfox'
+  fox = 'nordfox',
 })
 nightfox.load()

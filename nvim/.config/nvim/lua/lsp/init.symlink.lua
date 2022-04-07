@@ -1,4 +1,8 @@
-local lsp_installer = require('nvim-lsp-installer')
+local present, lsp_installer = pcall(require, 'nvim-lsp-installer')
+
+if not present then
+  return
+end
 
 local on_attach = require('lsp/helpers/on_attach')
 local tsserver = require('lsp/servers/tsserver')
