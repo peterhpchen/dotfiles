@@ -24,3 +24,5 @@ libffi-dev
 liblzma-dev
 
 fzf
+
+bat
