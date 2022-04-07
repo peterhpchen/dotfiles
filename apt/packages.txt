@@ -1,6 +1,5 @@
 neofetch
 
-neovim
 vim
 
 zsh
@@ -26,3 +25,5 @@ liblzma-dev
 fzf
 
 bat
+
+software-properties-common
