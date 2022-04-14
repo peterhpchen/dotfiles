@@ -5,4 +5,4 @@ while read file; do
 done < <(find $DOTFILES_ROOT -name "*.zshenv.zsh")
 
 # Prevent locale warning message
-LC_CTYPE=
+export LC_ALL=en_US.UTF-8
