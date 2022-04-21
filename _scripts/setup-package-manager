@@ -6,8 +6,8 @@ source $__dir/_base.sh
 echo "Setup package manager"
 if [[ "$(uname)" == "Darwin" ]]; then
   echo "Configuring homebrew"
-  bash $DOTFILES_ROOT/homebrew/setup.sh
+  bash $DOTFILES_ROOT/homebrew/scripts/setup.sh
 elif [[ "$(uname)" == "Linux" ]]; then
   echo "Configuring apt"
-  bash $DOTFILES_ROOT/apt/setup.sh
+  bash $DOTFILES_ROOT/apt/scripts/setup.sh
 fi

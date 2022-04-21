@@ -5,4 +5,4 @@ source $__dir/_base.sh
 
 while read uninstaller; do
   bash "$uninstaller"
-done < <(find $DOTFILES_ROOT -name uninstall.sh)
+done < <(find $DOTFILES_ROOT/*/scripts -name uninstall.sh)

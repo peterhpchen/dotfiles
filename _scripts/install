@@ -8,4 +8,4 @@ __sort_field_count=$(tr -dc '/' <<<"$DOTFILES_ROOT" | awk '{ print length + 2; }
 
 while read installer; do
   bash "$installer"
-done < <(find $DOTFILES_ROOT -name install.sh | sort -t '/' -k"$__sort_field_count","$__sort_field_count")
+done < <(find $DOTFILES_ROOT/*/scripts -name install.sh | sort -t '/' -k"$__sort_field_count","$__sort_field_count")
