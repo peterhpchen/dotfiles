@@ -2,8 +2,6 @@ neofetch
 
 vim
 
-zsh
-
 make
 build-essential
 libssl-dev

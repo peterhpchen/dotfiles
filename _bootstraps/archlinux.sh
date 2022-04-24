@@ -1,14 +1,12 @@
 #!/bin/bash
 
 __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source $__dir/_base.sh
 
-# Pacman out of the box
+# Pacman outs of the box
 
 # Update Pacman
-source $__dir/.dotfiles/pacman/scripts/update.sh
+source $DOTFILES_ROOT/pacman/scripts/update.sh
 
 # Install Zsh
-source $__dir/.dotfiles/zsh/scripts/install.pacman.sh
-
-# Install neofetch
-#source $__dir/.dotfiles/neofetch/install.pacman.sh
+source $DOTFILES_ROOT/zsh/scripts/install.pacman.sh
