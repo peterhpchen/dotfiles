@@ -1,3 +1,3 @@
 #!/bin/bash
 
-DOTFILES_ROOT=~/.dotfiles
+export DOTFILES_ROOT=~/.dotfiles
