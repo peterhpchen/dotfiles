@@ -12,3 +12,6 @@ source "$DOTFILES_ROOT"/pacman/scripts/update.sh
 
 # Install by list
 source "$DOTFILES_ROOT"/_scripts/install-by-list.sh <"$__dir"/docker-dev-base.archlinux.txt
+
+# Symbolic link by list
+source "$DOTFILES_ROOT"/_scripts/symlink-by-list.sh <"$__dir"/docker-dev-base.archlinux.txt
