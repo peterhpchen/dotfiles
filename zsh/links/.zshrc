@@ -10,6 +10,14 @@ fi
 # Init zplug
 source $ZPLUG_HOME/init.zsh
 
-while read file; do
-  source "$file"
-done < <(find $DOTFILES_ROOT/**/*.zsh ! -name "*.zshenv.zsh" ! -name "*.zprofile.zsh")
+while read dir; do
+  zsh_dir="$DOTFILES_ROOT/$dir/zshrc"
+
+  if [[ ! -d "$zsh_dir" ]]; then
+    continue
+  fi
+
+  while read file; do
+    source "$file"
+  done < <(find $zsh_dir/*.zsh)
+done<$DOTFILES_REQUIREMENTS

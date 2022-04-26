@@ -1,5 +1,11 @@
-export DOTFILES_ROOT=~/.dotfiles
+while read dir; do
+  zsh_dir="$DOTFILES_ROOT/$dir/zprofile"
 
-while read file; do
-  source $file
-done < <(find $DOTFILES_ROOT -name "*.zprofile.zsh")
+  if [[ ! -d "$zsh_dir" ]]; then
+    continue
+  fi
+
+  while read file; do
+    source "$file"
+  done < <(find $zsh_dir/*.zsh)
+done<$DOTFILES_REQUIREMENTS
