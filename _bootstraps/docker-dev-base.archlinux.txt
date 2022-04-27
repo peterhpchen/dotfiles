@@ -6,3 +6,4 @@ zsh.powerlevel10k
 zsh.zsh-history-substring-search
 neofetch
 bat
+exa
