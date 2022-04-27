@@ -8,3 +8,4 @@ neofetch
 bat
 exa
 fd
+fzf
