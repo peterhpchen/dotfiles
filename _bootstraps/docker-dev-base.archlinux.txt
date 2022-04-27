@@ -12,3 +12,4 @@ ripgrep
 fzf
 tmux
 vim
+nvim
