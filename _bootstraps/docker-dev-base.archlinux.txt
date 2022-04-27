@@ -10,6 +10,7 @@ exa
 fd
 ripgrep
 fzf
+zsh.fzf-tab
 tmux
 vim
 nvim

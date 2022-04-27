@@ -22,10 +22,6 @@ zplug "zsh-users/zsh-syntax-highlighting"
 # https://github.com/zsh-users/zsh-history-substring-search
 zplug "zsh-users/zsh-history-substring-search"
 
-# Replace zsh's default completion selection menu with fzf!
-# https://github.com/Aloxaf/fzf-tab
-zplug "Aloxaf/fzf-tab"
-
 # A next-generation cd command with your interactive filter
 # https://github.com/b4b4r07/enhancd
 zplug "b4b4r07/enhancd", use:init.sh
