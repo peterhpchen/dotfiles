@@ -1,3 +1,4 @@
 #!/bin/bash
 
-pacman -S neofetch
+echo "Installing neofetch by pacman"
+pacman -S --noconfirm neofetch

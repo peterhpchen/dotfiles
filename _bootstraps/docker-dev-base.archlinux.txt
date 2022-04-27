@@ -1,3 +1,4 @@
 pacman
+git
 zsh
 neofetch
