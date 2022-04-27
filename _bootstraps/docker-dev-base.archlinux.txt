@@ -1,2 +1,3 @@
 pacman
 zsh
+neofetch

@@ -1,6 +1,4 @@
 #!/bin/bash
 
-echo "zsh installer"
-
-echo "Installing zsh"
+echo "Installing zsh by pacman"
 pacman -S --noconfirm zsh
