@@ -2,3 +2,6 @@ pacman
 git
 zsh
 neofetch
+zsh.zplug
+zsh.powerlevel10k
+zsh.zsh-history-substring-search
