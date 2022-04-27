@@ -1,4 +1,6 @@
-neofetch
+if [[ "$(command -v neofetch)" ]]; then
+  neofetch
+fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -8,7 +10,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Init zplug
-source $ZPLUG_HOME/init.zsh
+if [[ -r "$ZPLUG_HOME/init.zsh" ]]; then
+  source $ZPLUG_HOME/init.zsh
+fi
 
 while read dir; do
   zsh_dir="$DOTFILES_ROOT/$dir/zshrc"
