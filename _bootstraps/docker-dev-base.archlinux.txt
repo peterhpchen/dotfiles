@@ -8,4 +8,5 @@ neofetch
 bat
 exa
 fd
+ripgrep
 fzf
