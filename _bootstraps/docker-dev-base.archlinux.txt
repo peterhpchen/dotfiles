@@ -13,3 +13,4 @@ fzf
 tmux
 vim
 nvim
+nvim.packer.nvim
