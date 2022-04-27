@@ -1,5 +1,5 @@
 export DOTFILES_ROOT=~/.dotfiles
-export DOTFILES_REQUIREMENTS="$DOTFILES_ROOT/requirements.txt"
+export DOTFILES_REQUIREMENTS="$HOME/.dotfiles-requirements.txt"
 
 while read dir; do
   zsh_dir="$DOTFILES_ROOT/$dir/zshenv"
