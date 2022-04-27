@@ -7,3 +7,4 @@ zsh.zsh-history-substring-search
 neofetch
 bat
 exa
+fd
