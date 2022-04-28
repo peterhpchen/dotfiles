@@ -7,10 +7,11 @@ editorconfigs
 exa
 fd
 fzf
+zsh.fzf-tab
 git
 macos
 neofetch
-node.vim
+node.nvm
 nvim
 nvim.packer.nvim
 pip
