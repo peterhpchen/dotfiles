@@ -29,7 +29,7 @@ return require('packer').startup(function(use)
   use({
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
-    config = require('configs.nvim-treesitter'),
+    config = require('treesitter'),
   })
 
   -- be used by telescope, gitsigns
