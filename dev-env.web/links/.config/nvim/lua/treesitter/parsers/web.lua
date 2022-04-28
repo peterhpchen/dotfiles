@@ -1,0 +1,1 @@
+return { 'html', 'css', 'scss' }

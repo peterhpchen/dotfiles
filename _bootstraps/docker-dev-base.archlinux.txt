@@ -13,5 +13,9 @@ fzf
 zsh.fzf-tab
 tmux
 vim
+gcc
 nvim
 nvim.packer.nvim
+dev-env.shell
+dev-env.vim
+dev-env.lua
