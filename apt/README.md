@@ -1,4 +1,4 @@
-# cheat.sh
+# APT
 
 ## Requirements
 

@@ -1,10 +1,5 @@
 # dircolors
 
-## Installation
+## Requirements
 
-Not need.
-
-## Setup
-
-* Execute [symlink](../script/symlink) command.
-* Setup by [.zshrc](../zsh/.symlink.zshrc).
+* [Coreutils](https://www.gnu.org/software/coreutils/).

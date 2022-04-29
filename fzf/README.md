@@ -1,10 +1,6 @@
 # fzf
 
-## Installation
+## Requirements
 
-* Installed by [Homebrew](../homebrew/README.md).
-* Execute [install](../script/install) command.
-
-## Setup
-
-Setup by [.zshrc](../zsh/.symlink.zshrc) and [.zshenv](../zsh/.symlink.zshenv).
+* [Homebrew](../homebrew/README.md)(macos).
+* [Pacman](../pacman/README.md)(archlinux).

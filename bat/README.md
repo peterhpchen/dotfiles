@@ -1,9 +1,5 @@
 # BAT
 
-## Installation
+## Requirements
 
-Installed by [Homebrew](../homebrew/README.md).
-
-## Setup
-
-Setup by [.zshenv](../zsh/.symlink.zshenv).
+* [Homebrew](../homebrew/README.md) or [Pacman](../pacman/README.md).

@@ -1,9 +1,5 @@
 # Homebrew
 
-## Installation
+## Requirements
 
-Execute [install](../script/install) command.
-
-## Uninstallation
-
-Execute [uninstall](../script/uninstall) command.
+None.

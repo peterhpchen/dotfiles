@@ -1,9 +1,6 @@
 # fd
 
-## Installation
+## Requirements
 
-Installed by [Homebrew](../homebrew/README.md).
-
-## Setup
-
-Setup by [.zshrc](../zsh/.symlink.zshrc).
+* [Homebrew](../homebrew/README.md)(macos).
+* [Pacman](../pacman/README.md)(archlinux).

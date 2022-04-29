@@ -1,9 +1,5 @@
 # Alacritty
 
-## Installation
+## Requirements
 
-Installed by [Homebrew](../homebrew/README.md).
-
-## Setup
-
-Execute [symlink](../script/symlink) command.
+* [Homebrew](../homebrew/README.md).
