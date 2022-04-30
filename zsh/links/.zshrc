@@ -14,14 +14,6 @@ if [[ -r "$ZPLUG_HOME/init.zsh" ]]; then
   source $ZPLUG_HOME/init.zsh
 fi
 
-while read dir; do
-  zsh_dir="$DOTFILES_ROOT/$dir/zshrc"
-
-  if [[ ! -d "$zsh_dir" ]]; then
-    continue
-  fi
-
-  while read file; do
-    source "$file"
-  done < <(find $zsh_dir/*.zsh)
-done<$DOTFILES_REQUIREMENTS
+while read file; do
+  source "$file"
+done < <(find $HOME/.zshrc.d/*/*.zsh)
