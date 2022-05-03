@@ -1,8 +1,7 @@
 #!/bin/bash
 
 while read -r dir; do
-  install_script="$DOTFILES_ROOT/$dir/scripts/install.sh"
-  if [ -f "$install_script" ]; then
-    bash "$install_script"
+  if [ -n "$dir" ]; then
+    source ${DOTFILES_ROOTS:-~/.dotfiles}/_scripts/install.sh $dir
   fi
 done
