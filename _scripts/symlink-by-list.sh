@@ -1,7 +1,7 @@
 #!/bin/bash
 
 while read -r dir; do
-  links_path="${DOTFILES_ROOTS:-~/.dotfiles}/$dir/links"
+  links_path=${DOTFILES_ROOTS:-~/.dotfiles}/"$dir"/links
 
   if [[ ! -d "$links_path" ]]; then
     continue
@@ -18,5 +18,5 @@ while read -r dir; do
       fi
       ln -s "$src" "$dst"
     fi
-  done < <(find "${DOTFILES_ROOTS:-~/.dotfiles}"/"$dir"/links -type f)
+  done < <(find "$links_path" -type f)
 done

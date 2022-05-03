@@ -11,5 +11,3 @@ if [[ "$(command -v cht.sh)" ]]; then
 else
   echo "cheat.sh isn't installed."
 fi
-
-exit 0

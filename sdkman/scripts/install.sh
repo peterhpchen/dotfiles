@@ -8,5 +8,3 @@ if [[ ! -s "$HOME/.sdkman/bin/sdkman-init.sh" ]]; then
 else
   echo "sdkman installed."
 fi
-
-exit 0

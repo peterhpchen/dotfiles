@@ -13,5 +13,3 @@ fi
 
 echo "Installing dependencies from the Brewfile"
 brew bundle --file="$__dir/Brewfile"
-
-exit 0

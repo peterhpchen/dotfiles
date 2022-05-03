@@ -11,5 +11,3 @@ if [[ ! -f $ZPLUG_HOME/init.zsh ]]; then
 else
   echo "zplug was installed."
 fi
-
-exit 0

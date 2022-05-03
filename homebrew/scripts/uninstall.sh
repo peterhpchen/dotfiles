@@ -8,5 +8,3 @@ if [[ "$(command -v brew)" ]]; then
 else
   echo "Homebrew isn't installed."
 fi
-
-exit 0

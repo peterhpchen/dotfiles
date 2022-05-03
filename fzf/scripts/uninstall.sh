@@ -8,5 +8,3 @@ if [[ "$(command -v fzf)" ]]; then
 else
   echo "fzf isn't installed."
 fi
-
-exit 0

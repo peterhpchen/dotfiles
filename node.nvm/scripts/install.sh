@@ -10,5 +10,3 @@ if [[ ! -s "$NVM_DIR/nvm.sh" ]]; then
 else
   echo "nvm installed."
 fi
-
-exit 0

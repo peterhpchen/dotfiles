@@ -1,7 +1,7 @@
 #!/bin/bash
 
 while read -r dir; do
-  zshrc_path="${DOTFILES_ROOTS:-~/.dotfiles}/$dir/zshrc"
+  zshrc_path=${DOTFILES_ROOTS:-~/.dotfiles}/"$dir"/zshrc
 
   if [[ ! -d "$zshrc_path" ]]; then
     continue
@@ -20,7 +20,7 @@ while read -r dir; do
     fi
   done < <(find "$zshrc_path" -type f)
 
-  zshenv_path="${DOTFILES_ROOTS:-~/.dotfiles}/$dir/zshenv"
+  zshenv_path=${DOTFILES_ROOTS:-~/.dotfiles}/"$dir"/zshenv
 
   if [[ ! -d "$zshenv_path" ]]; then
     continue
@@ -39,7 +39,7 @@ while read -r dir; do
     fi
   done < <(find "$zshenv_path" -type f)
 
-  zprofile_path="${DOTFILES_ROOTS:-~/.dotfiles}/$dir/zprofile"
+  zprofile_path=${DOTFILES_ROOTS:-~/.dotfiles}/"$dir"/zprofile
 
   if [[ ! -d "$zprofile_path" ]]; then
     continue

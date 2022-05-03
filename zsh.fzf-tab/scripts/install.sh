@@ -11,5 +11,3 @@ if [[ ! -f $FZF_TAB_HOME/fzf-tab.plugin.zsh ]]; then
 else
   echo "fzf-tab was installed."
 fi
-
-exit 0
