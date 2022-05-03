@@ -5,22 +5,18 @@ export DOTFILES_TYPE="archlinux"
 __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$__dir"/_base.sh
 
+__pkg_list=$__dir/docker-dev-base.archlinux.txt
+
 # Pacman outs of the box
 
 # Update Pacman
 source "$DOTFILES_ROOT"/pacman/scripts/update.sh
-echo "updated pacman"
-
-pkg_list=$__dir/docker-dev-base.archlinux.txt
 
 # Install by list
-source "$DOTFILES_ROOT"/_scripts/install-by-list.sh <$pkg_list
-echo "installed"
+source "$DOTFILES_ROOT"/_scripts/install-by-list.sh <"$__pkg_list"
 
 # Symbolic link by list
-source "$DOTFILES_ROOT"/_scripts/symlink-by-list.sh <$pkg_list
-echo "symlinked"
+source "$DOTFILES_ROOT"/_scripts/symlink-by-list.sh <"$__pkg_list"
 
 # Symbolic link shell script by list
-source "$DOTFILES_ROOT"/_scripts/symlink-shell-by-list.sh <$pkg_list
-echo "shelled"
+source "$DOTFILES_ROOT"/_scripts/symlink-shell-by-list.sh <"$__pkg_list"
