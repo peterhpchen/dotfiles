@@ -1,10 +1,7 @@
 #!/bin/bash
 
-__dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source $__dir/_base.sh
-
 echo "Setup OS"
 if [[ "$(uname)" == "Darwin" ]]; then
   echo "Configuring macOS"
-  source $DOTFILES_ROOT/macos/scripts/setup.sh
+  source ${DOTFILES_ROOTS:-~/.dotfiles}/macos/scripts/setup.sh
 fi

@@ -1,14 +1,14 @@
 #!/bin/bash
 
 while read -r dir; do
-  zshrc_path="$DOTFILES_ROOT/$dir/zshrc"
+  zshrc_path="${DOTFILES_ROOTS:-~/.dotfiles}/$dir/zshrc"
 
   if [[ ! -d "$zshrc_path" ]]; then
     continue
   fi
 
   while read -r src; do
-    dst_dir="$(dirname "$HOME/.zshrc.d/"$dir"/${src#$DOTFILES_ROOT/*/zshrc/}")"
+    dst_dir="$(dirname "$HOME/.zshrc.d/"$dir"/${src#${DOTFILES_ROOTS:-~/.dotfiles}/*/zshrc/}")"
     dst_file="$(basename "$src")"
     dst="$dst_dir/$dst_file"
 
@@ -20,14 +20,14 @@ while read -r dir; do
     fi
   done < <(find "$zshrc_path" -type f)
 
-  zshenv_path="$DOTFILES_ROOT/$dir/zshenv"
+  zshenv_path="${DOTFILES_ROOTS:-~/.dotfiles}/$dir/zshenv"
 
   if [[ ! -d "$zshenv_path" ]]; then
     continue
   fi
 
   while read -r src; do
-    dst_dir="$(dirname "$HOME/.zshenv.d/"$dir"/${src#$DOTFILES_ROOT/*/zshenv/}")"
+    dst_dir="$(dirname "$HOME/.zshenv.d/"$dir"/${src#${DOTFILES_ROOTS:-~/.dotfiles}/*/zshenv/}")"
     dst_file="$(basename "$src")"
     dst="$dst_dir/$dst_file"
 
@@ -39,14 +39,14 @@ while read -r dir; do
     fi
   done < <(find "$zshenv_path" -type f)
 
-  zprofile_path="$DOTFILES_ROOT/$dir/zprofile"
+  zprofile_path="${DOTFILES_ROOTS:-~/.dotfiles}/$dir/zprofile"
 
   if [[ ! -d "$zprofile_path" ]]; then
     continue
   fi
 
   while read -r src; do
-    dst_dir="$(dirname "$HOME/.zprofile.d/"$dir"/${src#$DOTFILES_ROOT/*/zprofile/}")"
+    dst_dir="$(dirname "$HOME/.zprofile.d/"$dir"/${src#${DOTFILES_ROOTS:-~/.dotfiles}/*/zprofile/}")"
     dst_file="$(basename "$src")"
     dst="$dst_dir/$dst_file"
 
