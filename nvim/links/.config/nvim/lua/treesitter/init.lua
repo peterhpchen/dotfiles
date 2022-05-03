@@ -5,7 +5,7 @@ if not present1 then
 end
 
 local ensure_installed = {}
-local parsers = io.popen('ls -a ~/.config/nvim/lua/treesitter/parsers')
+local parsers = io.popen('ls ~/.config/nvim/lua/treesitter/parsers')
 for file in parsers:lines() do
   local present2, parser = pcall(require, 'treesitter.parsers.' .. file:gsub('%.lua', ''))
   if present2 then
