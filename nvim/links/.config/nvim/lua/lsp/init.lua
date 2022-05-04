@@ -1,3 +1,15 @@
+local servers = io.popen('ls ~/.config/nvim/lua/lsp/servers')
+
+local server_opts = {}
+local ensure_installed = {}
+for server in servers:lines() do
+  local present2, server_opt = pcall(require, 'lsp.servers.' .. server)
+  if present2 then
+    server_opts[server] = server_opt
+    table.insert(ensure_installed, server)
+  end
+end
+
 local present1, lsp_installer = pcall(require, 'nvim-lsp-installer')
 
 if not present1 then
@@ -5,7 +17,7 @@ if not present1 then
 end
 
 lsp_installer.setup({
-  ensure_installed = { 'tsserver', 'sumneko_lua' },
+  ensure_installed = ensure_installed,
   automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
 })
 
@@ -21,12 +33,7 @@ local sumneko_lua = require('lsp/servers/sumneko_lua')
 
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-local enhance_server_opts = {
-  ['tsserver'] = tsserver,
-  ['sumneko_lua'] = sumneko_lua,
-}
-
-for lsp_name, lsp_opts in pairs(enhance_server_opts) do
+for lsp_name, lsp_opts in pairs(server_opts) do
   local opts = {
     on_attach = on_attach,
     flags = {
