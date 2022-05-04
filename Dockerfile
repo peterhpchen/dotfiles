@@ -2,7 +2,9 @@ FROM archlinux
 
 COPY / /root/.dotfiles
 
-RUN chmod +x /root/.dotfiles/_bootstraps/docker-dev-base.archlinux.sh
-RUN /root/.dotfiles/_bootstraps/docker-dev-base.archlinux.sh
+ARG __config_name=ide.base
+
+RUN chmod +x /root/.dotfiles/_scripts/bootstrap.sh
+RUN /root/.dotfiles/_scripts/bootstrap.sh $__config_name
 
 ENTRYPOINT /bin/zsh
