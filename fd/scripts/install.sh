@@ -4,6 +4,6 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "fd installer"
 
-if [[ "$DOTFILES_TYPE" == "archlinux" ]]; then
+if [[ -f "/etc/arch-release" ]]; then
   bash $__dir/install/pacman.sh
 fi

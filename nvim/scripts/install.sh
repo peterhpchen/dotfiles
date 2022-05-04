@@ -4,7 +4,7 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "nvim installer"
 
-if [[ "$DOTFILES_TYPE" == "archlinux" ]]; then
+if [[ -f "/etc/arch-release" ]]; then
   bash $__dir/install/pacman.sh
 elif [[ ! "$(command -v nvim)" ]]; then
   echo "Installing nvim."
