@@ -14,6 +14,7 @@ neofetch
 node.nvm
 nvim
 nvim.packer.nvim
+nvim.lsp-installer
 pip
 prettier
 pyenv
