@@ -30,11 +30,11 @@ zsh.zsh-history-substring-search
 nvim
 nvim.packer.nvim
 nvim.lsp-installer
-dev-env.shell
-dev-env.vim
+nvim.ide.shell
+nvim.ide.vim
 nvim.ide.lua
 nvim.ide.js
-dev-env.c
-dev-env.vue
-dev-env.web
+nvim.ide.c
+nvim.ide.vue
+nvim.ide.web
 nvim.ide.python
