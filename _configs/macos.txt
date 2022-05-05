@@ -37,3 +37,4 @@ nvim.ide.js
 dev-env.c
 dev-env.vue
 dev-env.web
+nvim.ide.python
