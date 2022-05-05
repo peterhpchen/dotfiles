@@ -19,4 +19,4 @@ nvim.packer.nvim
 nvim.lsp-installer
 dev-env.shell
 dev-env.vim
-dev-env.lua
+nvim.ide.lua

@@ -12,9 +12,6 @@ git
 macos
 neofetch
 node.nvm
-nvim
-nvim.packer.nvim
-nvim.lsp-installer
 pip
 prettier
 pyenv
@@ -30,3 +27,13 @@ zsh
 zsh.powerlevel10k
 zsh.zplug
 zsh.zsh-history-substring-search
+nvim
+nvim.packer.nvim
+nvim.lsp-installer
+dev-env.shell
+dev-env.vim
+nvim.ide.lua
+nvim.ide.js
+dev-env.c
+dev-env.vue
+dev-env.web
