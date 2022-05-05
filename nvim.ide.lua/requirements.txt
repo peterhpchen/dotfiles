@@ -1,0 +1,3 @@
+nvim
+nvim.packer.nvim
+stylua
