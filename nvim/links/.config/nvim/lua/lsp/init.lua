@@ -3,16 +3,16 @@ local servers = io.popen('ls ~/.config/nvim/lua/lsp/servers')
 local server_opts = {}
 local ensure_installed = {}
 for server in servers:lines() do
-  local present2, server_opt = pcall(require, 'lsp.servers.' .. server)
-  if present2 then
+  local present1, server_opt = pcall(require, 'lsp.servers.' .. server)
+  if present1 then
     server_opts[server] = server_opt
     table.insert(ensure_installed, server)
   end
 end
 
-local present1, lsp_installer = pcall(require, 'nvim-lsp-installer')
+local present2, lsp_installer = pcall(require, 'nvim-lsp-installer')
 
-if not present1 then
+if not present2 then
   return
 end
 
@@ -21,9 +21,9 @@ lsp_installer.setup({
   automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
 })
 
-local present2, lspconfig = pcall(require, 'lspconfig')
+local present3, lspconfig = pcall(require, 'lspconfig')
 
-if not present2 then
+if not present3 then
   return
 end
 
