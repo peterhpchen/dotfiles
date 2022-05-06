@@ -1,2 +1,2 @@
+node.nvm
 nvim.packer.nvim
-stylua

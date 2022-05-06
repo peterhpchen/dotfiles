@@ -1,2 +1,1 @@
 nvim.packer.nvim
-stylua

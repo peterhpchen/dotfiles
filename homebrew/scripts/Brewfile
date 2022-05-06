@@ -22,10 +22,6 @@ brew 'fd'
 # https://github.com/junegunn/fzf
 brew 'fzf'
 
-# A cat(1) clone with wings.
-# https://github.com/sharkdp/bat
-brew 'bat'
-
 # A shell parser, formatter, and interpreter with bash support
 # https://github.com/mvdan/sh
 brew 'shfmt'
@@ -85,10 +81,6 @@ brew 'zsh'
 # Move and resize windows on macOS with keyboard shortcuts and snap areas
 # https://github.com/rxhanson/Rectangle
 cask 'rectangle'
-
-# A cross-platform, OpenGL terminal emulator.
-# https://github.com/alacritty/alacritty
-cask 'alacritty'
 
 # A configurable diagramming/whiteboarding visualization application.
 # https://github.com/jgraph/drawio-desktop
