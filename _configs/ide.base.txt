@@ -17,6 +17,3 @@ gcc
 nvim
 nvim.packer.nvim
 nvim.lsp-installer
-nvim.ide.shell
-nvim.ide.vim
-nvim.ide.lua

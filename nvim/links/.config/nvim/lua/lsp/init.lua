@@ -28,8 +28,6 @@ if not present3 then
 end
 
 local on_attach = require('lsp/helpers/on_attach')
-local tsserver = require('lsp/servers/tsserver')
-local sumneko_lua = require('lsp/servers/sumneko_lua')
 
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
