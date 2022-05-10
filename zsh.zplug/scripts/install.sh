@@ -11,3 +11,7 @@ if [[ ! -f $ZPLUG_HOME/init.zsh ]]; then
 else
   echo "zplug was installed."
 fi
+
+if [[ -f "/etc/arch-release" ]]; then
+  pacman -S --noconfirm patch
+fi

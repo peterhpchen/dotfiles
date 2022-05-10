@@ -17,3 +17,6 @@ source "$DOTFILES_ROOT"/_scripts/symlink-by-list.sh <"$__pkg_list"
 
 # Symbolic link shell script by list
 source "$DOTFILES_ROOT"/_scripts/symlink-shell-by-list.sh <"$__pkg_list"
+
+# Execute after script
+source "$DOTFILES_ROOT"/_scripts/execute-after.sh <"$__pkg_list"
