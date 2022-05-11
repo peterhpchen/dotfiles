@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-. "$HOME/.cargo/env"
+source "$HOME/.cargo/env"
