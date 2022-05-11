@@ -1,1 +1,1 @@
-nvim.packer.nvim
+nvim.packer

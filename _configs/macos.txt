@@ -28,7 +28,7 @@ zsh.powerlevel10k
 zsh.zplug
 zsh.zsh-history-substring-search
 nvim
-nvim.packer.nvim
+nvim.packer
 nvim.lsp-installer
 nvim.ide.shell
 nvim.ide.vim

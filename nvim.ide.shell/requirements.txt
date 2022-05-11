@@ -1,2 +1,2 @@
 homebrew|pacman|apt
-nvim.packer.nvim
+nvim.packer

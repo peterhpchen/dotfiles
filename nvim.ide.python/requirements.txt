@@ -1,2 +1,2 @@
-nvim.packer.nvim
+nvim.packer
 pip

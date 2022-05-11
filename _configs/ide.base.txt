@@ -15,5 +15,5 @@ tmux
 vim
 gcc
 nvim
-nvim.packer.nvim
+nvim.packer
 nvim.lsp-installer
