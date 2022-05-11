@@ -17,7 +17,6 @@ prettier
 pyenv
 ripgrep
 rust
-rust.cargo
 sdkman
 ssh
 stylua
