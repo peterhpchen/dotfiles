@@ -1,4 +1,7 @@
+_configs/archlinux.pkg-manager
 _configs/ide.base
 rust
 stylua
 nvim.ide.lua
+nvim.ide.vim
+nvim.ide.shell

@@ -1,4 +1,4 @@
-homebrew
+_configs/macos.pkg-manager
 alacritty
 bat
 cheat.sh
