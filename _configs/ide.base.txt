@@ -13,7 +13,6 @@ fzf
 zsh.fzf-tab
 tmux
 vim
-gcc
 nvim
 nvim.packer
 nvim.lsp-installer
