@@ -1,0 +1,5 @@
+_configs/ide.base
+rust
+rust.cargo
+stylua
+nvim.ide.lua

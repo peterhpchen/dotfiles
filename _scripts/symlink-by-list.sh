@@ -1,6 +1,12 @@
 #!/bin/bash
 
 while read -r dir; do
+  __CONFIG_FILE=${DOTFILES_ROOTS:-~/.dotfiles}/"$dir".txt
+  if [[ -r "$__CONFIG_FILE" ]]; then
+    source ${DOTFILES_ROOTS:-~/.dotfiles}/_scripts/symlink-by-list.sh <"$__CONFIG_FILE"
+    continue
+  fi
+
   links_path=${DOTFILES_ROOTS:-~/.dotfiles}/"$dir"/links
 
   if [[ ! -d "$links_path" ]]; then
