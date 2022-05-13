@@ -1,21 +1,5 @@
 root = true
 
-# shfmt settings
-# Reference Google's Shell Style Guide
-# https://google.github.io/styleguide/shellguide.html
-# Execute `man shfmt` for details
-[*.sh]
-# like -i 2
-indent_style = space
-indent_size = 2
-
-shell_variant      = bash # like -ln=bash
-binary_next_line   = true  # like -bn
-switch_case_indent = true  # like -ci
-# space_redirects    = true  # like -sr
-# keep_padding       = true  # like -kp
-# function_next_line = true  # like -fn
-
 # Matches all files
 # TODO: Not work for prettier
 [*]
@@ -25,6 +9,28 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 max_line_length = 80
+
+# shfmt settings
+# Reference Google's Shell Style Guide
+# https://google.github.io/styleguide/shellguide.html
+# Execute `man shfmt` for details
+[*.sh]
+# like -i 2
+indent_style = space
+indent_size = 2
+
+# like -ln=bash
+shell_variant      = bash
+# like -bn
+binary_next_line   = true
+# like -ci
+switch_case_indent = true
+# # like -sr
+# space_redirects    = true
+# # like -kp
+# keep_padding       = true
+# # like -fn
+# function_next_line = true
 
 # Matches all Markdown files
 [*.md]
