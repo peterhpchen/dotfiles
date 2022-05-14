@@ -1,3 +1,5 @@
 #!/bin/bash
 
-cargo install stylua
+if [[ -f "/etc/arch-release" ]]; then
+  pacman -S --noconfirm stylua
+fi
