@@ -37,3 +37,4 @@ nvim.ide.c
 nvim.ide.vue
 nvim.ide.web
 nvim.ide.python
+ide
