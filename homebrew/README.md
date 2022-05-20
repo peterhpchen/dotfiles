@@ -1,5 +1,0 @@
-# Homebrew
-
-## Requirements
-
-None.

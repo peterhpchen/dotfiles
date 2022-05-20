@@ -1,5 +1,0 @@
-# EditorConfig
-
-## Requirements
-
-None.

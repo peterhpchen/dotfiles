@@ -1,5 +1,0 @@
-# APT
-
-## Requirements
-
-None.

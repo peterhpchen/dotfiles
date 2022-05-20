@@ -1,0 +1,4 @@
+_configs/macos
+dotfiles
+ide
+ssh

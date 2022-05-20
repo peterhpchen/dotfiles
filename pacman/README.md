@@ -1,5 +1,0 @@
-# Pacman
-
-## Requirements
-
-None.

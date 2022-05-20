@@ -1,0 +1,4 @@
+_configs/ide.dotfiles
+dotfiles
+ide
+ssh

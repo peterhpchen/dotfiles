@@ -1,7 +1,0 @@
-[user]
-	name = peterhpchen
-	email = peterhsinpingchen@gmail.com
-[pull]
-	ff = only
-[core]
-	excludesFile = ~/.gitignore
