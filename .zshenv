@@ -1,3 +1,3 @@
-export DOTFILES="$HOME"/.dotfiles
+export DOTFILES="$HOME/.dotfiles"
 
-source "$DOTFILES"/bat/zshenv.zsh
+source "$DOTFILES/bat/zshenv.zsh"

@@ -1,6 +1,7 @@
 #!/bin/sh
 
 DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
+REMOTE=https://github.com/peterhpchen/dotfiles.git
 
 if [ ! "$(command -v brew)" ]; then
   echo "Homebrew not installed. Installing."
@@ -17,9 +18,10 @@ if [ -d "$DOTFILES" ]; then
   exit 1
 fi
 
-git clone https://github.com/peterhpchen/dotfiles.git "$DOTFILES"
+git clone --quiet "$REMOTE" "$DOTFILES"
 
-ln -s "$DOTFILES"/Brewfile "$HOME"
+ln -s "$DOTFILES/Brewfile" "$HOME"
 brew bundle
 
-ln -s "$DOTFILES"/.zshenv "$HOME"
+ln -s "$DOTFILES/.zshrc" "$HOME"
+ln -s "$DOTFILES/.zshenv" "$HOME"
