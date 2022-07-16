@@ -1,6 +1,0 @@
-version: '3.9'
-services:
-  ide:
-    image: peter3598768/ide.dotfiles
-    volumes:
-      - ..:/root/workspace
