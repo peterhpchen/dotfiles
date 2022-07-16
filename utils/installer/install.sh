@@ -21,3 +21,5 @@ git clone https://github.com/peterhpchen/dotfiles.git "$DOTFILES"
 
 ln -s "$DOTFILES"/Brewfile "$HOME"
 brew bundle
+
+ln -s "$DOTFILES"/.zshenv "$HOME"
