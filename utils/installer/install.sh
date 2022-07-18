@@ -25,3 +25,5 @@ brew bundle
 
 ln -s "$DOTFILES/.zshrc" "$HOME"
 ln -s "$DOTFILES/.zshenv" "$HOME"
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
