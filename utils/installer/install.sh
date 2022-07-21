@@ -16,6 +16,13 @@ if [ ! "$(command -v git)" ]; then
   brew install git
 fi
 
+if [ -d "$DOTFILES" ]; then
+  echo "The \$DOTFILES folder already exists ($DOTFILES). Please remove it."
+  exit 1
+fi
+
+git clone --quiet "$REMOTE" "$DOTFILES"
+
 if [ ! -f "$NVM_DIR/nvm.sh" ]; then
   echo "NVM not installed. Installing."
   git clone --quiet https://github.com/nvm-sh/nvm.git "$NVM_DIR"
@@ -26,13 +33,6 @@ fi
 ln -s "$DOTFILES/nvm/default-packages" "$NVM_DIR"
 . "$NVM_DIR/nvm.sh"
 nvm install 'lts/*'
-
-if [ -d "$DOTFILES" ]; then
-  echo "The \$DOTFILES folder already exists ($DOTFILES). Please remove it."
-  exit 1
-fi
-
-git clone --quiet "$REMOTE" "$DOTFILES"
 
 ln -s "$DOTFILES/.Brewfile" "$HOME"
 brew bundle --global
