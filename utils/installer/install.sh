@@ -18,9 +18,9 @@ fi
 
 if [ ! -f "$NVM_DIR/nvm.sh" ]; then
   echo "NVM not installed. Installing."
-  git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR"
-  cd "$NVM_DIR" || exit 1
-  git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
+  git clone --quiet https://github.com/nvm-sh/nvm.git "$NVM_DIR"
+  cd "$NVM_DIR"
+  git checkout --quiet `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
   . "$NVM_DIR/nvm.sh"
 fi
 
@@ -33,8 +33,8 @@ fi
 
 git clone --quiet "$REMOTE" "$DOTFILES"
 
-ln -s "$DOTFILES/Brewfile" "$HOME"
-brew bundle
+ln -s "$DOTFILES/.Brewfile" "$HOME"
+brew bundle --global
 
 ln -s "$DOTFILES/.zshrc" "$HOME"
 ln -s "$DOTFILES/.zshenv" "$HOME"
