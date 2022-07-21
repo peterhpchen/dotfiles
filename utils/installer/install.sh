@@ -24,6 +24,7 @@ if [ ! -f "$NVM_DIR/nvm.sh" ]; then
   . "$NVM_DIR/nvm.sh"
 fi
 
+ln -s "$DOTFILES/nvm/default-packages" "$NVM_DIR"
 nvm install 'lts/*'
 
 if [ -d "$DOTFILES" ]; then
