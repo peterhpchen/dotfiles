@@ -32,7 +32,7 @@ fi
 
 ln -s "$DOTFILES/nvm/default-packages" "$NVM_DIR"
 . "$NVM_DIR/nvm.sh"
-nvm install 'lts/*'
+nvm install --no-progress --default 'lts/*'
 
 ln -s "$DOTFILES/.Brewfile" "$HOME"
 brew bundle --global
