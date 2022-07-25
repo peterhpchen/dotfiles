@@ -1,1 +1,2 @@
 brew "bat"
+brew "pyenv"
