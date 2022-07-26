@@ -6,6 +6,10 @@ REMOTE=https://github.com/peterhpchen/dotfiles.git
 
 NVM_DIR="$XDG_CONFIG_HOME/nvm"
 
+export PYENV_ROOT="$XDG_CONFIG_HOME/pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+PYTHON_VERSION="3.10.5"
+
 if [ ! "$(command -v brew)" ]; then
   echo "Homebrew not installed. Installing."
   curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
@@ -36,6 +40,10 @@ nvm install --no-progress --default 'lts/*'
 
 ln -s "$DOTFILES/.Brewfile" "$HOME"
 brew bundle --global
+
+eval "$(pyenv init -)"
+pyenv install "$PYTHON_VERSION"
+pyenv global "$PYTHON_VERSION"
 
 ln -s "$DOTFILES/.zshrc" "$HOME"
 ln -s "$DOTFILES/.zshenv" "$HOME"
