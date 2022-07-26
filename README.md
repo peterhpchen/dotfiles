@@ -13,7 +13,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/main/
 Reset everything by below command.
 
 ```sh
-rm -rf ~/.zshrc ~/.zshenv ~/.dotfiles ~/.config/nvm ~/.Brewfile ~/.Brewfile.lock.json ~/.config/pyenv
+rm -rf ~/.dotfiles \
+~/.zshrc ~/.zshenv \
+~/.Brewfile ~/.Brewfile.lock.json \
+~/.config/nvm ~/.config/pyenv
 ```
 
 You need `brew uninstall` after this command.
