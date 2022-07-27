@@ -27,6 +27,7 @@ fi
 
 git clone --quiet "$REMOTE" "$DOTFILES"
 
+# NVM
 if [ ! -f "$NVM_DIR/nvm.sh" ]; then
   echo "NVM not installed. Installing."
   git clone --quiet https://github.com/nvm-sh/nvm.git "$NVM_DIR"
@@ -41,12 +42,17 @@ nvm install --no-progress --default 'lts/*'
 ln -s "$DOTFILES/.Brewfile" "$HOME"
 brew bundle --global
 
+# pyenv
 eval "$(pyenv init -)"
 pyenv install "$PYTHON_VERSION"
 pyenv global "$PYTHON_VERSION"
 
+# ripgrep
 mkdir "$XDG_CONFIG_HOME/ripgrep"
 ln -s "$DOTFILES/ripgrep/.ripgreprc" "$XDG_CONFIG_HOME/ripgrep"
+
+# fzf
+"$(brew --prefix)"/opt/fzf/install --xdg --key-bindings --no-update-rc --completion --no-bash --no-fish
 
 ln -s "$DOTFILES/.zshrc" "$HOME"
 ln -s "$DOTFILES/.zshenv" "$HOME"
