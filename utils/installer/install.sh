@@ -45,5 +45,8 @@ eval "$(pyenv init -)"
 pyenv install "$PYTHON_VERSION"
 pyenv global "$PYTHON_VERSION"
 
+mkdir "$XDG_CONFIG_HOME/ripgrep"
+ln -s "$DOTFILES/ripgrep/.ripgreprc" "$XDG_CONFIG_HOME/ripgrep"
+
 ln -s "$DOTFILES/.zshrc" "$HOME"
 ln -s "$DOTFILES/.zshenv" "$HOME"
