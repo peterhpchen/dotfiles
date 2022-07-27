@@ -1,4 +1,5 @@
 brew "zsh"
+brew "zsh-completions"
 
 brew "bat"
 brew "exa"

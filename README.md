@@ -14,7 +14,7 @@ Reset everything by below command.
 
 ```sh
 rm -rf ~/.dotfiles \
-~/.zshrc ~/.zshenv \
+~/.zshrc ~/.zshenv ~/.zcompdump \
 ~/.Brewfile ~/.Brewfile.lock.json \
 ~/.config/nvm ~/.config/pyenv ~/.config/ripgrep ~/.config/fzf
 ```
