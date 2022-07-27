@@ -1,6 +1,7 @@
 alias dfs="cd $HOME/.dotfiles"
 
 source "$DOTFILES/zsh-autosuggestions/zshrc.zsh"
+source "$DOTFILES/zsh-syntax-highlighting/zshrc.zsh"
 
 source "$DOTFILES/bat/zshrc.zsh"
 source "$DOTFILES/exa/zshrc.zsh"

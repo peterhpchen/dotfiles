@@ -1,6 +1,7 @@
 brew "zsh"
-brew "zsh-completions"
 brew "zsh-autosuggestions"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
 
 brew "bat"
 brew "exa"
