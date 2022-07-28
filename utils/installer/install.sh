@@ -35,7 +35,7 @@ if [ ! -f "$NVM_DIR/nvm.sh" ]; then
   git checkout --quiet `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
 fi
 
-ln -s "$DOTFILES/nvm/default-packages" "$NVM_DIR"
+ln -s "$DOTFILES/xdg-config-home/nvm/default-packages" "$NVM_DIR"
 . "$NVM_DIR/nvm.sh"
 nvm install --no-progress --default 'lts/*'
 
@@ -49,7 +49,7 @@ pyenv global "$PYTHON_VERSION"
 
 # ripgrep
 mkdir "$XDG_CONFIG_HOME/ripgrep"
-ln -s "$DOTFILES/ripgrep/.ripgreprc" "$XDG_CONFIG_HOME/ripgrep"
+ln -s "$DOTFILES/xdg-config-home/ripgrep/.ripgreprc" "$XDG_CONFIG_HOME/ripgrep"
 
 # fzf
 "$(brew --prefix)"/opt/fzf/install --xdg --key-bindings --no-update-rc --completion --no-bash --no-fish
