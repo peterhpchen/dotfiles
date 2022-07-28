@@ -54,5 +54,6 @@ ln -s "$DOTFILES/xdg-config-home/ripgrep/.ripgreprc" "$XDG_CONFIG_HOME/ripgrep"
 # fzf
 "$(brew --prefix)"/opt/fzf/install --xdg --key-bindings --no-update-rc --completion --no-bash --no-fish
 
-ln -s "$DOTFILES/.zshrc" "$HOME"
 ln -s "$DOTFILES/.zshenv" "$HOME"
+ln -s "$DOTFILES/xdg-config-home/zsh/.zshenv" "$XDG_CONFIG_HOME/zsh"
+ln -s "$DOTFILES/xdg-config-home/zsh/.zshrc" "$XDG_CONFIG_HOME/zsh"
