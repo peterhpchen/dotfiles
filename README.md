@@ -14,9 +14,9 @@ Reset everything by below command.
 
 ```sh
 rm -rf ~/.dotfiles \
-~/.zshrc ~/.zshenv ~/.zcompdump \
+~/.zshenv \
 ~/.Brewfile ~/.Brewfile.lock.json \
-~/.config/nvm ~/.config/pyenv ~/.config/ripgrep ~/.config/fzf
+~/.config/zsh ~/.config/nvm ~/.config/pyenv ~/.config/ripgrep ~/.config/fzf
 ```
 
 You need `brew uninstall` after this command.
