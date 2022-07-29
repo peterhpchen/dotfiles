@@ -11,6 +11,7 @@ brew "fd"
 brew "fzf"
 brew "neofetch"
 brew "ripgrep"
+brew "tmux"
 
 brew "pyenv"
 brew "pyenv-virtualenv"
