@@ -9,6 +9,7 @@ brew "bat"
 brew "exa"
 brew "fd"
 brew "fzf"
+brew "neofetch"
 brew "ripgrep"
 
 brew "pyenv"

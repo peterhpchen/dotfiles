@@ -1,3 +1,4 @@
+source "$DOTFILES/neofetch/zshrc.zsh"
 source "$DOTFILES/powerlevel10k/zshrc.zsh"
 
 alias dfs="cd $HOME/.dotfiles"

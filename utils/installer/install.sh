@@ -40,7 +40,7 @@ ln -s "$DOTFILES/nvm/default-packages" "$NVM_DIR"
 nvm install --no-progress --default 'lts/*'
 
 ln -s "$DOTFILES/.Brewfile" "$HOME"
-brew bundle --global
+brew bundle --global --quiet
 
 # pyenv
 eval "$(pyenv init -)"
@@ -53,6 +53,10 @@ ln -s "$DOTFILES/ripgrep/.ripgreprc" "$XDG_CONFIG_HOME/ripgrep"
 
 # fzf
 "$(brew --prefix)"/opt/fzf/install --xdg --key-bindings --no-update-rc --completion --no-bash --no-fish
+
+# neofetch
+mkdir "$XDG_CONFIG_HOME/neofetch"
+ln -s "$DOTFILES/neofetch/config.conf" "$XDG_CONFIG_HOME/neofetch"
 
 ln -s "$DOTFILES/.zshenv" "$HOME"
 mkdir "$XDG_CONFIG_HOME/zsh"
