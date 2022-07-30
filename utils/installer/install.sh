@@ -10,6 +10,8 @@ export PYENV_ROOT="$XDG_CONFIG_HOME/pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 PYTHON_VERSION="3.10.5"
 
+TPM_REMOTE=https://github.com/tmux-plugins/tpm.git
+
 if [ ! "$(command -v brew)" ]; then
   echo "Homebrew not installed. Installing."
   curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
@@ -58,6 +60,11 @@ ln -s "$DOTFILES/ripgrep/.ripgreprc" "$XDG_CONFIG_HOME/ripgrep"
 mkdir "$XDG_CONFIG_HOME/neofetch"
 ln -s "$DOTFILES/neofetch/config.conf" "$XDG_CONFIG_HOME/neofetch"
 
+# tmux
+git clone "$TPM_REMOTE" "$XDG_CONFIG_HOME/tmux/plugins/tpm"
+ln -s "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux"
+
+# Zsh
 ln -s "$DOTFILES/.zshenv" "$HOME"
 mkdir "$XDG_CONFIG_HOME/zsh"
 ln -s "$DOTFILES/zsh/.zshenv" "$XDG_CONFIG_HOME/zsh"
