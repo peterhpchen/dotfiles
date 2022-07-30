@@ -63,6 +63,7 @@ ln -s "$DOTFILES/neofetch/config.conf" "$XDG_CONFIG_HOME/neofetch"
 # tmux
 git clone "$TPM_REMOTE" "$XDG_CONFIG_HOME/tmux/plugins/tpm"
 ln -s "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux"
+"$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins"
 
 # Zsh
 ln -s "$DOTFILES/.zshenv" "$HOME"
