@@ -46,6 +46,7 @@ brew bundle --global --quiet
 
 # pyenv
 eval "$(pyenv init -)"
+ln -s "$DOTFILES/pyenv/default-packages" "$XDG_CONFIG_HOME/pyenv"
 pyenv install "$PYTHON_VERSION"
 pyenv global "$PYTHON_VERSION"
 
