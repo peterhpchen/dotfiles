@@ -15,3 +15,8 @@ brew "tmux"
 
 brew "pyenv"
 brew "pyenv-virtualenv"
+
+brew "hadolint"
+brew "shellcheck"
+brew "shfmt"
+brew "stylua"
