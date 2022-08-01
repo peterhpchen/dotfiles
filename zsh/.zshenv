@@ -10,6 +10,7 @@ source "$DOTFILES/zsh-completions/zshenv.zsh"
 
 source "$DOTFILES/bat/zshenv.zsh"
 source "$DOTFILES/ripgrep/zshenv.zsh"
+source "$DOTFILES/zoxide/zshenv.zsh"
 
 source "$DOTFILES/nvm/zshenv.zsh"
 source "$DOTFILES/pyenv/zshenv.zsh"

@@ -12,6 +12,7 @@ brew "fzf"
 brew "neofetch"
 brew "ripgrep"
 brew "tmux"
+brew "zoxide"
 
 brew "pyenv"
 brew "pyenv-virtualenv"
