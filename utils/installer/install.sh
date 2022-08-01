@@ -66,6 +66,10 @@ git clone "$TPM_REMOTE" "$XDG_CONFIG_HOME/tmux/plugins/tpm"
 ln -s "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux"
 "$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins"
 
+# kitty
+mkdir "$XDG_CONFIG_HOME/kitty"
+ln -s "$DOTFILES/kitty/kitty.conf" "$XDG_CONFIG_HOME/kitty"
+
 # Zsh
 ln -s "$DOTFILES/.zshenv" "$HOME"
 mkdir "$XDG_CONFIG_HOME/zsh"

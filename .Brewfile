@@ -1,3 +1,7 @@
+tap "homebrew/core"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-completions"
@@ -22,3 +26,7 @@ brew "hadolint"
 brew "shellcheck"
 brew "shfmt"
 brew "stylua"
+
+cask "kitty"
+
+cask "font-hack-nerd-font"
