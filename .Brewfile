@@ -23,6 +23,7 @@ brew "pyenv"
 brew "pyenv-virtualenv"
 brew "jawshooah/pyenv/pyenv-default-packages", args: ["HEAD"]
 
+cask "docker"
 cask "kitty"
 
 cask "font-hack-nerd-font"
