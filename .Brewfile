@@ -23,11 +23,6 @@ brew "pyenv"
 brew "pyenv-virtualenv"
 brew "jawshooah/pyenv/pyenv-default-packages", args: ["HEAD"]
 
-brew "hadolint"
-brew "shellcheck"
-brew "shfmt"
-brew "stylua"
-
 cask "kitty"
 
 cask "font-hack-nerd-font"
