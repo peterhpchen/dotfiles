@@ -76,3 +76,5 @@ mkdir "$XDG_CONFIG_HOME/zsh"
 ln -s "$DOTFILES/zsh/.zshenv" "$XDG_CONFIG_HOME/zsh"
 ln -s "$DOTFILES/zsh/.zshrc" "$XDG_CONFIG_HOME/zsh"
 ln -s "$DOTFILES/zsh/.p10k.zsh" "$XDG_CONFIG_HOME/zsh"
+
+ln -s "$DOTFILES/.editorconfig" "$XDG_CONFIG_HOME"
