@@ -24,6 +24,7 @@ brew "pyenv-virtualenv"
 brew "jawshooah/pyenv/pyenv-default-packages", args: ["HEAD"]
 
 brew "prettier"
+brew "shfmt"
 
 cask "docker"
 cask "kitty"
