@@ -14,7 +14,7 @@ TPM_REMOTE=https://github.com/tmux-plugins/tpm.git
 
 if [ ! "$(command -v brew)" ]; then
   echo "Homebrew not installed. Installing."
-  curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+  curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash --login
 fi
 
 if [ ! "$(command -v git)" ]; then
