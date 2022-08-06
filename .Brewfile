@@ -1,6 +1,7 @@
 tap "homebrew/core"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-drivers"
 
 brew "mas"
 
@@ -33,5 +34,7 @@ cask "kitty"
 cask "google-chrome"
 
 cask "font-hack-nerd-font"
+
+cask "logitech-options"
 
 mas "Microsoft OneNote", id: 784801555
