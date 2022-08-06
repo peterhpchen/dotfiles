@@ -2,6 +2,8 @@ tap "homebrew/core"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 
+brew "mas"
+
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-completions"
@@ -31,3 +33,5 @@ cask "kitty"
 cask "google-chrome"
 
 cask "font-hack-nerd-font"
+
+mas "Microsoft OneNote", id: 784801555
