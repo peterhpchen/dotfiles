@@ -32,6 +32,7 @@ brew "shfmt"
 cask "docker"
 cask "kitty"
 cask "google-chrome"
+cask "rectangle"
 
 cask "font-hack-nerd-font"
 
