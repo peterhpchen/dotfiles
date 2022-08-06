@@ -70,6 +70,10 @@ ln -s "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux"
 mkdir "$XDG_CONFIG_HOME/kitty"
 ln -s "$DOTFILES/kitty/kitty.conf" "$XDG_CONFIG_HOME/kitty"
 
+# git
+mkdir "$XDG_CONFIG_HOME/git"
+ln -s "$DOTFILES/git/config" "$XDG_CONFIG_HOME/git"
+
 # Zsh
 ln -s "$DOTFILES/.zshenv" "$HOME"
 mkdir "$XDG_CONFIG_HOME/zsh"
