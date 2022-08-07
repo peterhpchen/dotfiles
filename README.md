@@ -2,6 +2,18 @@
 
 ## Installation
 
+### Step 1: Install XCode
+
+```sh
+xcode-select --install
+```
+
+### Step 2: Setup SSH
+
+Please view the [Github Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
+### Step 3: Exexute dotfiles script
+
 Install the whole development environment by single command.
 
 ```sh
