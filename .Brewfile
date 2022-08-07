@@ -39,3 +39,4 @@ cask "font-hack-nerd-font"
 cask "logi-options-plus"
 
 mas "Microsoft OneNote", id: 784801555
+mas "LINE", id: 539883307
