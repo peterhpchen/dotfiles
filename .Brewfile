@@ -36,6 +36,6 @@ cask "rectangle"
 
 cask "font-hack-nerd-font"
 
-cask "logitech-options"
+cask "logi-options-plus"
 
 mas "Microsoft OneNote", id: 784801555
