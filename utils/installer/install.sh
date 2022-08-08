@@ -34,7 +34,7 @@ if [ ! -f "$NVM_DIR/nvm.sh" ]; then
   echo "NVM not installed. Installing."
   git clone --quiet https://github.com/nvm-sh/nvm.git "$NVM_DIR"
   cd "$NVM_DIR"
-  git checkout --quiet `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
+  git checkout --quiet $(git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1))
 fi
 
 ln -s "$DOTFILES/nvm/default-packages" "$NVM_DIR"
@@ -83,3 +83,11 @@ ln -s "$DOTFILES/zsh/.p10k.zsh" "$XDG_CONFIG_HOME/zsh"
 
 ln -s "$DOTFILES/.editorconfig" "$HOME"
 ln -s "$DOTFILES/.prettierrc.js" "$HOME"
+
+# macOS
+echo "Set a shorter Delay until key repeat"
+defaults write -g InitialKeyRepeat -int 15
+echo "Set a blazingly fast keyboard repeat rate"
+defaults write -g KeyRepeat -int 1
+echo "Disable press-and-hold for keys in favor of key repeat"
+defaults write -g ApplePressAndHoldEnabled -bool false
