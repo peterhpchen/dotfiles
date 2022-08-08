@@ -1,5 +1,6 @@
 source "$DOTFILES/neofetch/zshrc.zsh"
 source "$DOTFILES/powerlevel10k/zshrc.zsh"
+# The above source need pin on the top
 
 alias dfs="cd $HOME/.dotfiles"
 
@@ -15,3 +16,6 @@ source "$DOTFILES/zoxide/zshrc.zsh"
 
 source "$DOTFILES/nvm/zshrc.zsh"
 source "$DOTFILES/pyenv/zshrc.zsh"
+
+# The following source need to pin on the bottom
+source "$DOTFILES/sdkman/zshrc.zsh"

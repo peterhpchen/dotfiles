@@ -10,6 +10,8 @@ export PYENV_ROOT="$XDG_CONFIG_HOME/pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 PYTHON_VERSION="3.10.5"
 
+export SDKMAN_DIR="$HOME/.sdkman"
+
 TPM_REMOTE=https://github.com/tmux-plugins/tpm.git
 
 if [ ! "$(command -v brew)" ]; then
@@ -49,6 +51,9 @@ eval "$(pyenv init -)"
 ln -s "$DOTFILES/pyenv/default-packages" "$XDG_CONFIG_HOME/pyenv"
 pyenv install "$PYTHON_VERSION"
 pyenv global "$PYTHON_VERSION"
+
+# sdkman
+curl -s "https://get.sdkman.io?rcupdate=false" | zsh
 
 # ripgrep
 mkdir "$XDG_CONFIG_HOME/ripgrep"

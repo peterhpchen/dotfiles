@@ -14,3 +14,5 @@ source "$DOTFILES/zoxide/zshenv.zsh"
 
 source "$DOTFILES/nvm/zshenv.zsh"
 source "$DOTFILES/pyenv/zshenv.zsh"
+
+source "$DOTFILES/sdkman/zshenv.zsh"
