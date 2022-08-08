@@ -20,6 +20,16 @@ Install the whole development environment by single command.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/main/utils/installer/install.sh)"
 ```
 
+### Extra: Install dotfiles-extra
+
+The `dotfiles-extra` is used to setup some specific environments. It has the same repo structure with `peterhpchen/dotfiles`, So we can just pull these submodule and execute `utils/installer/install.sh` to setup these env.
+
+```sh
+git pull --recurse-submodules
+# gainmiles for example
+. "$DOTFILES/gainmiles/utils/installer/install.sh"
+```
+
 ## Reset
 
 Reset everything by below command.
