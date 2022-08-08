@@ -10,7 +10,7 @@ export PYENV_ROOT="$XDG_CONFIG_HOME/pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 PYTHON_VERSION="3.10.5"
 
-export SDKMAN_DIR="$HOME/.sdkman"
+export SDKMAN_DIR="$XDG_CONFIG_HOME/sdkman"
 
 TPM_REMOTE=https://github.com/tmux-plugins/tpm.git
 
