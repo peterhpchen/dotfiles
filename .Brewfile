@@ -32,5 +32,6 @@ brew "shfmt"
 cask "docker"
 cask "kitty"
 cask "rectangle"
+cask "visual-studio-code"
 
 cask "font-hack-nerd-font"
