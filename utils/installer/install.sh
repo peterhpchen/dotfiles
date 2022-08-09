@@ -14,6 +14,8 @@ export SDKMAN_DIR="$XDG_CONFIG_HOME/sdkman"
 
 TPM_REMOTE=https://github.com/tmux-plugins/tpm.git
 
+SSH_DIR="$HOME/.ssh"
+
 if [ ! "$(command -v brew)" ]; then
   echo "Homebrew not installed. Installing."
   curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash --login
@@ -88,6 +90,14 @@ ln -s "$DOTFILES/zsh/.p10k.zsh" "$XDG_CONFIG_HOME/zsh"
 
 ln -s "$DOTFILES/.editorconfig" "$HOME"
 ln -s "$DOTFILES/.prettierrc.js" "$HOME"
+
+# SSH
+if [ -f "$SSH_DIR/config" ]; then
+  echo "The ssh config file already exists ($SSH_DIR/config). Please remove it."
+  exit 1
+fi
+
+ln -s "$DOTFILES/ssh/config" "$SSH_DIR"
 
 # macOS
 echo "Set a shorter Delay until key repeat"
