@@ -8,11 +8,7 @@
 xcode-select --install
 ```
 
-### Step 2: Setup SSH
-
-Please view the [Github Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
-
-### Step 3: Exexute dotfiles script
+### Step 2: Exexute dotfiles script
 
 Install the whole development environment by single command.
 
@@ -20,14 +16,25 @@ Install the whole development environment by single command.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/main/utils/installer/install.sh)"
 ```
 
+### Step 3: Setup SSH
+
+Please view the [Github Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
 ### Extra: Install dotfiles-extra
 
 The `dotfiles-extra` is used to setup some specific environments. It has the same repo structure with `peterhpchen/dotfiles`, So we can just pull these submodule and execute `utils/installer/install.sh` to setup these env.
 
 ```sh
+git submodule init
 git pull --recurse-submodules
 # gainmiles for example
 . "$DOTFILES/gainmiles/utils/installer/install.sh"
+```
+
+If your extra dotfiles are in the private repository, you need change dotfiles' git remote path to ssh.
+
+```sh
+git remote set-url origin git@github.com:peterhpchen/dotfiles.git
 ```
 
 ## Reset
