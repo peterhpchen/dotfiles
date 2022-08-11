@@ -4,8 +4,6 @@ DOTFILES="$HOME/.dotfiles"
 XDG_CONFIG_HOME="$HOME/.config"
 REMOTE=https://github.com/peterhpchen/dotfiles.git
 
-NVM_DIR="$XDG_CONFIG_HOME/nvm"
-
 export PYENV_ROOT="$XDG_CONFIG_HOME/pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 PYTHON_VERSION="3.10.5"
@@ -33,17 +31,7 @@ fi
 
 git clone --quiet "$REMOTE" "$DOTFILES"
 
-# NVM
-if [ ! -f "$NVM_DIR/nvm.sh" ]; then
-  echo "NVM not installed. Installing."
-  git clone --quiet https://github.com/nvm-sh/nvm.git "$NVM_DIR"
-  cd "$NVM_DIR"
-  git checkout --quiet $(git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1))
-fi
-
-ln -s "$DOTFILES/nvm/default-packages" "$NVM_DIR"
-. "$NVM_DIR/nvm.sh"
-nvm install --no-progress --default 'lts/*'
+. "$DOTFILES/nvm/utils/installer/install.sh"
 
 ln -s "$DOTFILES/.Brewfile" "$HOME"
 brew bundle --global --quiet
