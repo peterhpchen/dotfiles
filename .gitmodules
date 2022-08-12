@@ -4,3 +4,6 @@
 [submodule "personal"]
 	path = personal
 	url = git@github.com:peterhpchen/dotfiles-personal.git
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:peterhpchen/nvim.git
