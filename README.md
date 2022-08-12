@@ -2,7 +2,7 @@
 
 ## Installation
 
-### Step 1: Install XCode
+### Step 1: Install XCode CLI tools
 
 ```sh
 xcode-select --install
@@ -18,7 +18,15 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/main/
 
 ### Step 3: Setup SSH
 
-Please view the [Github Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+Execute `ssh.sh` to generate SSH key and setup.
+
+```sh
+. "$DOTFILES/utils/installer/ssh.sh" "your_email@example.com"
+```
+
+`your_email@example.com` is your GitHub email address.
+
+> Please view the [Github Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
 ### Extra: Install dotfiles-extra
 
