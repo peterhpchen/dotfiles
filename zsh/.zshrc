@@ -18,5 +18,7 @@ source "$DOTFILES/zoxide/zshrc.zsh"
 source "$DOTFILES/nvm/zshrc.zsh"
 source "$DOTFILES/pyenv/zshrc.zsh"
 
+source "$DOTFILES/gitignore.io/zshrc.zsh"
+
 # The following source need to pin on the bottom
 source "$DOTFILES/sdkman/zshrc.zsh"
