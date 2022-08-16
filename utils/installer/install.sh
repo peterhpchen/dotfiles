@@ -66,6 +66,10 @@ git submodule update --init -- kitty/nord-kitty
 mkdir "$XDG_CONFIG_HOME/git"
 ln -s "$DOTFILES/git/config" "$XDG_CONFIG_HOME/git"
 
+# dircolors
+cd "$DOTFILES"
+git submodule update --init -- dircolors/nord-dircolors
+
 # Zsh
 ln -s "$DOTFILES/.zshenv" "$HOME"
 mkdir "$XDG_CONFIG_HOME/zsh"

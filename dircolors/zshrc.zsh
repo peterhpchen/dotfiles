@@ -2,4 +2,6 @@
 
 DIRCOLORS_FILE="$DOTFILES/dircolors/nord-dircolors/src/dir_colors"
 
-test -r "$DIRCOLORS_FILE" && eval $(gdircolors "$DIRCOLORS_FILE")
+if [ -r "$DIRCOLORS_FILE" ]; then
+  eval $(gdircolors --bourne-shell "$DIRCOLORS_FILE")
+fi

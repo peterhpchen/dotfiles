@@ -30,6 +30,7 @@ brew "jawshooah/pyenv/pyenv-default-packages", args: ["HEAD"]
 brew "prettier"
 brew "shfmt"
 
+cask "alacritty"
 cask "docker"
 cask "kitty"
 cask "rectangle"
