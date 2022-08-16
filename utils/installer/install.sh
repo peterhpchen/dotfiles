@@ -59,6 +59,8 @@ ln -s "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux"
 # kitty
 mkdir "$XDG_CONFIG_HOME/kitty"
 ln -s "$DOTFILES/kitty/kitty.conf" "$XDG_CONFIG_HOME/kitty"
+cd "$DOTFILES"
+git submodule update --init -- kitty/nord-kitty
 
 # git
 mkdir "$XDG_CONFIG_HOME/git"
