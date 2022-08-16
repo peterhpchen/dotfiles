@@ -65,6 +65,7 @@ git submodule update --init -- kitty/nord-kitty
 # git
 mkdir "$XDG_CONFIG_HOME/git"
 ln -s "$DOTFILES/git/config" "$XDG_CONFIG_HOME/git"
+ln -s "$DOTFILES/git/ignore" "$XDG_CONFIG_HOME/git"
 
 # dircolors
 cd "$DOTFILES"
