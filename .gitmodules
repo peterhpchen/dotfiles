@@ -7,3 +7,6 @@
 [submodule "nvim"]
 	path = nvim
 	url = git@github.com:peterhpchen/nvim.git
+[submodule "kitty/nord-kitty"]
+	path = kitty/nord-kitty
+	url = https://github.com/connorholyday/nord-kitty.git
