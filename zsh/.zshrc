@@ -4,6 +4,9 @@ source "$DOTFILES/powerlevel10k/zshrc.zsh"
 
 alias dfs="cd $HOME/.dotfiles"
 
+# case insensitive path-completion
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+
 source "$DOTFILES/zsh-autosuggestions/zshrc.zsh"
 source "$DOTFILES/zsh-syntax-highlighting/zshrc.zsh"
 source "$DOTFILES/zsh-history-substring-search/zshrc.zsh"
