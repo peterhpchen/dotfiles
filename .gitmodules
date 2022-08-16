@@ -10,3 +10,6 @@
 [submodule "kitty/nord-kitty"]
 	path = kitty/nord-kitty
 	url = https://github.com/connorholyday/nord-kitty.git
+[submodule "dircolors/nord-dircolors"]
+	path = dircolors/nord-dircolors
+	url = https://github.com/arcticicestudio/nord-dircolors.git

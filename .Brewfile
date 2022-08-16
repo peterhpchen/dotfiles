@@ -13,6 +13,7 @@ brew "zsh-history-substring-search"
 brew "romkatv/powerlevel10k/powerlevel10k"
 
 brew "bat"
+brew "coreutils"
 brew "exa"
 brew "fd"
 brew "fzf"
