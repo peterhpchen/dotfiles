@@ -9,6 +9,7 @@ export HOMEBREW_PREFIX="/usr/local"
 source "$DOTFILES/zsh-completions/zshenv.zsh"
 
 source "$DOTFILES/bat/zshenv.zsh"
+source "$DOTFILES/cheat.sh/zshenv.zsh"
 source "$DOTFILES/ripgrep/zshenv.zsh"
 source "$DOTFILES/zoxide/zshenv.zsh"
 

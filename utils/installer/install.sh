@@ -27,6 +27,7 @@ fi
 
 git clone --quiet "$REMOTE" "$DOTFILES"
 
+. "$DOTFILES/cheat.sh/utils/installer/install.sh"
 . "$DOTFILES/nvm/utils/installer/install.sh"
 . "$DOTFILES/sdkman/utils/installer/install.sh"
 . "$DOTFILES/ssh/utils/installer/install.sh"
