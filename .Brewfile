@@ -21,6 +21,7 @@ brew "neofetch"
 brew "nvim"
 brew "ripgrep"
 brew "tmux"
+brew "tmuxinator"
 brew "zoxide"
 
 brew "pyenv"

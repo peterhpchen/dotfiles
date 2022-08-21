@@ -16,6 +16,7 @@ source "$DOTFILES/dircolors/zshrc.zsh"
 source "$DOTFILES/exa/zshrc.zsh"
 source "$DOTFILES/fd/zshrc.zsh"
 source "$DOTFILES/fzf/zshrc.zsh"
+source "$DOTFILES/tmuxinator/zshrc.zsh"
 source "$DOTFILES/zoxide/zshrc.zsh"
 
 source "$DOTFILES/nvm/zshrc.zsh"

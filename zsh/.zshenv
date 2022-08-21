@@ -1,3 +1,6 @@
+export SHELL="/bin/zsh"
+export EDITOR="nvim"
+
 export DOTFILES="$HOME/.dotfiles"
 
 export XDG_CONFIG_HOME="$HOME/.config"
