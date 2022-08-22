@@ -35,6 +35,9 @@ git clone --quiet "$REMOTE" "$DOTFILES"
 ln -s "$DOTFILES/.Brewfile" "$HOME"
 brew bundle --global --quiet
 
+# gitui
+ln -s "$DOTFILES/gitui/key_bindings.ron" "$XDG_CONFIG_HOME/gitui"
+
 # pyenv
 eval "$(pyenv init -)"
 ln -s "$DOTFILES/pyenv/default-packages" "$XDG_CONFIG_HOME/pyenv"
