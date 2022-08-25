@@ -1,0 +1,6 @@
+name: base
+root: ./
+
+windows:
+  - editor: nvim
+  - terminal: null
