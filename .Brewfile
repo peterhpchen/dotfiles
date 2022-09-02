@@ -37,6 +37,7 @@ brew "shfmt"
 # cask "alacritty"
 
 cask "docker"
+cask "drawio"
 cask "kitty"
 cask "rectangle"
 cask "visual-studio-code"
