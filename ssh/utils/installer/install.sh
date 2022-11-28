@@ -7,4 +7,5 @@ if [ -f "$SSH_DIR/config" ]; then
   exit 1
 fi
 
+mkdir "$SSH_DIR"
 ln -s "$DOTFILES/ssh/config" "$SSH_DIR"
