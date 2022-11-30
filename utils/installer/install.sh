@@ -60,6 +60,9 @@ git clone "$TPM_REMOTE" "$XDG_CONFIG_HOME/tmux/plugins/tpm"
 ln -s "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux"
 "$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins"
 
+# tmuxinator
+ln -s "$DOTFILES/tmuxinator/base.yml" "$XDG_CONFIG_HOME/tmuxinator"
+
 # kitty
 mkdir "$XDG_CONFIG_HOME/kitty"
 ln -s "$DOTFILES/kitty/kitty.conf" "$XDG_CONFIG_HOME/kitty"
