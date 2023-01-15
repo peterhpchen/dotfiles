@@ -13,7 +13,7 @@ xcode-select --install
 Install the whole development environment by single command.
 
 ```sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/main/utils/installer/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/main/.scripts/installer/install.sh)"
 ```
 
 ### Step 3: Setup SSH
@@ -21,7 +21,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/main/
 Execute `ssh.sh` to generate SSH key and setup.
 
 ```sh
-. "$DOTFILES/utils/installer/ssh.sh" "your_email@example.com"
+. "$DOTFILES/.scripts/installer/ssh.sh" "your_email@example.com"
 ```
 
 `your_email@example.com` is your GitHub email address.

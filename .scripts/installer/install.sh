@@ -28,10 +28,10 @@ fi
 
 git clone --quiet "$REMOTE" "$DOTFILES"
 
-. "$DOTS/cheat.sh/utils/installer/install.sh"
-. "$DOTS/nvm/utils/installer/install.sh"
-. "$DOTS/sdkman/utils/installer/install.sh"
-. "$DOTS/ssh/utils/installer/install.sh"
+. "$DOTS/cheat.sh/.scripts/installer/install.sh"
+. "$DOTS/nvm/.scripts/installer/install.sh"
+. "$DOTS/sdkman/.scripts/installer/install.sh"
+. "$DOTS/ssh/.scripts/installer/install.sh"
 
 ln -s "$DOTS/.Brewfile" "$HOME"
 brew bundle --global --quiet
