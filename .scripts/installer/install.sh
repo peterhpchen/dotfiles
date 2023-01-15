@@ -37,6 +37,7 @@ ln -s "$DOTS/.Brewfile" "$HOME"
 brew bundle --global --quiet
 
 # gitui
+mkdir "$XDG_CONFIG_HOME/gitui"
 ln -s "$DOTS/gitui/key_bindings.ron" "$XDG_CONFIG_HOME/gitui"
 
 # pyenv
@@ -62,6 +63,7 @@ ln -s "$DOTS/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux"
 "$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins"
 
 # tmuxinator
+mkdir "$XDG_CONFIG_HOME/tmuxinator"
 ln -s "$DOTS/tmuxinator/base.yml" "$XDG_CONFIG_HOME/tmuxinator"
 
 # kitty
