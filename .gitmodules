@@ -1,3 +1,9 @@
+[submodule "dots/kitty/nord-kitty"]
+	path = dots/kitty/nord-kitty
+	url = https://github.com/connorholyday/nord-kitty.git
+[submodule "dots/dircolors/nord-dircolors"]
+	path = dots/dircolors/nord-dircolors
+	url = https://github.com/arcticicestudio/nord-dircolors.git
 [submodule "gainmiles"]
 	path = gainmiles
 	url = git@github.com:peterhpchen/dotfiles-gainmiles.git
@@ -7,9 +13,3 @@
 [submodule "nvim"]
 	path = nvim
 	url = git@github.com:peterhpchen/nvim.git
-[submodule "kitty/nord-kitty"]
-	path = kitty/nord-kitty
-	url = https://github.com/connorholyday/nord-kitty.git
-[submodule "dircolors/nord-dircolors"]
-	path = dircolors/nord-dircolors
-	url = https://github.com/arcticicestudio/nord-dircolors.git

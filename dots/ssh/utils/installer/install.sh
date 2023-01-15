@@ -8,4 +8,4 @@ if [ -f "$SSH_DIR/config" ]; then
 fi
 
 mkdir "$SSH_DIR"
-ln -s "$DOTFILES/ssh/config" "$SSH_DIR"
+ln -s "$DOTS/ssh/config" "$SSH_DIR"

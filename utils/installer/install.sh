@@ -1,6 +1,7 @@
 #!/bin/sh
 
 DOTFILES="$HOME/.dotfiles"
+DOTS="$DOTFILES/dots"
 XDG_CONFIG_HOME="$HOME/.config"
 REMOTE=https://github.com/peterhpchen/dotfiles.git
 
@@ -27,66 +28,66 @@ fi
 
 git clone --quiet "$REMOTE" "$DOTFILES"
 
-. "$DOTFILES/cheat.sh/utils/installer/install.sh"
-. "$DOTFILES/nvm/utils/installer/install.sh"
-. "$DOTFILES/sdkman/utils/installer/install.sh"
-. "$DOTFILES/ssh/utils/installer/install.sh"
+. "$DOTS/cheat.sh/utils/installer/install.sh"
+. "$DOTS/nvm/utils/installer/install.sh"
+. "$DOTS/sdkman/utils/installer/install.sh"
+. "$DOTS/ssh/utils/installer/install.sh"
 
-ln -s "$DOTFILES/.Brewfile" "$HOME"
+ln -s "$DOTS/.Brewfile" "$HOME"
 brew bundle --global --quiet
 
 # gitui
-ln -s "$DOTFILES/gitui/key_bindings.ron" "$XDG_CONFIG_HOME/gitui"
+ln -s "$DOTS/gitui/key_bindings.ron" "$XDG_CONFIG_HOME/gitui"
 
 # pyenv
 eval "$(pyenv init -)"
-ln -s "$DOTFILES/pyenv/default-packages" "$XDG_CONFIG_HOME/pyenv"
+ln -s "$DOTS/pyenv/default-packages" "$XDG_CONFIG_HOME/pyenv"
 pyenv install "$PYTHON_VERSION"
 pyenv global "$PYTHON_VERSION"
 
 # ripgrep
 mkdir "$XDG_CONFIG_HOME/ripgrep"
-ln -s "$DOTFILES/ripgrep/.ripgreprc" "$XDG_CONFIG_HOME/ripgrep"
+ln -s "$DOTS/ripgrep/.ripgreprc" "$XDG_CONFIG_HOME/ripgrep"
 
 # fzf
 "$(brew --prefix)"/opt/fzf/install --xdg --key-bindings --no-update-rc --completion --no-bash --no-fish
 
 # neofetch
 mkdir "$XDG_CONFIG_HOME/neofetch"
-ln -s "$DOTFILES/neofetch/config.conf" "$XDG_CONFIG_HOME/neofetch"
+ln -s "$DOTS/neofetch/config.conf" "$XDG_CONFIG_HOME/neofetch"
 
 # tmux
 git clone "$TPM_REMOTE" "$XDG_CONFIG_HOME/tmux/plugins/tpm"
-ln -s "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux"
+ln -s "$DOTS/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux"
 "$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins"
 
 # tmuxinator
-ln -s "$DOTFILES/tmuxinator/base.yml" "$XDG_CONFIG_HOME/tmuxinator"
+ln -s "$DOTS/tmuxinator/base.yml" "$XDG_CONFIG_HOME/tmuxinator"
 
 # kitty
 mkdir "$XDG_CONFIG_HOME/kitty"
-ln -s "$DOTFILES/kitty/kitty.conf" "$XDG_CONFIG_HOME/kitty"
+ln -s "$DOTS/kitty/kitty.conf" "$XDG_CONFIG_HOME/kitty"
 cd "$DOTFILES"
-git submodule update --init -- kitty/nord-kitty
+git submodule update --init -- dots/kitty/nord-kitty
 
 # git
 mkdir "$XDG_CONFIG_HOME/git"
-ln -s "$DOTFILES/git/config" "$XDG_CONFIG_HOME/git"
-ln -s "$DOTFILES/git/ignore" "$XDG_CONFIG_HOME/git"
+ln -s "$DOTS/git/config" "$XDG_CONFIG_HOME/git"
+ln -s "$DOTS/git/ignore" "$XDG_CONFIG_HOME/git"
 
 # dircolors
 cd "$DOTFILES"
-git submodule update --init -- dircolors/nord-dircolors
+git submodule update --init -- dots/dircolors/nord-dircolors
 
 # Zsh
-ln -s "$DOTFILES/.zshenv" "$HOME"
+ln -s "$DOTS/.zshenv" "$HOME"
 mkdir "$XDG_CONFIG_HOME/zsh"
-ln -s "$DOTFILES/zsh/.zshenv" "$XDG_CONFIG_HOME/zsh"
-ln -s "$DOTFILES/zsh/.zshrc" "$XDG_CONFIG_HOME/zsh"
-ln -s "$DOTFILES/zsh/.p10k.zsh" "$XDG_CONFIG_HOME/zsh"
+ln -s "$DOTS/zsh/.zshenv" "$XDG_CONFIG_HOME/zsh"
+ln -s "$DOTS/zsh/.zshrc" "$XDG_CONFIG_HOME/zsh"
+ln -s "$DOTS/zsh/.p10k.zsh" "$XDG_CONFIG_HOME/zsh"
 
-ln -s "$DOTFILES/.editorconfig" "$HOME"
-ln -s "$DOTFILES/.prettierrc.js" "$HOME"
+ln -s "$DOTS/.editorconfig" "$HOME"
+ln -s "$DOTS/.prettierrc.js" "$HOME"
 
 # macOS
 echo "Set a shorter Delay until key repeat"
