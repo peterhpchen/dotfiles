@@ -30,13 +30,13 @@ Execute `ssh.sh` to generate SSH key and setup.
 
 ### Extra: Install dotfiles-extra
 
-The `dotfiles-extra` is used to setup some specific environments. It has the same repo structure with `peterhpchen/dotfiles`, So we can just pull these submodule and execute `utils/installer/install.sh` to setup these env.
+The `dotfiles-extra` is used to setup some specific environments. It has the same repo structure with `peterhpchen/dotfiles`, So we can just pull these submodule and execute `.scripts/installer/install.sh` to setup these env.
 
 ```sh
 git submodule init
 git pull --recurse-submodules
-# gainmiles for example
-. "$DOTFILES/gainmiles/utils/installer/install.sh"
+# personal for example
+. "$DOTFILES/personal/.scripts/installer/install.sh"
 ```
 
 If your extra dotfiles are in the private repository, you need change dotfiles' git remote path to ssh.
