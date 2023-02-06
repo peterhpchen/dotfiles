@@ -1,4 +1,3 @@
 #!/bin/zsh
 
-# https://github.com/sharkdp/bat#highlighting-theme
-export BAT_THEME="Nord"
+export BAT_CONFIG_PATH="$XDG_CONFIG_HOME/bat/bat.conf"

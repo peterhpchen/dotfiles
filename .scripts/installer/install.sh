@@ -81,6 +81,10 @@ ln -s "$DOTS/git/ignore" "$XDG_CONFIG_HOME/git"
 cd "$DOTFILES"
 git submodule update --init -- dots/dircolors/nord-dircolors
 
+# bat
+mkdir "$XDG_CONFIG_HOME/bat"
+ln -s "$DOTS/bat/bat.conf" "$XDG_CONFIG_HOME/bat"
+
 # Zsh
 ln -s "$DOTS/.zshenv" "$HOME"
 mkdir "$XDG_CONFIG_HOME/zsh"

@@ -1,5 +1,6 @@
 export SHELL="/bin/zsh"
 export EDITOR="nvim"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'" # bat required
 
 export DOTFILES="$HOME/.dotfiles"
 export DOTS="$DOTFILES/dots"
