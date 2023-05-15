@@ -34,7 +34,7 @@ git clone --quiet "$REMOTE" "$DOTFILES"
 . "$DOTS/sdkman/.scripts/installer/install.sh"
 . "$DOTS/ssh/.scripts/installer/install.sh"
 
-ln -s "$DOTS/.Brewfile" "$HOME"
+ln -s "$DOTS/homebrew/.Brewfile" "$HOME"
 brew bundle --global --quiet
 
 # gitui
