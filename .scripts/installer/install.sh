@@ -3,8 +3,8 @@
 DOTFILES="$HOME/.dotfiles"
 
 if [ -d "$DOTFILES" ]; then
-  echo "The \$DOTFILES folder already exists ($DOTFILES). Please remove it."
-  exit 1
+	echo "The \$DOTFILES folder already exists ($DOTFILES). Please remove it."
+	exit 1
 fi
 
 DOTS="$DOTFILES/dots"
@@ -18,13 +18,13 @@ PYTHON_VERSION="3.10.5"
 TPM_REMOTE=https://github.com/tmux-plugins/tpm.git
 
 if [ ! "$(command -v brew)" ]; then
-  echo "Homebrew not installed. Installing."
-  curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash --login
+	echo "Homebrew not installed. Installing."
+	curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash --login
 fi
 
 if [ ! "$(command -v git)" ]; then
-  echo "Git not installed. Installing."
-  brew install git
+	echo "Git not installed. Installing."
+	brew install git
 fi
 
 git clone --quiet "$REMOTE" "$DOTFILES"
@@ -89,12 +89,12 @@ ln -s "$DOTS/bat/bat.conf" "$XDG_CONFIG_HOME/bat"
 # Zsh
 ln -s "$DOTS/.zshenv" "$HOME"
 mkdir "$XDG_CONFIG_HOME/zsh"
-ln -s "$DOTS/zsh/.zshenv" "$XDG_CONFIG_HOME/zsh"
-ln -s "$DOTS/zsh/.zshrc" "$XDG_CONFIG_HOME/zsh"
-ln -s "$DOTS/zsh/.p10k.zsh" "$XDG_CONFIG_HOME/zsh"
+ln -s "$DOTS/zsh/XDG_CONFIG_HOME/.zshenv" "$XDG_CONFIG_HOME/zsh"
+ln -s "$DOTS/zsh/XDG_CONFIG_HOME/.zshrc" "$XDG_CONFIG_HOME/zsh"
+ln -s "$DOTS/zsh/XDG_CONFIG_HOME/.p10k.zsh" "$XDG_CONFIG_HOME/zsh"
 
-ln -s "$DOTS/.editorconfig" "$HOME"
-ln -s "$DOTS/.prettierrc.js" "$HOME"
+ln -s "$DOTS/editorconfig/.editorconfig" "$HOME"
+ln -s "$DOTS/prettier/.prettierrc.js" "$HOME"
 
 # macOS
 echo "Set a shorter Delay until key repeat"
