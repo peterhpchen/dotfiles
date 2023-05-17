@@ -1,5 +1,85 @@
 # Peter's dotfiles
 
+My personal dotfiles for macOS, Zsh.
+
+## Directory Structure
+
+Every folder is a individual configuration for specific tool (or group). Its name is `dot`.
+
+The `dot` structure is below:
+
+```
+.
+|- .scripts
+| |- install.sh
+|- <config files>
+|- README.md
+```
+
+You can execute `.scripts/install.sh` to install and config this tool. The installer can help you install tool and link all config files to specific position for setup.
+
+## dot
+
+The target of `dot` has two types: tool or group.
+
+- When target is tool, it only charges single tool(for example: [nvm](./dots/nvm/)).
+- When target is group, it charges multiple tools for a whole environment(for example: [nvim](./nvim/)).
+
+You can use your way to set any config by `dot`. For my way, I use four `dot` to setup my whole complete environment:
+
+```
+. (Root dot)
+|- nvim (IDE)
+|- gainmiles (Work)
+|- personal (Personal)
+```
+
+- `.` (Root dot): Basic tools of OS and Command Line.
+- `nvim` (IDE): Neovim settings.
+- `gainmiles` (Work): The specific tools and settings for job.
+- `personal` (Personal): The specific tools and settings for my personal use.
+
+## Tools
+
+The below is the tool list for root `dot`. if you want to know what tools include in the else `dot`, please see the each `dot` README.
+
+- Package Manager: Homebrew
+  - Terminal Emulator: kitty
+- SHELL
+  - dircolors
+  - zsh
+  - zsh-autosuggestions
+  - zsh-completions
+  - zsh-history-substring-search
+  - zsh-syntax-highlighting
+  - powerlevel10k
+- Window Multiplexer
+  - tmux
+  - tmuxinator
+- Version Control
+  - git
+  - gitignore.io
+  - gitui
+- CLI
+  - neofetch
+  - bat
+  - ripgrep
+  - exa
+  - fd
+  - fzf
+  - zoxide
+  - cheat.sh
+- SSH
+- Formatter
+  - editorconfig
+  - prettier
+- Node.js
+  - nvm
+- Python
+  - pyenv
+- JAVA
+  - sdkman
+
 ## Installation
 
 ### Step 1: Install XCode CLI tools
