@@ -87,7 +87,7 @@ mkdir "$XDG_CONFIG_HOME/bat"
 ln -s "$DOTS/bat/XDG_CONFIG_HOME/bat.conf" "$XDG_CONFIG_HOME/bat"
 
 # Zsh
-ln -s "$DOTS/.zshenv" "$HOME"
+ln -s "$DOTS/zsh/.zshenv" "$HOME"
 mkdir "$XDG_CONFIG_HOME/zsh"
 ln -s "$DOTS/zsh/XDG_CONFIG_HOME/.zshenv" "$XDG_CONFIG_HOME/zsh"
 ln -s "$DOTS/zsh/XDG_CONFIG_HOME/.zshrc" "$XDG_CONFIG_HOME/zsh"
