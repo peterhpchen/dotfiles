@@ -39,44 +39,44 @@ brew bundle --global --quiet
 
 # gitui
 mkdir "$XDG_CONFIG_HOME/gitui"
-ln -s "$DOTS/gitui/key_bindings.ron" "$XDG_CONFIG_HOME/gitui"
+ln -s "$DOTS/gitui/XDG_CONFIG_HOME/key_bindings.ron" "$XDG_CONFIG_HOME/gitui"
 
 # pyenv
 eval "$(pyenv init -)"
-ln -s "$DOTS/pyenv/default-packages" "$XDG_CONFIG_HOME/pyenv"
+ln -s "$DOTS/pyenv/XDG_CONFIG_HOME/default-packages" "$XDG_CONFIG_HOME/pyenv"
 pyenv install "$PYTHON_VERSION"
 pyenv global "$PYTHON_VERSION"
 
 # ripgrep
 mkdir "$XDG_CONFIG_HOME/ripgrep"
-ln -s "$DOTS/ripgrep/.ripgreprc" "$XDG_CONFIG_HOME/ripgrep"
+ln -s "$DOTS/ripgrep/XDG_CONFIG_HOME/.ripgreprc" "$XDG_CONFIG_HOME/ripgrep"
 
 # fzf
 "$(brew --prefix)"/opt/fzf/install --xdg --key-bindings --no-update-rc --completion --no-bash --no-fish
 
 # neofetch
 mkdir "$XDG_CONFIG_HOME/neofetch"
-ln -s "$DOTS/neofetch/config.conf" "$XDG_CONFIG_HOME/neofetch"
+ln -s "$DOTS/neofetch/XDG_CONFIG_HOME/config.conf" "$XDG_CONFIG_HOME/neofetch"
 
 # tmux
 git clone "$TPM_REMOTE" "$XDG_CONFIG_HOME/tmux/plugins/tpm"
-ln -s "$DOTS/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux"
+ln -s "$DOTS/tmux/XDG_CONFIG_HOME/tmux.conf" "$XDG_CONFIG_HOME/tmux"
 "$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins"
 
 # tmuxinator
 mkdir "$XDG_CONFIG_HOME/tmuxinator"
-ln -s "$DOTS/tmuxinator/base.yml" "$XDG_CONFIG_HOME/tmuxinator"
+ln -s "$DOTS/tmuxinator/XDG_CONFIG_HOME/base.yml" "$XDG_CONFIG_HOME/tmuxinator"
 
 # kitty
 mkdir "$XDG_CONFIG_HOME/kitty"
-ln -s "$DOTS/kitty/kitty.conf" "$XDG_CONFIG_HOME/kitty"
+ln -s "$DOTS/kitty/XDG_CONFIG_HOME/kitty.conf" "$XDG_CONFIG_HOME/kitty"
 cd "$DOTFILES"
 git submodule update --init -- dots/kitty/nord-kitty
 
 # git
 mkdir "$XDG_CONFIG_HOME/git"
-ln -s "$DOTS/git/config" "$XDG_CONFIG_HOME/git"
-ln -s "$DOTS/git/ignore" "$XDG_CONFIG_HOME/git"
+ln -s "$DOTS/git/XDG_CONFIG_HOME/config" "$XDG_CONFIG_HOME/git"
+ln -s "$DOTS/git/XDG_CONFIG_HOME/ignore" "$XDG_CONFIG_HOME/git"
 
 # dircolors
 cd "$DOTFILES"
@@ -84,7 +84,7 @@ git submodule update --init -- dots/dircolors/nord-dircolors
 
 # bat
 mkdir "$XDG_CONFIG_HOME/bat"
-ln -s "$DOTS/bat/bat.conf" "$XDG_CONFIG_HOME/bat"
+ln -s "$DOTS/bat/XDG_CONFIG_HOME/bat.conf" "$XDG_CONFIG_HOME/bat"
 
 # Zsh
 ln -s "$DOTS/.zshenv" "$HOME"
