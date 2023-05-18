@@ -93,7 +93,7 @@ xcode-select --install
 Install the whole development environment by single command.
 
 ```sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/main/.scripts/installer/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/main/.scripts/install.sh)"
 ```
 
 ### Step 3: Setup SSH
@@ -101,7 +101,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/main/
 Execute `ssh.sh` to generate SSH key and setup.
 
 ```sh
-. "$DOTFILES/.scripts/installer/ssh.sh" "your_email@example.com"
+. "$DOTFILES/.scripts/ssh.sh" "your_email@example.com"
 ```
 
 `your_email@example.com` is your GitHub email address.
@@ -110,13 +110,13 @@ Execute `ssh.sh` to generate SSH key and setup.
 
 ### Extra: Install dotfiles-extra
 
-The `dotfiles-extra` is used to setup some specific environments. It has the same repo structure with `peterhpchen/dotfiles`, So we can just pull these submodule and execute `.scripts/installer/install.sh` to setup these env.
+The `dotfiles-extra` is used to setup some specific environments. It has the same repo structure with `peterhpchen/dotfiles`, So we can just pull these submodule and execute `.scripts/install.sh` to setup these env.
 
 ```sh
 git submodule init
 git pull --recurse-submodules
 # personal for example
-. "$DOTFILES/personal/.scripts/installer/install.sh"
+. "$DOTFILES/personal/.scripts/install.sh"
 ```
 
 If your extra dotfiles are in the private repository, you need change dotfiles' git remote path to ssh.
