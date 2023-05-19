@@ -23,7 +23,7 @@ You can execute `.scripts/install.sh` to install and config this tool. The insta
 The target of `dot` has two types: tool or group.
 
 - When target is tool, it only charges single tool(for example: [nvm](./dots/nvm/)).
-- When target is group, it charges multiple tools for a whole environment(for example: [nvim](./nvim/)).
+- When target is group, it charges multiple tools for a whole environment(for example: [nvim](https://github.com/peterhpchen/nvim)).
 
 You can use your way to set any config by `dot`. For my way, I use four `dot` to setup my whole complete environment:
 
@@ -44,7 +44,7 @@ You can use your way to set any config by `dot`. For my way, I use four `dot` to
 The below is the tool list for root `dot`. if you want to know what tools include in the else `dot`, please see the each `dot` README.
 
 - Package Manager: Homebrew
-  - Terminal Emulator: kitty
+- Terminal Emulator: kitty
 - SHELL
   - dircolors
   - zsh
