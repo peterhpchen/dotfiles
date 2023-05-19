@@ -1,4 +1,4 @@
-# :cat: kitty
+# kitty
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/kovidgoyal/kitty?style=social)](https://github.com/kovidgoyal/kitty)
 

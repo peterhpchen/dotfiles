@@ -49,9 +49,10 @@ which using submodule handle theme plugins.
 
 The below is the tool list for root `dot`. if you want to know what tools include in the else `dot`, please see the each `dot` README.
 
-- [:beer: Homebrew](./dots/homebrew/): :beer: The missing package manager for macOS (or Linux)
-- [:cat: kitty](./dots/kitty/): Cross-platform, fast, feature-rich, GPU based terminal
-- [:bat: BAT](./dots/bat/): A cat(1) clone with wings.
+- :beer: [Homebrew](./dots/homebrew/): :beer: The missing package manager for macOS (or Linux)
+- :cat: [kitty](./dots/kitty/): Cross-platform, fast, feature-rich, GPU based terminal
+- :bat: [BAT](./dots/bat/): A cat(1) clone with wings.
+- :mag: [ripgrep](./dots/ripgrep/): ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - SHELL
   - dircolors
   - zsh
@@ -69,7 +70,6 @@ The below is the tool list for root `dot`. if you want to know what tools includ
   - gitui
 - CLI
   - neofetch
-  - ripgrep
   - exa
   - fd
   - fzf
