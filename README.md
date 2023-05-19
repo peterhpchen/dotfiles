@@ -63,12 +63,12 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 
 - :capital_abcd: Hack Nerd Font
 
-- :keyboard: Neovim
+- :keyboard: [Neovim](https://github.com/peterhpchen/nvim)
 
 - :whale: Docker
 - :chart: Draw.io
 
-- :shell: zsh
+- :shell: [Zsh](./dots/zsh/): Zsh is a shell with lots of features.
 - :shell::page_facing_up: zsh-autosuggestions
 - :shell::oncoming_automobile: zsh-completions
 - :shell::newspaper: zsh-history-substring-search
