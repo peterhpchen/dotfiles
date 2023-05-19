@@ -53,7 +53,8 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :cat: [kitty](./dots/kitty/): Cross-platform, fast, feature-rich, GPU based terminal
 - :framed_picture: [neofetch](./dots/neofetch/): :framed_picture: A command-line system information tool written in bash 3.2+
 - :scroll: [exa](./dots/exa/): A modern replacement for ‘ls’.
-- :mag: [ripgrep](./dots/ripgrep/): ripgrep recursively searches directories for a regex pattern while respecting your gitignore
+- :mag: [fd](./dots/fd/): A simple, fast and user-friendly alternative to 'find'
+- :mag_right: [ripgrep](./dots/ripgrep/): ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 - :bat: [BAT](./dots/bat/): A cat(1) clone with wings.
 - SHELL
   - dircolors
@@ -71,7 +72,6 @@ The below is the tool list for root `dot`. if you want to know what tools includ
   - gitignore.io
   - gitui
 - CLI
-  - fd
   - fzf
   - zoxide
   - cheat.sh
