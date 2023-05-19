@@ -39,6 +39,12 @@ You can use your way to set any config by `dot`. For my way, I use four `dot` to
 - `gainmiles` (Work): The specific tools and settings for job.
 - `personal` (Personal): The specific tools and settings for my personal use.
 
+## Use git submodule to manage external plugins
+
+This dotfiles use git submodule to manage the third party plugins of the tools.
+The [dircolors](./dots/dircolors/) and [kitty](./dots/kitty/) is the example,
+which using submodule handle theme plugins.
+
 ## Tools
 
 The below is the tool list for root `dot`. if you want to know what tools include in the else `dot`, please see the each `dot` README.
@@ -79,6 +85,10 @@ The below is the tool list for root `dot`. if you want to know what tools includ
   - pyenv
 - JAVA
   - sdkman
+
+## Theme
+
+This dotfiles use Nord theme for all tools.
 
 ## Installation
 
