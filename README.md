@@ -75,7 +75,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :shell::rainbow: zsh-syntax-highlighting
 
 - :rainbow: [dircolors](./dots/dircolors/)
-- :up: powerlevel10k
+- :up: [Powerlevel10k](./dots/powerlevel10k/): A Zsh theme
 
 - :window: [tmux](./dots/tmux/): tmux is a terminal multiplexer
 - :window::bookmark: [tmuxinator](./dots/tmuxinator/): Manage complex tmux sessions easily
