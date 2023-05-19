@@ -61,6 +61,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :books: [cheat.sh](./dots/cheat.sh/): the only cheat sheet you need
 - :window: [tmux](./dots/tmux/): tmux is a terminal multiplexer
 - :window::bookmark: [tmuxinator](./dots/tmuxinator/): Manage complex tmux sessions easily
+- :christmas_tree: [git](./dots/git/): Git is a fast, scalable, distributed revision control system
 - SHELL
   - dircolors
   - zsh
@@ -69,9 +70,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
   - zsh-history-substring-search
   - zsh-syntax-highlighting
   - powerlevel10k
-- Window Multiplexer
 - Version Control
-  - git
   - gitignore.io
   - gitui
 - SSH
