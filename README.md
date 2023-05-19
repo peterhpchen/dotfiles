@@ -52,8 +52,9 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :beer: [Homebrew](./dots/homebrew/): :beer: The missing package manager for macOS (or Linux)
 - :cat: [kitty](./dots/kitty/): Cross-platform, fast, feature-rich, GPU based terminal
 - :framed_picture: [neofetch](./dots/neofetch/): :framed_picture: A command-line system information tool written in bash 3.2+
-- :bat: [BAT](./dots/bat/): A cat(1) clone with wings.
+- :scroll: [exa](./dots/exa/): A modern replacement for ‘ls’.
 - :mag: [ripgrep](./dots/ripgrep/): ripgrep recursively searches directories for a regex pattern while respecting your gitignore
+- :bat: [BAT](./dots/bat/): A cat(1) clone with wings.
 - SHELL
   - dircolors
   - zsh
@@ -70,7 +71,6 @@ The below is the tool list for root `dot`. if you want to know what tools includ
   - gitignore.io
   - gitui
 - CLI
-  - exa
   - fd
   - fzf
   - zoxide

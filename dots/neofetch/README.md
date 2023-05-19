@@ -7,4 +7,4 @@
 - Installed by **Homebrew**.
 - Source `zshrc.zsh`.
 - XDG Base Directory Specification.
-- Default Settings.
+- Official default settings.
