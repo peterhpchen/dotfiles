@@ -49,8 +49,8 @@ which using submodule handle theme plugins.
 
 The below is the tool list for root `dot`. if you want to know what tools include in the else `dot`, please see the each `dot` README.
 
-- [:bat: BAT](./dots/bat/): A cat(1) clone with syntax highlighting and Git integration.
-- Package Manager: Homebrew
+- [:beer: Homebrew](./dots/homebrew/): :beer: The missing package manager for macOS (or Linux)
+- [:bat: BAT](./dots/bat/): A cat(1) clone with wings.
 - Terminal Emulator: kitty
 - SHELL
   - dircolors

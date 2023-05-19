@@ -1,8 +1,8 @@
-# BAT
+# :bat: BAT
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/sharkdp/bat?style=social)](https://github.com/sharkdp/bat)
 
-> A cat(1) clone with syntax highlighting and Git integration.
+A cat(1) clone with wings.
 
 - Installed by **Homebrew**.
 - XDG Base Directory Specification.
