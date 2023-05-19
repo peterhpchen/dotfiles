@@ -63,6 +63,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :window::bookmark: [tmuxinator](./dots/tmuxinator/): Manage complex tmux sessions easily
 - :christmas_tree: [Git](./dots/git/): Git is a fast, scalable, distributed revision control system
 - :christmas_tree::hole: [gitignore.io](./dots/gitignore.io/): Create useful .gitignore files for your project
+- :christmas_tree::tv: [gitui](./dots/gitui/): Blazing :boom: fast terminal-ui for git written in rust :crab:
 - SHELL
   - dircolors
   - zsh
@@ -72,7 +73,6 @@ The below is the tool list for root `dot`. if you want to know what tools includ
   - zsh-syntax-highlighting
   - powerlevel10k
 - Version Control
-  - gitui
 - SSH
 - Formatter
   - editorconfig
