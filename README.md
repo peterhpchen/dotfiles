@@ -55,7 +55,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 
 - :lock: [SSH](./dots/ssh/)
 
-- :apple: macOS
+- :apple: [macOS](./dots/macos/)
 - :apple::pilot: MAS
 - :apple::beer: [Homebrew](./dots/homebrew/): :beer: The missing package manager for macOS (or Linux)
 
