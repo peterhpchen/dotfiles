@@ -68,7 +68,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
   - gitui
 - CLI
   - neofetch
-  - bat
+  - [BAT](./dots/bat/README.md): A cat(1) clone with syntax highlighting and Git integration.
   - ripgrep
   - exa
   - fd
