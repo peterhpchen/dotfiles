@@ -74,7 +74,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :shell::newspaper: zsh-history-substring-search
 - :shell::rainbow: zsh-syntax-highlighting
 
-- :rainbow: dircolors
+- :rainbow: [dircolors](./dots/dircolors/)
 - :up: powerlevel10k
 
 - :window: [tmux](./dots/tmux/): tmux is a terminal multiplexer
