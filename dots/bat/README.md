@@ -1,6 +1,6 @@
 # BAT
 
-> A cat(1) clone with syntax highlighting and Git integration.
+> [BAT](https://github.com/sharkdp/bat): A cat(1) clone with syntax highlighting and Git integration.
 
 - Installed by **Homebrew**.
 - XDG Base Directory Specification.

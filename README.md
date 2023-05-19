@@ -49,6 +49,7 @@ which using submodule handle theme plugins.
 
 The below is the tool list for root `dot`. if you want to know what tools include in the else `dot`, please see the each `dot` README.
 
+- [:bat:BAT](./dots/bat/): A cat(1) clone with syntax highlighting and Git integration.
 - Package Manager: Homebrew
 - Terminal Emulator: kitty
 - SHELL
@@ -68,7 +69,6 @@ The below is the tool list for root `dot`. if you want to know what tools includ
   - gitui
 - CLI
   - neofetch
-  - [BAT](./dots/bat/README.md): A cat(1) clone with syntax highlighting and Git integration.
   - ripgrep
   - exa
   - fd
