@@ -6,4 +6,4 @@ A simple, fast and user-friendly alternative to 'find'
 
 - Installed by **Homebrew**.
 - Source `zshrc.zsh`.
-- ~~Alias `find`~~(this find alias let the sdkman-init.sh error, so it cannot be alias.).
+- ~~Alias `find`~~(This `find` alias let the `sdkman-init.sh` error, so it cannot be alias.).

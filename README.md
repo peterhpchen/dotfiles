@@ -55,6 +55,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :scroll: [exa](./dots/exa/): A modern replacement for ‘ls’.
 - :mag: [fd](./dots/fd/): A simple, fast and user-friendly alternative to 'find'
 - :mag_right: [ripgrep](./dots/ripgrep/): ripgrep recursively searches directories for a regex pattern while respecting your gitignore
+- :cherry_blossom: [fzf](./dots/fzf/): :cherry_blossom: A command-line fuzzy finder
 - :bat: [BAT](./dots/bat/): A cat(1) clone with wings.
 - SHELL
   - dircolors
@@ -72,7 +73,6 @@ The below is the tool list for root `dot`. if you want to know what tools includ
   - gitignore.io
   - gitui
 - CLI
-  - fzf
   - zoxide
   - cheat.sh
 - SSH
