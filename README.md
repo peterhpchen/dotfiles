@@ -49,8 +49,38 @@ which using submodule handle theme plugins.
 
 The below is the tool list for root `dot`. if you want to know what tools include in the else `dot`, please see the each `dot` README.
 
-- :beer: [Homebrew](./dots/homebrew/): :beer: The missing package manager for macOS (or Linux)
+- :lock: SSH
+
+- :apple: macOS
+- :apple::pilot: MAS
+- :apple::beer: [Homebrew](./dots/homebrew/): :beer: The missing package manager for macOS (or Linux)
+
 - :cat: [kitty](./dots/kitty/): Cross-platform, fast, feature-rich, GPU based terminal
+
+- :capital_abcd: Hack Nerd Font
+
+- :keyboard: Neovim
+
+- :whale: Docker
+- :chart: Draw.io
+
+- :shell: zsh
+- :shell::page_facing_up: zsh-autosuggestions
+- :shell::oncoming_automobile: zsh-completions
+- :shell::newspaper: zsh-history-substring-search
+- :shell::rainbow: zsh-syntax-highlighting
+
+- :rainbow: dircolors
+- :up: powerlevel10k
+
+- :window: [tmux](./dots/tmux/): tmux is a terminal multiplexer
+- :window::bookmark: [tmuxinator](./dots/tmuxinator/): Manage complex tmux sessions easily
+
+- :christmas_tree: [Git](./dots/git/): Git is a fast, scalable, distributed revision control system
+- :christmas_tree::hole: [gitignore.io](./dots/gitignore.io/): Create useful .gitignore files for your project
+- :christmas_tree::tv: [GitUI](./dots/gitui/): Blazing :boom: fast terminal-ui for git written in rust :crab:
+- :christmas_tree::octocat: Github CLI
+
 - :framed_picture: [neofetch](./dots/neofetch/): :framed_picture: A command-line system information tool written in bash 3.2+
 - :scroll: [exa](./dots/exa/): A modern replacement for ‘ls’.
 - :mag: [fd](./dots/fd/): A simple, fast and user-friendly alternative to 'find'
@@ -59,30 +89,13 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :feather: [zoxide](./dots/zoxide/): A smarter cd command. Supports all major shells.
 - :bat: [BAT](./dots/bat/): A cat(1) clone with wings.
 - :books: [cheat.sh](./dots/cheat.sh/): the only cheat sheet you need
-- :window: [tmux](./dots/tmux/): tmux is a terminal multiplexer
-- :window::bookmark: [tmuxinator](./dots/tmuxinator/): Manage complex tmux sessions easily
-- :christmas_tree: [Git](./dots/git/): Git is a fast, scalable, distributed revision control system
-- :christmas_tree::hole: [gitignore.io](./dots/gitignore.io/): Create useful .gitignore files for your project
-- :christmas_tree::tv: [gitui](./dots/gitui/): Blazing :boom: fast terminal-ui for git written in rust :crab:
-- SHELL
-  - dircolors
-  - zsh
-  - zsh-autosuggestions
-  - zsh-completions
-  - zsh-history-substring-search
-  - zsh-syntax-highlighting
-  - powerlevel10k
-- Version Control
-- SSH
-- Formatter
-  - editorconfig
-  - prettier
-- Node.js
-  - nvm
-- Python
-  - pyenv
-- JAVA
-  - sdkman
+
+- :straight_ruler: editorconfig
+- :sparkles: prettier
+
+- :green_square::pilot: nvm
+- :snake::pilot: pyenv
+- :coffee::pilot: sdkman
 
 ## Theme
 
