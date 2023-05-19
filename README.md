@@ -60,6 +60,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :bat: [BAT](./dots/bat/): A cat(1) clone with wings.
 - :books: [cheat.sh](./dots/cheat.sh/): the only cheat sheet you need
 - :window: [tmux](./dots/tmux/): tmux is a terminal multiplexer
+- :window::bookmark: [tmuxinator](./dots/tmuxinator/): Manage complex tmux sessions easily
 - SHELL
   - dircolors
   - zsh
@@ -69,7 +70,6 @@ The below is the tool list for root `dot`. if you want to know what tools includ
   - zsh-syntax-highlighting
   - powerlevel10k
 - Window Multiplexer
-  - tmuxinator
 - Version Control
   - git
   - gitignore.io
