@@ -45,11 +45,15 @@ This dotfiles use git submodule to manage the third party plugins of the tools.
 The [dircolors](./dots/dircolors/) and [kitty](./dots/kitty/) is the example,
 which using submodule handle theme plugins.
 
+## XDG Base Directory Specification
+
+All packages in this dotfiles repo use [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) to organize configurations.
+
 ## Tools
 
 The below is the tool list for root `dot`. if you want to know what tools include in the else `dot`, please see the each `dot` README.
 
-- :lock: SSH
+- :lock: [SSH](./dots/ssh/)
 
 - :apple: macOS
 - :apple::pilot: MAS
