@@ -97,9 +97,9 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :mouse: [editorconfig](./dots/editorconfig/): EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
 - :sparkles: [Prettier](./dots/prettier/): Prettier is an opinionated code formatter.
 
-- :green_square::pilot: nvm
-- :snake::pilot: pyenv
-- :coffee::pilot: sdkman
+- :green_square::pilot: [nvm](./dots/nvm/): Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
+- :snake::pilot: [pyenv](./dots/pyenv/):
+- :coffee::pilot: [sdkman](./dots/sdkman/):
 
 ## Theme
 
