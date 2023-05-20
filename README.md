@@ -99,7 +99,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 
 - :green_square::pilot: [nvm](./dots/nvm/): Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
 - :snake::pilot: [pyenv](./dots/pyenv/): Simple Python version management
-- :coffee::pilot: [sdkman](./dots/sdkman/):
+- :coffee::pilot: [SDKMAN!](./dots/sdkman/): The SDKMAN! Command Line Interface
 
 ## Theme
 
