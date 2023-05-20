@@ -82,31 +82,33 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 
 ### :apple: macOS
 
-- :apple: [macOS](./dots/macos/)
-- :apple::left_right_arrow: [Rectangle](./dots/rectangle/): Move and resize windows on macOS with keyboard shortcuts and snap areas
-- :apple::pilot: MAS
-- :apple::beer: [Homebrew](./dots/homebrew/): :beer: The missing package manager for macOS (or Linux)
+- [macOS](./dots/macos/)
+- :left_right_arrow: [Rectangle](./dots/rectangle/): Move and resize windows on macOS with keyboard shortcuts and snap areas
+- :pilot: MAS
+- :beer: [Homebrew](./dots/homebrew/): :beer: The missing package manager for macOS (or Linux)
 
 ### :shell: Zsh
 
-- :shell: [Zsh](./dots/zsh/): Zsh is a shell with lots of features.
-  - :shell::page_facing_up: zsh-autosuggestions: Fish-like autosuggestions for zsh
-  - :shell::oncoming_automobile: zsh-completions: Additional completion definitions for Zsh.
-  - :shell::newspaper: zsh-history-substring-search: :tropical_fish: ZSH port of Fish history search (up arrow)
-  - :shell::rainbow: zsh-syntax-highlighting: Fish shell like syntax highlighting for Zsh.
+- [Zsh](./dots/zsh/): Zsh is a shell with lots of features.
+  - :page_facing_up: zsh-autosuggestions: Fish-like autosuggestions for zsh
+  - :oncoming_automobile: zsh-completions: Additional completion definitions for Zsh.
+  - :newspaper: zsh-history-substring-search: :tropical_fish: ZSH port of Fish history search (up arrow)
+  - :rainbow: zsh-syntax-highlighting: Fish shell like syntax highlighting for Zsh.
 - :up: [Powerlevel10k](./dots/powerlevel10k/): A Zsh theme
 
 ### :window: tmux
 
-- :window: [tmux](./dots/tmux/): tmux is a terminal multiplexer
-- :window::bookmark: [tmuxinator](./dots/tmuxinator/): Manage complex tmux sessions easily
+- [tmux](./dots/tmux/): tmux is a terminal multiplexer
+  - :pilot: TPM: Tmux Plugin Manager
+  - :art: Nord: An arctic, north-bluish clean and elegant tmux color theme.
+- :bookmark: [tmuxinator](./dots/tmuxinator/): Manage complex tmux sessions easily
 
 ### :christmas_tree: Git
 
-- :christmas_tree: [Git](./dots/git/): Git is a fast, scalable, distributed revision control system
-- :christmas_tree::hole: [gitignore.io](./dots/gitignore.io/): Create useful .gitignore files for your project
-- :christmas_tree::tv: [GitUI](./dots/gitui/): Blazing :boom: fast terminal-ui for git written in rust :crab:
-- :christmas_tree::octocat: Github CLI
+- [Git](./dots/git/): Git is a fast, scalable, distributed revision control system
+- :hole: [gitignore.io](./dots/gitignore.io/): Create useful .gitignore files for your project
+- :tv: [GitUI](./dots/gitui/): Blazing :boom: fast terminal-ui for git written in rust :crab:
+- :octocat: Github CLI
 
 ## Theme
 
