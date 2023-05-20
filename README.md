@@ -51,7 +51,7 @@ All packages in this dotfiles repo use [XDG Base Directory Specification](https:
 
 ## Tools
 
-The below is the tool list for root `dot`. if you want to know what tools include in the else `dot`, please see the each `dot` README.
+The below is the tool list for root `dot`. if you want to know what tools include in the else `dot`([nvim](https://github.com/peterhpchen/nvim), personal and work), please see the each `dot` README.
 
 - :lock: [SSH](./dots/ssh/)
 
