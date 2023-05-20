@@ -12,7 +12,7 @@ export XDG_STATE_HOME="$HOME/.local/state"
 
 export HOMEBREW_PREFIX="/usr/local"
 
-source "$DOTS/zsh-completions/zshenv.zsh"
+source "$DOTS/zsh/zsh-completions/zshenv.zsh"
 
 source "$DOTS/bat/zshenv.zsh"
 source "$DOTS/cheat.sh/zshenv.zsh"

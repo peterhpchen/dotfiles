@@ -63,7 +63,6 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :chart: Draw.io
 
 - :rainbow: [dircolors](./dots/dircolors/)
-- :up: [Powerlevel10k](./dots/powerlevel10k/): A Zsh theme
 
 - :framed_picture: [neofetch](./dots/neofetch/): :framed_picture: A command-line system information tool written in bash 3.2+
 - :scroll: [exa](./dots/exa/): A modern replacement for ‘ls’.
@@ -91,10 +90,11 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 ### :shell: Zsh
 
 - :shell: [Zsh](./dots/zsh/): Zsh is a shell with lots of features.
-- :shell::page_facing_up: zsh-autosuggestions
-- :shell::oncoming_automobile: zsh-completions
-- :shell::newspaper: zsh-history-substring-search
-- :shell::rainbow: zsh-syntax-highlighting
+  - :shell::page_facing_up: zsh-autosuggestions: Fish-like autosuggestions for zsh
+  - :shell::oncoming_automobile: zsh-completions: Additional completion definitions for Zsh.
+  - :shell::newspaper: zsh-history-substring-search: :tropical_fish: ZSH port of Fish history search (up arrow)
+  - :shell::rainbow: zsh-syntax-highlighting: Fish shell like syntax highlighting for Zsh.
+- :up: [Powerlevel10k](./dots/powerlevel10k/): A Zsh theme
 
 ### :window: tmux
 

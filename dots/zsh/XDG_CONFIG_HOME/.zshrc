@@ -11,9 +11,9 @@ compinit
 # case insensitive path-completion
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
-source "$DOTS/zsh-autosuggestions/zshrc.zsh"
-source "$DOTS/zsh-syntax-highlighting/zshrc.zsh"
-source "$DOTS/zsh-history-substring-search/zshrc.zsh"
+source "$DOTS/zsh/zsh-autosuggestions/zshrc.zsh"
+source "$DOTS/zsh/zsh-syntax-highlighting/zshrc.zsh"
+source "$DOTS/zsh/zsh-history-substring-search/zshrc.zsh"
 
 source "$DOTS/bat/zshrc.zsh"
 source "$DOTS/dircolors/zshrc.zsh"
