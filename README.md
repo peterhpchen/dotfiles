@@ -64,13 +64,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 
 - :rainbow: [dircolors](./dots/dircolors/)
 
-- :framed_picture: [neofetch](./dots/neofetch/): :framed_picture: A command-line system information tool written in bash 3.2+
-- :scroll: [exa](./dots/exa/): A modern replacement for ‘ls’.
-- :mag: [fd](./dots/fd/): A simple, fast and user-friendly alternative to 'find'
-- :mag_right: [ripgrep](./dots/ripgrep/): ripgrep recursively searches directories for a regex pattern while respecting your gitignore
-- :cherry_blossom: [fzf](./dots/fzf/): :cherry_blossom: A command-line fuzzy finder
 - :feather: [zoxide](./dots/zoxide/): A smarter cd command. Supports all major shells.
-- :bat: [BAT](./dots/bat/): A cat(1) clone with wings.
 - :books: [cheat.sh](./dots/cheat.sh/): the only cheat sheet you need
 
 - :mouse: [editorconfig](./dots/editorconfig/): EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
@@ -109,6 +103,18 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :hole: [gitignore.io](./dots/gitignore.io/): Create useful .gitignore files for your project
 - :tv: [GitUI](./dots/gitui/): Blazing :boom: fast terminal-ui for git written in rust :crab:
 - :octocat: Github CLI
+
+### :eyes: View
+
+- :framed_picture: [neofetch](./dots/neofetch/): :framed_picture: A command-line system information tool written in bash 3.2+
+- :scroll: [exa](./dots/exa/): A modern replacement for ‘ls’.
+- :bat: [BAT](./dots/bat/): A cat(1) clone with wings.
+
+### :flashlight: Search
+
+- :mag: [fd](./dots/fd/): A simple, fast and user-friendly alternative to 'find'
+- :mag_right: [ripgrep](./dots/ripgrep/): ripgrep recursively searches directories for a regex pattern while respecting your gitignore
+- :cherry_blossom: [fzf](./dots/fzf/): :cherry_blossom: A command-line fuzzy finder
 
 ## Theme
 
