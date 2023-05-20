@@ -84,6 +84,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 ### :apple: macOS
 
 - :apple: [macOS](./dots/macos/)
+- :apple::left_right_arrow: [Rectangle](./dots/rectangle/): Move and resize windows on macOS with keyboard shortcuts and snap areas
 - :apple::pilot: MAS
 - :apple::beer: [Homebrew](./dots/homebrew/): :beer: The missing package manager for macOS (or Linux)
 
