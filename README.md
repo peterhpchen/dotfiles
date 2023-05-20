@@ -55,35 +55,15 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 
 - :lock: [SSH](./dots/ssh/)
 
-- :apple: [macOS](./dots/macos/)
-- :apple::pilot: MAS
-- :apple::beer: [Homebrew](./dots/homebrew/): :beer: The missing package manager for macOS (or Linux)
-
 - :cat: [kitty](./dots/kitty/): Cross-platform, fast, feature-rich, GPU based terminal
-
-- :capital_abcd: Hack Nerd Font
 
 - :keyboard: [Neovim](https://github.com/peterhpchen/nvim)
 
 - :whale: Docker
 - :chart: Draw.io
 
-- :shell: [Zsh](./dots/zsh/): Zsh is a shell with lots of features.
-- :shell::page_facing_up: zsh-autosuggestions
-- :shell::oncoming_automobile: zsh-completions
-- :shell::newspaper: zsh-history-substring-search
-- :shell::rainbow: zsh-syntax-highlighting
-
 - :rainbow: [dircolors](./dots/dircolors/)
 - :up: [Powerlevel10k](./dots/powerlevel10k/): A Zsh theme
-
-- :window: [tmux](./dots/tmux/): tmux is a terminal multiplexer
-- :window::bookmark: [tmuxinator](./dots/tmuxinator/): Manage complex tmux sessions easily
-
-- :christmas_tree: [Git](./dots/git/): Git is a fast, scalable, distributed revision control system
-- :christmas_tree::hole: [gitignore.io](./dots/gitignore.io/): Create useful .gitignore files for your project
-- :christmas_tree::tv: [GitUI](./dots/gitui/): Blazing :boom: fast terminal-ui for git written in rust :crab:
-- :christmas_tree::octocat: Github CLI
 
 - :framed_picture: [neofetch](./dots/neofetch/): :framed_picture: A command-line system information tool written in bash 3.2+
 - :scroll: [exa](./dots/exa/): A modern replacement for ‘ls’.
@@ -101,9 +81,36 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :snake::pilot: [pyenv](./dots/pyenv/): Simple Python version management
 - :coffee::pilot: [SDKMAN!](./dots/sdkman/): The SDKMAN! Command Line Interface
 
+### :apple: macOS
+
+- :apple: [macOS](./dots/macos/)
+- :apple::pilot: MAS
+- :apple::beer: [Homebrew](./dots/homebrew/): :beer: The missing package manager for macOS (or Linux)
+
+### :shell: Zsh
+
+- :shell: [Zsh](./dots/zsh/): Zsh is a shell with lots of features.
+- :shell::page_facing_up: zsh-autosuggestions
+- :shell::oncoming_automobile: zsh-completions
+- :shell::newspaper: zsh-history-substring-search
+- :shell::rainbow: zsh-syntax-highlighting
+
+### :window: tmux
+
+- :window: [tmux](./dots/tmux/): tmux is a terminal multiplexer
+- :window::bookmark: [tmuxinator](./dots/tmuxinator/): Manage complex tmux sessions easily
+
+### :christmas_tree: Git
+
+- :christmas_tree: [Git](./dots/git/): Git is a fast, scalable, distributed revision control system
+- :christmas_tree::hole: [gitignore.io](./dots/gitignore.io/): Create useful .gitignore files for your project
+- :christmas_tree::tv: [GitUI](./dots/gitui/): Blazing :boom: fast terminal-ui for git written in rust :crab:
+- :christmas_tree::octocat: Github CLI
+
 ## Theme
 
-This dotfiles use Nord theme for all tools.
+- :art: Theme: [Nord](https://www.nordtheme.com/)
+- :capital_abcd: Hack Nerd Font
 
 ## Installation
 
