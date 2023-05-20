@@ -94,8 +94,8 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 - :bat: [BAT](./dots/bat/): A cat(1) clone with wings.
 - :books: [cheat.sh](./dots/cheat.sh/): the only cheat sheet you need
 
-- :straight_ruler: [editorconfig](./dots/editorconfig/): EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
-- :sparkles: prettier
+- :mouse: [editorconfig](./dots/editorconfig/): EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
+- :sparkles: [Prettier](./dots/prettier/): Prettier is an opinionated code formatter.
 
 - :green_square::pilot: nvm
 - :snake::pilot: pyenv
