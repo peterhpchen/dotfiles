@@ -18,7 +18,7 @@ if [ ! "$(command -v git)" ]; then
   pacman -S --noconfirm git
 fi
 
-git clone --quiet "$REMOTE" "$DOTFILES"
+git clone --quiet -b support-archlinux "$REMOTE" "$DOTFILES"
 
 # . "$DOTS/cheat.sh/.scripts/install.sh"
 # . "$DOTS/nvm/.scripts/install.sh"
