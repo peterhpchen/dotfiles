@@ -127,7 +127,8 @@ You can install in your host or just docker it.
 
 ```sh
 docker run -it --rm archlinux/archlinux sh -uelic '
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/support-archlinux/.scripts/install.archlinux.sh)"zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/support-archlinux/.scripts/install.archlinux.sh)"
+zsh
 '
 ```
 
