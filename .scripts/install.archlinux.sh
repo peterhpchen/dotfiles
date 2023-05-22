@@ -11,7 +11,7 @@ DOTS="$DOTFILES/dots"
 XDG_CONFIG_HOME="$HOME/.config"
 REMOTE=https://github.com/peterhpchen/dotfiles.git
 
-pacman -Syu
+pacman -Syu --noconfirm
 
 if [ ! "$(command -v git)" ]; then
   echo "Git not installed. Installing."
