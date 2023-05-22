@@ -34,7 +34,7 @@ git clone --quiet -b support-archlinux "$REMOTE" "$DOTFILES"
 # . "$DOTS/fzf/.scripts/setup.sh"
 # . "$DOTS/neofetch/.scripts/setup.sh"
 #
-# . "$DOTS/tmux/.scripts/setup.sh"
+. "$DOTS/tmux/.scripts/setup.sh"
 #
 # . "$DOTS/tmuxinator/.scripts/setup.sh"
 #
