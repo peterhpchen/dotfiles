@@ -1,1 +1,11 @@
+bat
+exa
+fd
+fzf
+git
+gitui
 neofetch
+ripgrep
+tmux
+zoxide
+zsh
