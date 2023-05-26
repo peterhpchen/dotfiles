@@ -12,3 +12,5 @@ git submodule update --init -- dots/zsh/packages/zsh-completions
 git submodule update --init -- dots/zsh/packages/zsh-history-substring-search
 git submodule update --init -- dots/zsh/packages/zsh-syntax-highlighting
 git submodule update --init --depth 1 -- dots/zsh/packages/powerlevel10k
+
+chsh -s "$(command -v zsh)" "$(whoami)"
