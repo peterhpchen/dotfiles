@@ -5,6 +5,7 @@ fzf
 git
 gitui
 neofetch
+prettier
 ripgrep
 tmux
 zoxide

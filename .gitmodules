@@ -25,3 +25,6 @@
 [submodule "dots/zsh/packages/zsh-syntax-highlighting"]
 	path = dots/zsh/packages/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "dots/zsh/packages/powerlevel10k"]
+	path = dots/zsh/packages/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git

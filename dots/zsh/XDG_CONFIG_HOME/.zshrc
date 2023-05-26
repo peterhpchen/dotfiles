@@ -1,5 +1,5 @@
 source "$DOTS/neofetch/zshrc.zsh"
-source "$DOTS/powerlevel10k/zshrc.zsh"
+source "$DOTS/zsh/powerlevel10k/zshrc.zsh"
 # The above source need pin on the top
 
 alias dfs="cd $HOME/.dotfiles"
