@@ -46,7 +46,7 @@ git clone --quiet -b support-archlinux "$REMOTE" "$DOTFILES"
 #
 # . "$DOTS/bat/.scripts/setup.sh"
 #
-# . "$DOTS/zsh/.scripts/setup.sh"
+. "$DOTS/zsh/.scripts/setup.sh"
 #
 # . "$DOTS/editorconfig/.scripts/setup.sh"
 # . "$DOTS/prettier/.scripts/setup.sh"

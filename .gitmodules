@@ -13,3 +13,15 @@
 [submodule "dots/kitty/packages/nord-kitty"]
 	path = dots/kitty/packages/nord-kitty
 	url = https://github.com/connorholyday/nord-kitty.git
+[submodule "dots/zsh/packages/zsh-autosuggestions"]
+	path = dots/zsh/packages/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "dots/zsh/packages/zsh-completions"]
+	path = dots/zsh/packages/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "dots/zsh/packages/zsh-history-substring-search"]
+	path = dots/zsh/packages/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search
+[submodule "dots/zsh/packages/zsh-syntax-highlighting"]
+	path = dots/zsh/packages/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
