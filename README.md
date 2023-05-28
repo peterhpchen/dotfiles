@@ -72,6 +72,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 
 - :green_square::pilot: [nvm](./dots/nvm/): Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
 - :snake::pilot: [pyenv](./dots/pyenv/): Simple Python version management
+  - :ghost: pyenv-virtualenv: a pyenv plugin to manage virtualenv (a.k.a. python-virtualenv)
 - :coffee::pilot: [SDKMAN!](./dots/sdkman/): The SDKMAN! Command Line Interface
 
 ### :apple: macOS
@@ -88,7 +89,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
   - :oncoming_automobile: zsh-completions: Additional completion definitions for Zsh.
   - :newspaper: zsh-history-substring-search: :tropical_fish: ZSH port of Fish history search (up arrow)
   - :rainbow: zsh-syntax-highlighting: Fish shell like syntax highlighting for Zsh.
-- :up: [Powerlevel10k](./dots/powerlevel10k/): A Zsh theme
+  - :up: Powerlevel10k: A Zsh theme
 
 ### :window: tmux
 
