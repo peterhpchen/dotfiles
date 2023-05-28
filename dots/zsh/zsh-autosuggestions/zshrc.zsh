@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-source "$HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "$DOTS/zsh/packages/zsh-autosuggestions/zsh-autosuggestions.zsh"

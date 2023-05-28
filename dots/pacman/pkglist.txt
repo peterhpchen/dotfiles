@@ -1,0 +1,15 @@
+bat
+exa
+fd
+fzf
+git
+gitui
+neofetch
+prettier
+pyenv
+ripgrep
+ruby
+rubygems
+tmux
+zoxide
+zsh

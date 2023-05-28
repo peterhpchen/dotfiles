@@ -123,6 +123,16 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 
 ## Installation
 
+You can install in your host or just docker it.
+
+```sh
+docker run -it --rm archlinux/archlinux sh -uelic '
+export TERM="screen-256color"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/support-archlinux/.scripts/install.archlinux.sh)"
+zsh
+'
+```
+
 ### Step 1: Install XCode CLI tools
 
 ```sh

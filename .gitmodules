@@ -1,9 +1,3 @@
-[submodule "dots/kitty/nord-kitty"]
-	path = dots/kitty/nord-kitty
-	url = https://github.com/connorholyday/nord-kitty.git
-[submodule "dots/dircolors/nord-dircolors"]
-	path = dots/dircolors/nord-dircolors
-	url = https://github.com/arcticicestudio/nord-dircolors.git
 [submodule "gainmiles"]
 	path = gainmiles
 	url = git@github.com:peterhpchen/dotfiles-gainmiles.git
@@ -13,3 +7,24 @@
 [submodule "nvim"]
 	path = nvim
 	url = git@github.com:peterhpchen/nvim.git
+[submodule "dots/dircolors/packages/nord-dircolors"]
+	path = dots/dircolors/packages/nord-dircolors
+	url = https://github.com/arcticicestudio/nord-dircolors.git
+[submodule "dots/kitty/packages/nord-kitty"]
+	path = dots/kitty/packages/nord-kitty
+	url = https://github.com/connorholyday/nord-kitty.git
+[submodule "dots/zsh/packages/zsh-autosuggestions"]
+	path = dots/zsh/packages/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "dots/zsh/packages/zsh-completions"]
+	path = dots/zsh/packages/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "dots/zsh/packages/zsh-history-substring-search"]
+	path = dots/zsh/packages/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search
+[submodule "dots/zsh/packages/zsh-syntax-highlighting"]
+	path = dots/zsh/packages/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "dots/zsh/packages/powerlevel10k"]
+	path = dots/zsh/packages/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
