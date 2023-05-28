@@ -38,15 +38,13 @@ git clone --quiet -b support-archlinux "$REMOTE" "$DOTFILES"
 
 # . "$DOTS/tmuxinator/.scripts/setup.sh"
 
-# . "$DOTS/kitty/.scripts/setup.sh"
-
 . "$DOTS/git/.scripts/setup.sh"
 
-# . "$DOTS/dircolors/.scripts/setup.sh"
+. "$DOTS/dircolors/.scripts/setup.sh"
 
 . "$DOTS/bat/.scripts/setup.sh"
 
-. "$DOTS/zsh/.scripts/setup.sh"
+. "$DOTS/zsh/.scripts/setup.archlinux.sh"
 
 . "$DOTS/editorconfig/.scripts/setup.sh"
 . "$DOTS/prettier/.scripts/setup.sh"
