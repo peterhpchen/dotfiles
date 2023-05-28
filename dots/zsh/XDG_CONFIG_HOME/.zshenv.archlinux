@@ -10,7 +10,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_STATE_HOME="$HOME/.local/state"
 
-source "$DOTS/zsh/zsh-completions/zshenv.zsh"
+source "$DOTS/zsh/zsh-completions/zshenv.archlinux.zsh"
 
 source "$DOTS/bat/zshenv.zsh"
 source "$DOTS/cheat.sh/zshenv.zsh"

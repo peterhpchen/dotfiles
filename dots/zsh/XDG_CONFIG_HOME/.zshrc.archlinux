@@ -1,5 +1,5 @@
 source "$DOTS/neofetch/zshrc.zsh"
-source "$DOTS/zsh/powerlevel10k/zshrc.zsh"
+source "$DOTS/zsh/powerlevel10k/zshrc.archlinux.zsh"
 # The above source need pin on the top
 
 alias dfs="cd $HOME/.dotfiles"
@@ -11,9 +11,9 @@ compinit
 # case insensitive path-completion
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
-source "$DOTS/zsh/zsh-autosuggestions/zshrc.zsh"
-source "$DOTS/zsh/zsh-syntax-highlighting/zshrc.zsh"
-source "$DOTS/zsh/zsh-history-substring-search/zshrc.zsh"
+source "$DOTS/zsh/zsh-autosuggestions/zshrc.archlinux.zsh"
+source "$DOTS/zsh/zsh-syntax-highlighting/zshrc.archlinux.zsh"
+source "$DOTS/zsh/zsh-history-substring-search/zshrc.archlinux.zsh"
 
 source "$DOTS/bat/zshrc.zsh"
 source "$DOTS/dircolors/zshrc.archlinux.zsh"
