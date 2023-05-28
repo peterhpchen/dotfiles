@@ -28,7 +28,7 @@ git clone --quiet -b support-archlinux "$REMOTE" "$DOTFILES"
 . "$DOTS/pacman/.scripts/setup.sh"
 . "$DOTS/gitui/.scripts/setup.sh"
 
-. "$DOTS/pyenv/.scripts/setup.sh"
+. "$DOTS/pyenv/.scripts/setup.archlinux.sh"
 
 . "$DOTS/ripgrep/.scripts/setup.sh"
 . "$DOTS/fzf/.scripts/setup.sh"
