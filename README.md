@@ -1,6 +1,6 @@
 # Peter's dotfiles
 
-My personal dotfiles for macOS, Zsh.
+My personal dotfiles for macOS, Arch Linux, Zsh.
 
 ## Directory Structure
 
