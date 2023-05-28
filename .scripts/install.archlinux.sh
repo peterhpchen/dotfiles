@@ -23,12 +23,12 @@ git clone --quiet -b support-archlinux "$REMOTE" "$DOTFILES"
 . "$DOTS/cheat.sh/.scripts/install.sh"
 . "$DOTS/nvm/.scripts/install.sh"
 . "$DOTS/sdkman/.scripts/install.sh"
-# . "$DOTS/ssh/.scripts/install.sh"
+. "$DOTS/ssh/.scripts/install.sh"
 
 . "$DOTS/pacman/.scripts/setup.sh"
 . "$DOTS/gitui/.scripts/setup.sh"
 
-# . "$DOTS/pyenv/.scripts/setup.sh"
+. "$DOTS/pyenv/.scripts/setup.sh"
 
 . "$DOTS/ripgrep/.scripts/setup.sh"
 . "$DOTS/fzf/.scripts/setup.sh"

@@ -6,6 +6,7 @@ git
 gitui
 neofetch
 prettier
+pyenv
 ripgrep
 tmux
 zoxide
