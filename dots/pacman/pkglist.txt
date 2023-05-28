@@ -8,6 +8,8 @@ neofetch
 prettier
 pyenv
 ripgrep
+ruby
+rubygems
 tmux
 zoxide
 zsh

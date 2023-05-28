@@ -36,7 +36,8 @@ git clone --quiet -b support-archlinux "$REMOTE" "$DOTFILES"
 
 . "$DOTS/tmux/.scripts/setup.sh"
 
-# . "$DOTS/tmuxinator/.scripts/setup.sh"
+. "$DOTS/tmuxinator/.scripts/install.sh"
+. "$DOTS/tmuxinator/.scripts/setup.sh"
 
 . "$DOTS/git/.scripts/setup.sh"
 
