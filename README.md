@@ -129,7 +129,7 @@ You can install in your host or just docker it.
 ```sh
 docker run -it --rm archlinux/archlinux sh -uelic '
 export TERM="screen-256color"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/support-archlinux/.scripts/install.archlinux.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/peterhpchen/dotfiles/main/.scripts/install.archlinux.sh)"
 zsh
 '
 ```
