@@ -177,6 +177,14 @@ If your extra dotfiles are in the private repository, you need change dotfiles' 
 git remote set-url origin git@github.com:peterhpchen/dotfiles.git
 ```
 
+## Sync changes
+
+Because we use the `curl` to download the install script, the remote url of this repository is `https`. If we want to push our change to remote repository, we need to change remote `origin` from https to ssh.
+
+```sh
+git remote set-url origin git@github.com:peterhpchen/dotfiles.git
+```
+
 ## Reset
 
 Reset everything by below command.
