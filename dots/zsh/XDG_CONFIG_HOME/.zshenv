@@ -23,3 +23,5 @@ source "$DOTS/nvm/zshenv.zsh"
 source "$DOTS/pyenv/zshenv.zsh"
 
 source "$DOTS/sdkman/zshenv.zsh"
+
+source "$DOTS/android/zshenv.zsh"
