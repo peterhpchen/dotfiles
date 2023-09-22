@@ -13,7 +13,7 @@ REMOTE=https://github.com/peterhpchen/dotfiles.git
 
 if [ ! "$(command -v brew)" ]; then
   echo "Homebrew not installed. Installing."
-  NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  NONINTERACTIVE=1 /bin/bash -c "$(sudo curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
