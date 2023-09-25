@@ -185,6 +185,15 @@ Because we use the `curl` to download the install script, the remote url of this
 git remote set-url origin git@github.com:peterhpchen/dotfiles.git
 ```
 
+## Add new submodule
+
+If you want add new submodule (whether `external plugins` or `dotfiles-extra`), you can use `git submodule add` to do this.
+
+```sh
+# personal for example
+git submodule add git@github.com:peterhpchen/dotfiles-personal.git personal
+```
+
 ## Reset
 
 Reset everything by below command.
