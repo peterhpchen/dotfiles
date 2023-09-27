@@ -1,7 +1,6 @@
 tap "homebrew/core"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/cask-drivers"
 tap "daipeihust/tap" # im-select
 
 brew "mas"
@@ -40,6 +39,7 @@ brew "shfmt"
 # optional terminal emulator
 # cask "alacritty"
 
+cask "dbeaver-community"
 cask "docker"
 cask "drawio"
 cask "kitty"
