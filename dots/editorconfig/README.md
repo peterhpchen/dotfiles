@@ -6,3 +6,5 @@ EditorConfig helps maintain consistent coding styles for multiple developers wor
 
 - Follow **Prettier** rules in all files.
 - Follow **shfmt** rules in the shell files.
+- Follow **EmmyLuaCodeStyle** rules in the lua files.
+- If you want to use with project, please copy the `.editorconfig` to project root path.

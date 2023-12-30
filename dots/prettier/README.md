@@ -7,3 +7,4 @@ Prettier is an opinionated code formatter.
 - Installed by **Homebrew**.
 - Setup by `setup.sh`.
 - Co-work with **editorconfig**.
+- If you want to use with project, please copy `.prettierrc.js` to the proeject root path.

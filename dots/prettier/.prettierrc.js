@@ -1,4 +1,5 @@
 module.exports = {
+  editorconfig: true,
   singleQuote: true,
   htmlWhitespaceSensitivity: 'strict',
   // The options below config in EditorConfig, do not config here

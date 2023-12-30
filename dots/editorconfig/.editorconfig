@@ -1,7 +1,7 @@
 root = true
 
 # Matches all files
-# TODO: Not work for prettier
+# Prettier would fllow these rules.
 [*]
 indent_style = space
 indent_size = 2
