@@ -35,6 +35,7 @@ brew "jawshooah/pyenv/pyenv-default-packages", args: ["HEAD"]
 
 brew "prettier"
 brew "shfmt"
+brew "stylua"
 
 # optional terminal emulator
 # cask "alacritty"
