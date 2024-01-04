@@ -14,9 +14,14 @@
 
 [merge]
   conflictstyle = diff3
+  tool = nvimdiff
 
 [diff]
   colorMoved = default
+  tool = nvimdiff
+
+[difftool]
+  prompt = false
 
 [pull]
   rebase = true
