@@ -17,7 +17,7 @@ source "$DOTS/zsh/zsh-history-substring-search/zshrc.zsh"
 
 source "$DOTS/bat/zshrc.zsh"
 source "$DOTS/dircolors/zshrc.zsh"
-source "$DOTS/exa/zshrc.zsh"
+source "$DOTS/eza/zshrc.zsh"
 source "$DOTS/fd/zshrc.zsh"
 source "$DOTS/fzf/zshrc.zsh"
 source "$DOTS/tmuxinator/zshrc.zsh"

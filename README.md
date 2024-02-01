@@ -108,7 +108,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 ### :eyes: View
 
 - :framed_picture: [neofetch](./dots/neofetch/): :framed_picture: A command-line system information tool written in bash 3.2+
-- :scroll: [exa](./dots/exa/): A modern replacement for ‘ls’.
+- :scroll: [eza](./dots/eza/): A modern, maintained replacement for ls
 - :bat: [BAT](./dots/bat/): A cat(1) clone with wings.
 
 ### :flashlight: Search

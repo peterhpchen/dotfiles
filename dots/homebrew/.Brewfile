@@ -14,7 +14,7 @@ brew "romkatv/powerlevel10k/powerlevel10k"
 
 brew "bat"
 brew "coreutils"
-brew "exa"
+brew "eza"
 brew "fd"
 brew "fzf"
 brew "gh"
