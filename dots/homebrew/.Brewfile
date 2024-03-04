@@ -44,7 +44,6 @@ cask "dbeaver-community"
 cask "docker"
 cask "drawio"
 cask "kitty"
-cask "neovide"
 cask "rectangle"
 cask "visual-studio-code"
 
