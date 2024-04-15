@@ -46,5 +46,7 @@ cask "drawio"
 cask "kitty"
 cask "rectangle"
 cask "visual-studio-code"
+cask "mactex"
+cask "skim"
 
 cask "font-hack-nerd-font"
