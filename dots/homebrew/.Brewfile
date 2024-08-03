@@ -1,6 +1,3 @@
-tap "homebrew/core"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
 tap "daipeihust/tap" # im-select
 
 brew "mas"
@@ -10,7 +7,7 @@ brew "zsh-autosuggestions"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 brew "zsh-history-substring-search"
-brew "romkatv/powerlevel10k/powerlevel10k"
+brew "powerlevel10k"
 
 brew "bat"
 brew "coreutils"
