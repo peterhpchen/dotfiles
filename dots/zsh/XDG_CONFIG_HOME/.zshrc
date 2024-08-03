@@ -1,4 +1,4 @@
-source "$DOTS/neofetch/zshrc.zsh"
+source "$DOTS/fastfetch/zshrc.zsh"
 source "$DOTS/zsh/powerlevel10k/zshrc.zsh"
 # The above source need pin on the top
 

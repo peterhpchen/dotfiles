@@ -107,7 +107,7 @@ The below is the tool list for root `dot`. if you want to know what tools includ
 
 ### :eyes: View
 
-- :framed_picture: [neofetch](./dots/neofetch/): :framed_picture: A command-line system information tool written in bash 3.2+
+- :framed_picture: [fastfetch](./dots/fastfetch/): An actively maintained, feature-rich and performance oriented, neofetch like system information tool.
 - :scroll: [eza](./dots/eza/): A modern, maintained replacement for ls
 - :bat: [BAT](./dots/bat/): A cat(1) clone with wings.
 
@@ -202,7 +202,7 @@ Reset everything by below command.
 rm -rf ~/.dotfiles \
 ~/.zshenv ~/.editorconfig ~/.prettierrc.js \
 ~/.Brewfile ~/.Brewfile.lock.json \
-~/.config/zsh ~/.config/nvm ~/.config/pyenv ~/.config/ripgrep ~/.config/fzf ~/.config/neofetch ~/.config/tmux ~/.config/kitty ~/.config/git ~/.config/sdkman ~/.config/tmuxinator ~/.config/gh ~/.config/gitui \
+~/.config/zsh ~/.config/nvm ~/.config/pyenv ~/.config/ripgrep ~/.config/fzf ~/.config/fastfetch ~/.config/tmux ~/.config/kitty ~/.config/git ~/.config/sdkman ~/.config/tmuxinator ~/.config/gh ~/.config/gitui \
 ~/.local/share/zoxide \
 ~/.ssh/config ~/.ssh/config.d
 ```

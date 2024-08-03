@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-neofetch
+fastfetch

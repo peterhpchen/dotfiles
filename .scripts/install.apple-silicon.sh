@@ -36,7 +36,7 @@ git clone --quiet "$REMOTE" "$DOTFILES"
 
 . "$DOTS/ripgrep/.scripts/setup.sh"
 . "$DOTS/fzf/.scripts/setup.sh"
-. "$DOTS/neofetch/.scripts/setup.sh"
+. "$DOTS/fastfetch/.scripts/setup.sh"
 
 . "$DOTS/tmux/.scripts/setup.sh"
 

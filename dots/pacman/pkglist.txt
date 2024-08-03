@@ -4,7 +4,7 @@ fd
 fzf
 git
 gitui
-neofetch
+fastfetch
 prettier
 pyenv
 ripgrep
