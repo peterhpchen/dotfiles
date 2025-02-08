@@ -1,6 +1,3 @@
-[submodule "gainmiles"]
-	path = gainmiles
-	url = git@github.com:peterhpchen/dotfiles-gainmiles.git
 [submodule "personal"]
 	path = personal
 	url = git@github.com:peterhpchen/dotfiles-personal.git

@@ -160,7 +160,7 @@ Execute `ssh.sh` to generate SSH key and setup.
 
 > Please view the [Github Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
-### Extra: Install dotfiles-extra
+### Step 4: Install dotfiles-extra (Optional)
 
 The `dotfiles-extra` is used to setup some specific environments. It has the same repo structure with `peterhpchen/dotfiles`, So we can just pull these submodule and execute `.scripts/install.sh` to setup these env.
 
@@ -185,13 +185,22 @@ Because we use the `curl` to download the install script, the remote url of this
 git remote set-url origin git@github.com:peterhpchen/dotfiles.git
 ```
 
-## Add new submodule
+## Add a new submodule
 
-If you want add new submodule (whether `external plugins` or `dotfiles-extra`), you can use `git submodule add` to do this.
+If you want to add a new submodule (whether `external plugins` or `dotfiles-extra`), you can use `git submodule add` to do this.
 
 ```sh
 # personal for example
 git submodule add git@github.com:peterhpchen/dotfiles-personal.git personal
+```
+
+## Remove a existing submodule
+
+If you want to remove a existing submodule (whether `external plugins` or `dotfiles-extra`), you need to uninstall first, then use `git rm` to remove the submodule. 
+
+```sh
+# personal for example
+git rm personal
 ```
 
 ## Reset
