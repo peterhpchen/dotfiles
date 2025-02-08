@@ -25,3 +25,6 @@
 [submodule "dots/zsh/packages/powerlevel10k"]
 	path = dots/zsh/packages/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "tsmc"]
+	path = tsmc
+	url = git@github.com:peterhpchen/dotfile-tsmc.git

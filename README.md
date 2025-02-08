@@ -30,13 +30,13 @@ You can use your way to set any config by `dot`. For my way, I use four `dot` to
 ```
 . (Root dot)
 |- nvim (IDE)
-|- gainmiles (Work)
+|- tsmc (Work)
 |- personal (Personal)
 ```
 
 - `.` (Root dot): Basic tools of OS and Command Line.
 - `nvim` (IDE): Neovim settings.
-- `gainmiles` (Work): The specific tools and settings for job.
+- `tsmc` (Work): The specific tools and settings for job.
 - `personal` (Personal): The specific tools and settings for my personal use.
 
 ## Use git submodule to manage external plugins
