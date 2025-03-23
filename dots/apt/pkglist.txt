@@ -1,2 +1,4 @@
 xclip
 neovim
+nodejs
+npm
