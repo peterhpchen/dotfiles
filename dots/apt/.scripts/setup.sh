@@ -1,4 +1,5 @@
 #!/bin/sh
 
 ln -s "$DOTS/apt/pkglist.txt" "$HOME"
-sudo apt install -y $(cat pkglist.txt)
+apt update
+apt install -y $(cat "$HOME/pkglist.txt")

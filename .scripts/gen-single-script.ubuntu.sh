@@ -10,7 +10,7 @@ fi
 DOTS="$DOTFILES/dots"
 XDG_CONFIG_HOME="$HOME/.config"
 REMOTE=https://github.com/peterhpchen/dotfiles.git
-INSTALL_SCRIPT="$DOTFILES/.scripts/install.ubuntu.sh"
+INSTALL_SCRIPT="$DOTFILES/.scripts/single-install.ubuntu.sh"
 
 rm -f "$INSTALL_SCRIPT"
 
