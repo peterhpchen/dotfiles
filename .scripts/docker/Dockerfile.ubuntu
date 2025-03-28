@@ -1,5 +1,4 @@
-# TODO: Use specific version
-FROM ubuntu:latest
+FROM ubuntu:22.04
 
 # tzdata
 ENV DEBIAN_FRONTEND=noninteractive
