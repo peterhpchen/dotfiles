@@ -1,0 +1,4 @@
+alacritty --classic
+node --classic
+nvim --classic
+postman --classic
