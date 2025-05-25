@@ -1,4 +1,8 @@
-module.exports = {
+/**
+ * @see https://prettier.io/docs/configuration
+ * @type {import("prettier").Config}
+ */
+const config = {
   // // https://github.com/prettier/prettier/issues/15255
   // // editorconfig options is a Node.js API configuration option object, and not a configuration file option
   // // Use --no-editorconfig to disable EditorConfig settings in CLI
