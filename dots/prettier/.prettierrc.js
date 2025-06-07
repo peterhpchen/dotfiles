@@ -15,3 +15,5 @@ const config = {
   // tabWidth: 2, // `indent_size` / `tab_width`
   // printWidth: 80, // `max_line_length`
 };
+
+export default config;
